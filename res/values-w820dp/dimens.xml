@@ -1,0 +1,178 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- 1) ActionBar Common for all -->
+    <dimen name="ActionBarHeight">55dp</dimen>
+    <dimen name="ActionBatTextSize">23dp</dimen>
+    <dimen name="actionBarIconWidth">50dp</dimen>
+    <dimen name="actionBarIconHeight">50dp</dimen>
+    <dimen name="actionBarIconPadding">7dp</dimen>
+    <dimen name="actionBarTitlePadding">3dp</dimen>
+
+    <!-- 2) TabHost layout (Add Property) -->
+    <dimen name="TabLayoutHeight">50dp</dimen>
+    <dimen name="TabTextSize">20dp</dimen>
+
+    <!-- 3) Basic inforamtion layout(Add property) -->
+    <dimen name="BasicInfoLayoutHeigth">40dp</dimen>
+    <dimen name="BasicInfoTextSize">20dp</dimen>
+    <dimen name="BasicInfoIconWidth">35dp</dimen>
+    <dimen name="BasicInfoIconHeight">35dp</dimen>
+
+    <!-- 4) Toggle button(Add Property) (Sale/rent) -->
+    <!-- (Common) Togglebutton -->
+    <dimen name="switchMinWidth">135dp</dimen>
+    <dimen name="switchMinHeight">40dp</dimen>
+    <dimen name="toggleTxtSize">20dp</dimen>
+    <dimen name="thumbTextPadding">25dp</dimen>
+    <dimen name="trackTextPadding">18dp</dimen>
+    <dimen name="switchPadding">11dp</dimen>
+
+    <!-- 5) Add Property linear layout (Textview and spiner or editbox) -->
+    <dimen name="addPropLLHeight">88dp</dimen>
+    <dimen name="addPropLLMargin">11dp</dimen>
+    <dimen name="addPropLLTopMargin">11dp</dimen>
+    <dimen name="addPropLLLeftMargin">13dp</dimen>
+    <dimen name="addPropLLRightMargin">13dp</dimen>
+
+    <!-- 6)Textview lable -->
+    <dimen name="tvLablePadding">8dp</dimen>
+    <dimen name="tvLableTxtSize">20dp</dimen>
+
+    <!-- 7) Property Type view(Add property) -->
+    <dimen name="propTypeViewMainLHeight">40dp</dimen>
+    <dimen name="propTypeViewIconLWidth">50dp</dimen>
+    <dimen name="propTypeViewTxtSize">20dp</dimen>
+    <dimen name="PropTypeViewMatgin">6dp</dimen>
+    <dimen name="PropTypeViewTxtPading">7dp</dimen>
+
+    <!-- 8)Bedrooms,Bathrooms,Floors related -->
+    <dimen name="iconWidth">35dp</dimen>
+    <dimen name="iconHeight">35dp</dimen>
+    <dimen name="iconPadding">2dp</dimen>
+    <dimen name="iconMargin">8dp</dimen>
+
+    <!-- 9)Furnish option view  (Add Property) -->
+    <dimen name="addPropFurnishOptionHeight">37dp</dimen>
+    <dimen name="addPropFurnishOptMarginRight">6dp</dimen>
+    <dimen name="addPropFurnishOptViewTxtSize">20dp</dimen>
+
+    <!-- 10)Nominee and amenities layout style -->
+    <dimen name="nomineeAmenitiesBtnHeight">45dp</dimen>
+    <dimen name="nomineeAmenitiesBtnTxtSize">20dp</dimen>
+    <dimen name="nomineeAmenitiesBtnMargin">7dp</dimen>
+
+    <!-- 11) Share property layout(Add Property) -->
+    <dimen name="sharePropLLHeight">50dp</dimen>
+    <dimen name="sharePropTxtSize">20dp</dimen>
+    <dimen name="shareWithBackIconWidth">60dp</dimen>
+    <dimen name="shareWithBackIconHeight">60dp</dimen>
+    <dimen name="shareWithBackIconRighPading">7dp</dimen>
+
+    <!-- 12) Photo dialog related (Add property) -->
+    <dimen name="photoDiaHeaderLLHeight">40dp</dimen>
+    <dimen name="photoDiaCloseIconWidth">40dp</dimen>
+    <dimen name="photoDiaViewHeight">1dp</dimen>
+    <dimen name="photoDiaCountLLheight">35dp</dimen>
+    <dimen name="photoDiaCountTvPadding">7dp</dimen>
+    <dimen name="photoDiaButtonLLheight">55dp</dimen>
+    <dimen name="photoDiaFooterBtnHeight">60dp</dimen>
+
+    <!-- 13)Amenities dialog (Add property) -->
+    <dimen name="amenitiesDiaHeaderLLHeight">40dp</dimen>
+    <dimen name="amenitiesDiaCheckAllLLheight">35dp</dimen>
+    <dimen name="amenitiesDiaHeaderTvPadding">7dp</dimen>
+    <dimen name="amenitiesDiaFooterBtnHeight">60dp</dimen>
+    <dimen name="amenitiesDiaChkWidth">50dp</dimen>
+    <dimen name="amenitiesDiaChkHeight">50dp</dimen>
+    <dimen name="amenitiesDiaChkDrawablePadding">10dp</dimen>
+    <dimen name="amenitiesDiaChkPadding">10dp</dimen>
+    <dimen name="amenitiesDiaChkMargin">6dp</dimen>
+    <dimen name="amenitiesDiaIconWidth">50dp</dimen>
+    <dimen name="amenitiesDiaRoundMargin">5dp</dimen>
+
+    <!-- 14) Google map Height -->
+    <dimen name="addPropGoogleMapLLHeight">185dp</dimen>
+    <dimen name="addPropGoogleMapHeight">155dp</dimen>
+    
+    <!-- 15) Footer button heiget
+    	  1) Share Prop btn,
+    	  2) Share and add prop btn 
+          3) Nominee dialog
+          4) Amenities dialog
+    	
+     -->
+     <dimen name="footerBtnHeight">45dp</dimen>
+     <dimen name="footerBtnTxtSize">20dp</dimen>
+     <dimen name="footerBtnMargin">8dp</dimen>
+     
+      <!-- 16) Property detail page layout related -->
+     <!-- Common for property detaitl page if you change then it will effect all page  -->
+     <dimen name="propDetMarginLeftLLCommon">10dp</dimen>
+     <dimen name="propDetMarginRightLLCommon">10dp</dimen>
+     <dimen name="PropDetAllTvTxtSizeCommon">20dp</dimen>
+     <dimen name="propDetViewHeightCommon">2dp</dimen>
+     <dimen name="propDetAllCardLLMarginTop">10dp</dimen>
+     <dimen name="propDetTvPaddingCommon">5dp</dimen>
+     <dimen name="propDetLLFooterBtnMargin">5dp</dimen>
+     <dimen name="propDetBtnHeight">40dp</dimen>
+     
+     <!-- 16.1)  First view Photo,Gallery view-->
+     <dimen name="PropDetPhotoMapLayoutHeight">400dp</dimen>
+     <dimen name="PropDetPhotoPevIconWidth">40dp</dimen>
+     <dimen name="PropDetPhotoPevIconHeight">40dp</dimen>
+     
+     <!-- 16.2) Photo counter view  -->
+     <dimen name="PropDetPhotoCountTvMarginPading">5dp</dimen>
+     
+     <!--  16.3) bed, bath, property type -->
+     <dimen name="propDetBedBathPropTypeLLHieght">80dp</dimen>
+     <dimen name="propDetBedBathPropTypeIconLLPadding">5dp</dimen>
+     
+     <!-- 16.4) Address, posted date, view layout -->
+     <dimen name="propDetLableIconWidth">15dp</dimen>
+     <dimen name="propDetLableIconHeight">15dp</dimen>
+     
+     <!-- 17) Property list row related this common for all listing -->
+     <integer name="propListRowImgLLWeight">4</integer>
+     <dimen name="propListRowImgLLPadding">5dp</dimen>
+     <dimen name="propListRowIVMargin">3dp</dimen>
+     
+     <integer name="propListRowDetLLWeight">5</integer>
+     <dimen name="propListRowDetLLPadding">5dp</dimen>
+     
+     <dimen name="propListRowDetTVPadding">2dp</dimen>
+     <dimen name="propListRowTVHeaderTxtSize">16dp</dimen>
+     <dimen name="propListRowTVSubTxtSize">14dp</dimen>
+     
+     <dimen name="propListRowIVMoreOptionWidht">30dp</dimen>
+     <dimen name="propListRowIVMoreOptionHeight">50dp</dimen>
+     <dimen name="propListRowIVMoreOptionPadding">5dp</dimen>
+     
+     <dimen name="propListRowLLFavCallPadding">3dp</dimen>
+     <dimen name="propListRowIVFavCallWidth">28dp</dimen>
+     <dimen name="propListRowIVFavCallHeight">28dp</dimen>
+     
+     <dimen name="propListRowIVCalWidthHeight">16dp</dimen>
+     
+     <!-- 18) Property list menu related -->
+     <dimen name="propListRowMenuLLPaddingLeft">20dp</dimen>
+     <dimen name="propListRowMenuTVPadding">8dp</dimen>
+     <dimen name="propListRowMenuLLPaddingRight">20dp</dimen>
+     
+     <!-- 19) Price more option icon width and height -->
+     <dimen name="addPropPriceMoreOptionBtnWidth">50dp</dimen>
+     <dimen name="addPropPriceMoreOptionBtnHeigh">35dp</dimen>
+     <dimen name="addPropPriceMoreOptionBtnPadding">5dp</dimen>
+     
+     <!-- 20) Progrees button related -->
+      <dimen name="corner_radius">0dp</dimen>
+      <dimen name="layer_padding">3dp</dimen>
+      
+      <!-- 21) Spinner text size -->
+      <dimen name="commonSpinnerTextSize">20dp</dimen>
+
+</resources>

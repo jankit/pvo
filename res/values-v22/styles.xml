@@ -1,0 +1,178 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+            
+        -->
+    </style>
+    
+    
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!-- <item name="android:actionBarStyle">@style/ActionBar</item> -->
+    </style>
+    
+     <!-- Actionbar common style -->
+   <!-- <style name="ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+    	<item name="android:icon">@android:color/transparent</item>
+    	<item name="android:background">@color/btnBlueColor</item>
+    	<item name="android:textColor">@android:color/white</item>
+    	<item name="android:height">@dimen/ActionBarHeight</item>
+    	<item name="android:textSize">@dimen/ActionBatTextSize</item>
+    	<item name="android:titleTextStyle">@style/NoTitleText</item>
+    	<item name="android:gravity">clip_horizontal</item>
+    	<item name="android:homeAsUpIndicator">@drawable/back_arrow</item>
+	</style>  -->
+	
+    <!-- Tab view custom layout style  -->
+    <style name="TabViewCustmeLayoutStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/TabLayoutHeight</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">@dimen/TabTextSize</item>
+        <item name="android:textColor">@color/TabTextColor</item>
+        <item name="android:background">@drawable/z_tab_selector_common</item>
+    </style>
+    
+    <!-- Basic information layout style (Add Property )-->
+    <style name="BasicInfoLayoutStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/BasicInfoLayoutHeigth</item>
+        <item name="android:background">@color/BasicInfoLayoutBGColor</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+	<!-- Toggle button style (Sale/Rent)-->
+    <style name="mySwitchStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="track">@drawable/z_toggle_switch_track_green</item>
+        <item name="thumb">@drawable/z_toggle_background_fenced</item>
+        <item name="switchTextAppearanceAttrib">@style/mySwitchTextAppearance</item>
+        <item name="pushStyle">false</item>
+        <item name="textOnThumb">true</item>
+        <item name="thumbTextPadding">@dimen/thumbTextPadding</item>
+        <item name="trackTextPadding">@dimen/trackTextPadding</item>
+        <item name="switchMinHeight">@dimen/switchMinHeight</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="mySwitchTextAppearance">
+        <item name="textColor">#000000</item>
+        <item name="textSize">@dimen/toggleTxtSize</item>
+        <item name="textStyle">normal</item>
+    </style>
+
+    
+    <!-- Add Property linear layout style -->
+    <style name="addPropLLStyle">
+        <item name="android:background">@color/addPropLLBgCoolor</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/addPropLLHeight</item>
+        <item name="android:layout_marginTop">@dimen/addPropLLTopMargin</item>
+        <!-- <item name="android:layout_marginBottom">@dimen/addPropLLBottmMargin</item> -->
+        <item name="android:layout_marginLeft">@dimen/addPropLLLeftMargin</item>
+        <item name="android:layout_marginRight">@dimen/addPropLLRightMargin</item>
+    </style>
+    
+    <!-- Textview lable style -->
+    <style name="tetxtViewLableStyle">
+        <item name="android:textColor">@color/tvLableTextColor</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/tvLablePadding</item>
+        <item name="android:textSize">@dimen/tvLableTxtSize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    
+    <!-- Property type custom main layout style(Add porpety)-->
+    <style name="PropTypeViewMainLLStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/propTypeViewMainLHeight</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">@drawable/z_prop_type_view_main_enable</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <!-- Furnish option style -->
+    <style name="furnishOprionTVStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/addPropFurnishOptViewTxtSize</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/addPropFurnishOptMarginRight</item>
+    </style>
+    
+    <!-- Nominee/Amenities button style (Add Property) -->
+    <style name="nomineeAmenitiesBtnStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/nomineeAmenitiesBtnHeight</item>
+        <item name="android:layout_margin">@dimen/nomineeAmenitiesBtnMargin</item>
+        <item name="android:textSize">@dimen/nomineeAmenitiesBtnTxtSize</item>
+        <item name="android:name">@drawable/z_nomine_aminities_btn</item>
+        <item name="android:textColor">@color/grayDark</item>
+		<item name="android:background">@drawable/z_nomine_aminities_btn</item>	
+        
+        
+    </style>
+    
+    
+    
+    <style name="dialog_untran" parent="dialog_tran">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+     <style name="dialog_tran" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+    
+    <!-- Dilog animation --> 
+     <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/new_dialog_slide_up</item>
+        <item name="android:windowExitAnimation">@anim/new_dialog_slide_out_down</item>
+    </style>
+
+     <!-- Animation for dialog box -->
+    <style name="DialogSlideAnim" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+    
+    <!-- Spinner Style -->
+	<style name="SpinnerStyle" >
+	    <item name="android:textColor">@android:color/black</item>
+	    <item name="android:background">@drawable/spinner_background_holo_light</item>
+		<item name="android:choiceMode">singleChoice</item>
+		<item name="android:popupBackground">#BDCAD6</item>
+		<item name="android:padding">10dp</item>
+		<item name="android:dropDownVerticalOffset">0dip</item>
+		<item name="android:dropDownHorizontalOffset">0dip</item>
+		<item name="android:dropDownSelector">@android:color/black</item>
+		<item name="android:dropDownListViewStyle">@style/TestSpinnerStyle</item>
+		<item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+	</style>	
+	
+	<!-- Near by location -->
+    <style name="Animation">
+        <item name="android:windowEnterAnimation">@anim/new_dialog_slide_up</item>
+        <item name="android:windowExitAnimation">@anim/new_dialog_slide_out_down</item>
+    </style>
+    
+</resources>

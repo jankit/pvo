@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Residential property type id's -->
+    <string-array name="propTypeResidential">
+        <item type="id" name="propType_apartment" />
+        <item type="id" name="propType_HouseVilla" />
+        <item type="id" name="propType_plotLand" />
+        <item type="id" name="propType_BuilderFloor" />
+        <item type="id" name="propType_FarmHouse" />
+        <item type="id" name="propType_ServiceApartment" />
+        <item type="id" name="propType_StudioApartment" />
+    </string-array>
+    
+    <!-- Commercial property type id's -->
+    <string-array name="propTypeCommercial">
+        <item type="id" name="propType_shop" />
+        <item type="id" name="propType_showroom" />
+        <item type="id" name="propType_OfficeSpace" />
+        <item type="id" name="propType_factory" />
+        <item type="id" name="propType_warehouse" />
+        <item type="id" name="propType_agriFarmLand" />
+        <item type="id" name="propType_industrialLand" />
+    </string-array>
+        
+</resources>

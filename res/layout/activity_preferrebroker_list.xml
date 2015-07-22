@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/prefBrokerLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/prefBrokerNumberOfRecord"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/prefeBrokerTotalNoRecodTv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <com.markupartist.android.widget.PullToRefreshListView
+        android:id="@+id/prefBrokerListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/prefBrokerNumberOfRecord"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:scrollbars="none" 
+        android:layout_above="@+id/ll_prefbrok_footer"/>
+
+    <!-- Footer button layout -->
+
+    <LinearLayout
+        android:id="@+id/ll_prefbrok_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/footerheight"
+        android:layout_alignParentBottom="true"
+        android:background="@color/layout_background_color1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <!-- Add prefere Broker -->
+
+        <LinearLayout
+            android:id="@+id/prefBrokerAddPrefBrokerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_style"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingRight="@dimen/footer_inner_imageview_pading"
+                android:src="@drawable/add" />
+
+            <TextView
+                android:id="@+id/preferedBrokerAddPrefBrokerTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="ADD PREFERE"
+                android:textColor="@color/button_text_color"
+                android:textSize="@dimen/button_text_size" />
+        </LinearLayout>
+
+        <!-- Group listing -->
+
+        <LinearLayout
+            android:id="@+id/prefBrokerGroupListLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_style"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingRight="@dimen/footer_inner_imageview_pading"
+                android:src="@drawable/add" />
+
+            <TextView
+                android:id="@+id/preferedBrokerGroupListTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="GROUP"
+                android:textColor="@color/button_text_color"
+                android:textSize="@dimen/button_text_size" />
+        </LinearLayout>
+
+        <!-- Refine Prefere broker listing -->
+
+        <LinearLayout
+            android:id="@+id/prefBrokerRefinePrefListLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_style"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingRight="@dimen/footer_inner_imageview_pading"
+                android:src="@drawable/ref" />
+
+            <TextView
+                android:id="@+id/preferedRefinePrefListingTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="REFINE SEARCH"
+                android:textColor="@color/button_text_color"
+                android:textSize="@dimen/button_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	This xml File is used to set the Detail of the public Requirement
+	Java File:- PublicPropertyCustomeAdapter.java
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/publicReqCustListlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_item_customshape" >
+
+        <ImageView
+            android:id="@+id/publicReqImageView"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/no_image" />
+
+        <!-- Requirement -->
+        <TextView
+            android:id="@+id/publicReqCustRequirementIdTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/publicReqImageView"
+            android:padding="2dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+        
+        <!-- set Price/Rent/Purpose-Rent Or Sale -->
+        <TextView
+            android:id="@+id/publicReqCustPreiceRentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/publicReqImageView"
+            android:layout_below="@+id/publicReqCustRequirementIdTv"
+            android:padding="2dp"
+            android:text="Price/Rent"
+			android:textColor="#cc3f3f"            
+            android:textSize="12sp" />
+
+        <!-- Set Location -->
+
+        <TextView
+            android:id="@+id/publicReqCustLocationTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/publicReqCustPreiceRentTv"
+            android:layout_toRightOf="@+id/publicReqImageView"
+            android:padding="1dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        
+         <!-- Area Sq.Foot -->
+
+        <TextView
+            android:id="@+id/publicReqCustAreaSqFootTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/publicReqCustLocationTv"
+            android:layout_toRightOf="@+id/publicReqImageView"
+            android:padding="1dp"
+            android:text="Area Sq.Foot"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <!-- Property type For sale / rent -->
+
+        <TextView
+            android:id="@+id/publicReqCustPropertyTypeSaleRentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/publicReqCustAreaSqFootTv"
+            android:layout_toRightOf="@+id/publicReqImageView"
+            android:padding="1dp"
+            android:text="Property Type"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+       
+
+        <!-- Bed -->
+
+        <TextView
+            android:id="@+id/publicReqCustBedTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/publicReqCustPropertyTypeSaleRentTv"
+            android:layout_toRightOf="@+id/publicReqImageView"
+            android:padding="1dp"
+            android:text="Bed"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <!-- Posetd Broker Name -->
+
+        <TextView
+            android:id="@+id/publicReqCustPosedByBrokerNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/publicReqImageView"
+            android:layout_below="@+id/publicReqCustBedTv"
+            android:layout_marginTop="10dp"
+            android:padding="1dp"
+            android:text="Broker Name"
+            android:textColor="#cc3f3f"
+            android:textSize="12sp" />
+
+        <!-- Phone Number -->
+
+        <TextView
+            android:id="@+id/publicReqCustPhoneNumberTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/publicReqImageView"
+            android:layout_below="@+id/publicReqCustPosedByBrokerNameTv"
+            android:padding="1dp"
+            android:text="Phone Number"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <!-- Posetd Date -->
+
+        <TextView
+            android:id="@+id/publicReqCustPostedDateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/publicReqCustPosedByBrokerNameTv"
+            android:layout_alignParentRight="true"
+            android:padding="1dp"
+            android:text="Broker Name"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <!-- Footer button layout -->
+
+        <LinearLayout
+            android:id="@+id/publicReqCustActionLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/publicReqCustPostedDateTv"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/publicReqCustCallButtonTv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/call_button" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="#3021BE4A" />
+
+            <ImageView
+                android:id="@+id/publicReqCustSmsButtonTv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/sms_button" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

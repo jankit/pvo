@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/propListRowMenuLLPaddingLeft"
+    android:paddingRight="@dimen/propListRowMenuLLPaddingRight" >
+
+    <!-- Edit layout -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_menu_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/edit"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="@dimen/propListRowMenuTVPadding"
+            android:text="Edit"
+            android:textColor="#ffffff" 
+            android:textSize="@dimen/propListRowTVSubTxtSize"/>
+    </LinearLayout>
+
+    <!-- Delete layout -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_menu_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/delete"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="@dimen/propListRowMenuTVPadding"
+            android:text="Delete"
+            android:textColor="#ffffff" 
+            android:textSize="@dimen/propListRowTVSubTxtSize"/>
+    </LinearLayout>
+
+    <!-- Active/inactive -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_menu_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/act"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="Active"
+            android:padding="@dimen/propListRowMenuTVPadding"
+            android:textColor="#ffffff" 
+            android:textSize="@dimen/propListRowTVSubTxtSize"/>
+    </LinearLayout>
+    
+     <!-- inactive -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_menu_inActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/inact"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="InActive"
+            android:padding="@dimen/propListRowMenuTVPadding"
+            android:textColor="#ffffff" 
+            android:textSize="@dimen/propListRowTVSubTxtSize"/>
+    </LinearLayout>
+
+    <!-- Inquery -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_menu_inquiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/inq"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="@dimen/propListRowMenuTVPadding"
+            android:text="Inquiry"
+            android:textColor="#ffffff" 
+            android:textSize="@dimen/propListRowTVSubTxtSize"/>
+    </LinearLayout>
+
+</LinearLayout>

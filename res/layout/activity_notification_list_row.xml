@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	This Xml File Is used to set the All Notification of particular User 
+	Java File:- AllNotificationArrayAdapter.java
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/allNotificationListlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_item_customshape" >
+
+        <ImageView
+            android:id="@+id/allNotificationImageView"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="6dp"
+            android:src="@drawable/no_image" />
+
+        <TextView
+            android:id="@+id/allNotificationVTypeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/allNotificationImageView"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/allNotificationPropertyIdTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/allNotificationVTypeTv"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/allNotificationImageView"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        
+        <!-- Notification type -->
+
+        <TextView
+            android:id="@+id/allNotificationTypeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/allNotificationImageView"
+            android:layout_toRightOf="@+id/allNotificationImageView"
+            android:padding="3dp"
+            android:textSize="12sp" 
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+        
+        <!-- set Price/Rent/Purpose-Rent Or Sale -->
+
+        <TextView
+            android:id="@+id/allNotificationPreiceRentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/allNotificationTypeTv"
+            android:layout_toRightOf="@+id/allNotificationImageView"
+            android:padding="3dp"
+            android:text="Price/Rent"
+            android:textColor="#cc3f3f"
+            android:textSize="12sp" />
+
+        <!-- Set Location -->
+
+        <TextView
+            android:id="@+id/allNotificationLocationTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/allNotificationPreiceRentTv"
+            android:layout_toRightOf="@+id/allNotificationImageView"
+            android:padding="3dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" 
+            />
+
+        <!-- Property type For sale / rent -->
+
+        <TextView
+            android:id="@+id/allNotificationPropertyTypeSaleRentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/allNotificationLocationTv"
+            android:layout_toRightOf="@+id/allNotificationImageView"
+            android:padding="3dp"
+            android:text="Property Type"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+        <!-- Area Sq.Foot -->
+
+        <TextView
+            android:id="@+id/allNotificationCustAreaSqFootTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/allNotificationPropertyTypeSaleRentTv"
+            android:layout_toRightOf="@+id/allNotificationImageView"
+            android:padding="3dp"
+            android:text="Area Sq.Foot"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <!-- Bed -->
+
+        <TextView
+            android:id="@+id/allNotificationCustBedTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/allNotificationCustAreaSqFootTv"
+            android:layout_toRightOf="@+id/allNotificationImageView"
+            android:padding="3dp"
+            android:text="Bed"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <!-- Posetd Broker Name -->
+
+        <TextView
+            android:id="@+id/allNotificationCustPosedByBrokerNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/allNotificationImageView"
+            android:layout_below="@+id/allNotificationCustBedTv"
+            android:padding="3dp"
+            android:text="Broker Name"
+            android:textColor="#cc3f3f"
+            android:textSize="12sp" />
+        <!-- Phone number -->
+        <TextView
+            android:id="@+id/allNotificationCustNumberTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/allNotificationImageView"
+            android:layout_below="@+id/allNotificationCustPosedByBrokerNameTv"
+            android:padding="3dp"
+            android:text="Broker Name"
+            android:textColor="#cc3f3f"
+            android:textSize="12sp" />
+
+        <!-- Posetd Date -->
+
+        <TextView
+            android:id="@+id/allNotificationCustPostedDateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/allNotificationCustPosedByBrokerNameTv"
+            android:layout_alignBottom="@+id/allNotificationCustPosedByBrokerNameTv"
+            android:layout_alignParentRight="true"
+            android:padding="3dp"
+            android:text="Date"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+        
+         <!-- Button layout -->
+
+            <LinearLayout
+                android:id="@+id/allNotificationCustActionLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/allNotificationCustPostedDateTv"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/allNotificationCustCallButtonTv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/call_button" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="#3021BE4A" />
+
+                <ImageView
+                    android:id="@+id/allNotificationCustSmsButtonTv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/sms_button" />
+            </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

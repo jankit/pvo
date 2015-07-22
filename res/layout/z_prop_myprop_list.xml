@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	This File is Used To Display the List Of My Property
+	Java File :- MyPropertyActivity.java
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myPropLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/myPropertyListViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_myPropFooter"
+        android:background="@drawable/bg" >
+
+        <TextView
+            android:id="@+id/tvTotalRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="@android:color/black"
+            android:visibility="gone" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swp_myPropList_swipLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ListView
+                android:id="@+id/lv_myPropList_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <!--
+             <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        -->
+
+        <!-- <com.markupartist.android.widget.PullToRefreshListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/tvMyReqTotalRecord"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:scrollbars="none" /> -->
+        <!--
+             android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"        -->
+    </RelativeLayout>
+
+    
+
+
+    <!-- Footer layout -->
+
+
+    <LinearLayout
+        android:id="@+id/ll_myPropFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+        
+        <z.com.pvo.loading.button.ActionProcessButton
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btn_myPropList_addProp"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/footerBtnHeight"
+            android:layout_margin="@dimen/footerBtnMargin"
+            android:background="@color/btnBlueColor"
+            android:text="ADD PROPERTY"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/footerBtnTxtSize"/>
+
+        <!-- <Button
+            android:id="@+id/btn_myPropList_addProp"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/footerBtnHeight"
+            android:layout_margin="@dimen/footerBtnMargin"
+            android:background="@color/btnBlueColor"
+            android:text="ADD PROPERTY"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/footerBtnTxtSize" /> -->
+    </LinearLayout>
+    
+    
+    <!-- Progress bar Layout -->
+    <LinearLayout
+        android:id="@+id/myPropProgresLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/footerBtnHeight"
+        android:layout_margin="@dimen/footerBtnMargin"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!-- END -->
+    
+   <!--  <LinearLayout
+        android:id="@+id/ll_myPropFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/footerheight"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/myPropProgresLayout"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/myPropAddBtnMainLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/layout_background_color1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="2dp" >
+
+            <LinearLayout
+                android:id="@+id/myPropAddNewPropLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:paddingRight="@dimen/footer_inner_imageview_pading"
+                    android:src="@drawable/add" />
+
+                <TextView
+                    android:id="@+id/myPropAddTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/add_property"
+                    android:textColor="@color/button_text_color"
+                    android:textSize="@dimen/button_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/layout_background_color2"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:id="@+id/myPropRefineSearchLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style_blue_color"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:paddingRight="@dimen/footer_inner_imageview_pading"
+                    android:src="@drawable/ref" />
+
+                <TextView
+                    android:id="@+id/searchPropListNewSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/refine_search"
+                    android:textColor="@color/button_text_color"
+                    android:textSize="@dimen/button_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout> -->
+
+</RelativeLayout>

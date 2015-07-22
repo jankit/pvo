@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	This Xml File Is Used to set The Search Property Detail
+	Java File:- SearchPropertyCustomAdapter.java
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/searchPropCustListlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listview_item_customshape" >
+
+            <ImageView
+                android:id="@+id/searchPropCustListImageView"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/no_image" />
+
+             <!-- Property id -->
+            <TextView
+                android:id="@+id/searchPropCustPropertyIdTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/searchPropCustListImageView"
+                android:padding="2dp"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+            
+            <!-- Price/Rent Text View -->
+            <TextView
+                android:id="@+id/searchPropCustPriceRentTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/searchPropCustListImageView"
+                android:layout_below="@+id/searchPropCustPropertyIdTv"
+                android:padding="2dp"
+                android:text="Price /Rent"
+                android:textColor="#cc3f3f"
+                android:textSize="12sp" />
+
+            <!-- Location Text View -->
+
+            <TextView
+                android:id="@+id/searchPropCustLocationTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/searchPropCustPriceRentTv"
+                android:layout_toRightOf="@+id/searchPropCustListImageView"
+                android:padding="1dp"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+            
+             <!-- Area Sq. Foot Text View -->
+
+            <TextView
+                android:id="@+id/searchPropCustAreaSqFootTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/searchPropCustLocationTv"
+                android:layout_toRightOf="@+id/searchPropCustListImageView"
+                android:padding="1dp"
+                android:text="Area Sq. foot"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <!-- Property Type,Sale,Rent Text view -->
+
+            <TextView
+                android:id="@+id/searchPropCustPropertyTypeRentSaleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/searchPropCustAreaSqFootTv"
+                android:layout_toRightOf="@+id/searchPropCustListImageView"
+                android:padding="1dp"
+                android:text="Property Type"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+           
+
+            <!-- Bed Text View -->
+
+            <TextView
+                android:id="@+id/searchPropCustBedTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/searchPropCustPropertyTypeRentSaleTv"
+                android:layout_toRightOf="@+id/searchPropCustListImageView"
+                android:padding="1dp"
+                android:text="Bed"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <!-- Posted By Broker name -->
+
+            <TextView
+                android:id="@+id/searchPropCustPostedByBrokerNaemTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/searchPropCustListImageView"
+                android:padding="1dp"
+                android:layout_marginTop="10dp"
+                android:text="Broker Name"
+                android:textColor="#cc3f3f"
+                android:textSize="12sp" />
+
+            <!-- Phone Number -->
+
+            <TextView
+                android:id="@+id/searchPropCustPhoneNumberTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/searchPropCustPostedByBrokerNaemTv"
+                android:padding="1dp"
+                android:text="Phone Number"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <!-- Posted Date -->
+
+            <TextView
+                android:id="@+id/searchPropCustPostedDateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/searchPropCustPostedByBrokerNaemTv"
+                android:layout_alignParentRight="true"
+                android:padding="1dp"
+                android:text="Posted Date"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <!-- Footer layout -->
+
+            <LinearLayout
+                android:id="@+id/searchPropCustActionLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/searchPropCustPostedDateTv"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/searchPropCallButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/call_button" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="#3021BE4A" />
+
+                <ImageView
+                    android:id="@+id/searchPropCustSmsButtonTv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/sms_button" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popupWindow"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dp"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/locationHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#2665B4"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/popUpWindowHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Localities"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@+id/locationHeader"
+        android:layout_margin="@dimen/button_margin"
+        android:background="@drawable/button_style"
+        android:paddingLeft="@dimen/button_pading_left"
+        android:paddingRight="@dimen/button_pading_right"
+        android:text="DONE"
+        android:textColor="@color/button_text_color"
+        android:textSize="@dimen/button_text_size" />
+
+    <Button
+        android:id="@+id/cancelPopupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@+id/locationHeader"
+        android:layout_margin="@dimen/button_margin"
+        android:layout_toRightOf="@+id/doneButton"
+        android:background="@drawable/button_style"
+        android:paddingLeft="@dimen/button_pading_left"
+        android:paddingRight="@dimen/button_pading_right"
+        android:text="CANCEL"
+        android:textColor="@color/button_text_color"
+        android:textSize="@dimen/button_text_size" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectedList"
+        android:inputType="text"
+        android:textColor="@android:color/black"
+        android:textCursorDrawable="@android:color/black" />
+
+    <TextView
+        android:id="@+id/areaPopUpMaxSelectLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:layout_marginLeft="10dp"
+        android:text="Select maximum 10 area." />
+
+    <ListView
+        android:id="@+id/searchList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/areaPopUpMaxSelectLabel"
+        android:layout_margin="10dp"
+        android:background="@android:color/white"
+        android:padding="5dp" />
+
+    <ScrollView
+        android:id="@+id/selectedList"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_below="@+id/doneButton"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:id="@+id/selectitem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="color_list">
+        <item>Red</item>
+        <item>Black</item>
+        <item>Cyan</item>
+        <item>Silver</item>
+        <item>Blue</item>
+        <item>Gray</item>
+        <item>Orange</item>
+        <item>Purple</item>
+        <item>Brown</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Magenta</item>
+    </string-array>
+
+    <color name="slidieng_window_color">#52a5b1</color>
+    <color name="slidieng_window_click_color">#4a949f</color>
+    <color name="add_on_text">#000000</color>
+    
+    <!-- #606366 -->
+    <color name="heading">#4bc1d2</color>
+    <color name="red">#FF0000</color>
+    <color name="black">#000000</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="blue">#0000FF</color>
+    <!-- <color name="gray">#808080</color> -->
+    <color name="purple">#800080</color>
+    <color name="brown">#A52A2A</color>
+    <color name="yellow">#FFFF00</color>
+    <!-- <color name="green">#008000</color> -->
+    <color name="magenta">#FF00FF</color>
+    <color name="light_green">#21E245</color>
+    <color name="dark_brown">#91837F</color>
+    <color name="light_blue">#9C6ED5</color>
+    <color name="diamond_blue">#2872EC</color>
+    <color name="mendi">#AF8023</color>
+    <color name="dark_green">#496110</color>
+    <color name="sky_blue">#33CCFF</color>
+    <color name="apptheme_color">#33b5e5</color>
+    <color name="menu_button_color">#33CCFF</color>
+    <color name="heading_bg">#9966CC</color>
+    <color name="yellow1">#F9E60E</color>
+    <color name="yellow2">#F9F89D</color>
+    <color name="orange4">#F7BE45</color>
+    <color name="orange5">#F7D896</color>
+    <color name="blue2">#19FCDA</color>
+    <color name="blue25">#D9F7F2</color>
+    <color name="grey05">#ACA899</color>
+    <color name="white1">#FFFFFF</color>
+    <color name="white2">#DDDDDD</color>
+    <color name="orange">#FF6600</color>
+
+    <!-- LIST BORDER COLOR -->
+    <color name="rounded_container_border">#ffb7babb</color>
+
+    <!-- ITEM BACKGROUND COLOR - STATE - DEFAULT -->
+    <color name="base_start_color_default">#FFFFFF</color>
+    <color name="base_end_color_default">#FFFFFF</color>
+
+    <!-- ITEM BACKGROUND COLOR - STATE - PRESSED -->
+    <color name="base_start_color_pressed">#ff3590c4</color>
+    <color name="base_end_color_pressed">#ff2570ba</color>
+
+    <!-- ITEM TEXT COLORS - STATES - PRESSED AND DEFAULT -->
+    <color name="text_color_default">#000000</color>
+    <color name="text_color_pressed">#ffffff</color>
+    
+    <!-- *********** New ********************* -->
+    
+    
+    <!-- Add Property Property type  -->
+    <color name="green">#59D964</color>
+    <color name="greenDark">#4CBC55</color>
+    <color name="gray">#E2E2E2</color>
+    <color name="grayDark">#888888</color>
+    
+    <!-- Button Color -->
+    <color name="btnBlueColor">#32A9DC</color>
+    <color name="btnGreenColor">#59D964</color>
+    
+    
+    
+    <!-- Add Property linear layout background color -->
+    <color name="addPropLLBgCoolor">#FFFFFF</color>
+    
+    
+    <!-- Lable text view text color -->
+    <color name="tvLableTextColor">#888888</color>
+    
+    <!-- Tab layout related -->
+    <color name="TabTextColor">#FFFFFF</color>
+    
+    <!-- Add Property Basic information layout color -->
+    <color name="BasicInfoLayoutBGColor">#FFFFFF</color>
+    <color name="AddPropBasicInfoTxtColor">#000000</color>
+    
+    
+    <!-- Toggle button color -->
+    <color name="ToggleGreenBGColor">#59D964</color>
+    <color name="ToggleTextColor">#000000</color>
+    
+    <!-- Photo dialog related -->
+    <color name="photoDiloagHederBGColor">#22000000</color>
+    <color name="photoDiaViewColor">#59D964</color>
+    
+
+</resources>

@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	This Xml File Display Detail of the Particular Agent Detail
+	Java File:- FindAgentDetailActivity.java
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/findAgentLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/listview_item_customshape"
+        android:paddingBottom="10dp"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageLayout"
+                android:layout_margin="5dp">
+            	<ImageView
+                	android:id="@+id/findAgentDetPhotoImg"
+                	android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+        	        android:src="@drawable/no_image"
+        	        android:fitsSystemWindows="true"
+        	        android:scaleType="fitXY"/>
+            	
+            	<ImageView
+            	    android:id="@+id/findAgentDeLogoImg"
+                	android:layout_width="40dp"
+                	android:layout_height="40dp"
+                	android:src="@drawable/no_image"
+                	android:fitsSystemWindows="true"
+                	android:layout_alignParentRight="true"
+                	android:layout_alignParentTop="true"/>
+			</RelativeLayout>            
+
+            <!-- 1 -->
+
+            <TextView
+                android:id="@+id/findAgenttv1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageLayout"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Broker Id"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/findAgenttv11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/findAgenttv1"
+                android:layout_alignBottom="@+id/findAgenttv1"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/findAgenttv1"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/findAgenttv11"
+                android:background="#C0C0C0" />
+
+            <!-- 2 -->
+
+            <TextView
+                android:id="@+id/findAgenttv2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/findAgenttv1"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Name"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/findAgenttv12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/findAgenttv2"
+                android:layout_alignBottom="@+id/findAgenttv2"
+                android:layout_alignLeft="@+id/findAgenttv11"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/findAgenttv12"
+                android:background="#C0C0C0" />
+
+            <!-- 3 -->
+
+            <TextView
+                android:id="@+id/findAgenttv3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/findAgenttv2"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Company"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/findAgenttv13"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/findAgenttv3"
+                android:layout_alignBottom="@+id/findAgenttv3"
+                android:layout_alignLeft="@+id/findAgenttv12"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/findAgenttv13"
+                android:background="#C0C0C0" />
+
+            <!-- 4 -->
+
+            <TextView
+                android:id="@+id/findAgenttv4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/findAgenttv3"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Address"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/findAgenttv14"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/findAgenttv4"
+                android:layout_alignBottom="@+id/findAgenttv4"
+                android:layout_alignLeft="@+id/findAgenttv13"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/findAgenttv14"
+                android:background="#C0C0C0" />
+
+            <!-- 5 -->
+
+            <TextView
+                android:id="@+id/findAgenttv5"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/findAgenttv4"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Phone Number"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/findAgenttv15"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/findAgenttv5"
+                android:layout_alignBottom="@+id/findAgenttv5"
+                android:layout_alignLeft="@+id/findAgenttv14"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/findAgenttv15"
+                android:background="#C0C0C0" />
+
+            <!-- 6 -->
+
+            <TextView
+                android:id="@+id/findAgenttv6"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/findAgenttv5"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Email\n"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/findAgenttv16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/findAgenttv6"
+                android:layout_alignBottom="@+id/findAgenttv6"
+                android:layout_alignLeft="@+id/findAgenttv15"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/findAgenttv16"
+                android:background="#C0C0C0" />
+
+            <!-- 7 -->
+
+            <TextView
+                android:id="@+id/findAgenttv7"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/findAgenttv6"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Website\n"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/findAgenttv17"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/findAgenttv7"
+                android:layout_alignBottom="@+id/findAgenttv7"
+                android:layout_alignLeft="@+id/findAgenttv16"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/findAgenttv17"
+                android:background="#C0C0C0" />
+
+            
+             <!-- 8 -->
+
+            <TextView
+                android:id="@+id/findAgentPropTypeDealsinTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/findAgenttv7"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Property dealsin"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/findAgentPropTypeValTv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/findAgentPropTypeDealsinTv"
+                android:layout_alignBottom="@+id/findAgentPropTypeDealsinTv"
+                android:layout_alignLeft="@+id/findAgenttv17"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/findAgentPropTypeValTv"
+                android:background="#C0C0C0" />
+            
+            <!-- 9 -->
+
+            <TextView
+                android:id="@+id/findAgenttv8"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/findAgentPropTypeDealsinTv"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Date Of Join"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/findAgenttv18"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/findAgenttv8"
+                android:layout_alignBottom="@+id/findAgenttv8"
+                android:layout_alignLeft="@+id/findAgentPropTypeValTv"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/findAgenttv18"
+                android:background="#C0C0C0" />
+
+            <!-- 9 -->
+
+            <TextView
+                android:id="@+id/findAgenttv9"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/findAgenttv8"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Post Code"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/findAgenttv19"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/findAgenttv9"
+                android:layout_alignBottom="@+id/findAgenttv9"
+                android:layout_alignLeft="@+id/findAgenttv18"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/findAgenttv19"
+                android:background="#C0C0C0" />
+
+            <!-- 10 -->
+
+            <TextView
+                android:id="@+id/findAgenttv10"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/findAgenttv9"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:singleLine="false"
+                android:text="Language\n"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/findAgenttv20"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/findAgenttv10"
+                android:layout_alignBottom="@+id/findAgenttv10"
+                android:layout_alignLeft="@+id/findAgenttv19"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/findAgenttv20"
+                android:background="#C0C0C0" />
+
+            <!-- Total Property -->
+
+            <TextView
+                android:id="@+id/totalProperty"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/findAgenttv10"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Total Property"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalPropertyVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/totalProperty"
+                android:layout_alignBottom="@+id/totalProperty"
+                android:layout_alignLeft="@+id/findAgenttv20"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/totalPropertyVal"
+                android:background="#C0C0C0" />
+
+            <!-- areaDeals in -->
+
+            <TextView
+                android:id="@+id/areaDealsIn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/totalProperty"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Area Deals in\n"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/areaDealsInVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/areaDealsIn"
+                android:layout_alignBottom="@+id/areaDealsIn"
+                android:layout_alignLeft="@+id/totalPropertyVal"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/areaDealsInVal"
+                android:background="#C0C0C0" />
+            
+            
+              <!-- Facebook -->
+
+            <TextView
+                android:id="@+id/facebookTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/areaDealsIn"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Facebook"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/facebookVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/facebookTv"
+                android:layout_alignBottom="@+id/facebookTv"
+                android:layout_alignLeft="@+id/areaDealsInVal"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/facebookVal"
+                android:background="#C0C0C0" />
+            
+            
+            
+              <!-- Linked in-->
+
+            <TextView
+                android:id="@+id/linkedInTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/facebookTv"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Linked in"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/linkedInVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/linkedInTv"
+                android:layout_alignBottom="@+id/linkedInTv"
+                android:layout_alignLeft="@+id/facebookVal"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/linkedInVal"
+                android:background="#C0C0C0" />
+            
+              <!-- affiliated with -->
+
+            <TextView
+                android:id="@+id/affiliatedWithTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/linkedInTv"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Affiliated with"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/affiliatedWithVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/affiliatedWithTv"
+                android:layout_alignBottom="@+id/affiliatedWithTv"
+                android:layout_alignLeft="@+id/linkedInVal"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/affiliatedWithVal"
+                android:background="#C0C0C0" />
+            
+              <!-- businessPage -->
+
+            <TextView
+                android:id="@+id/businessPageTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/affiliatedWithTv"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Business page"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/businessPageVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/businessPageTv"
+                android:layout_alignBottom="@+id/businessPageTv"
+                android:layout_alignLeft="@+id/affiliatedWithVal"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/businessPageVal"
+                android:background="#C0C0C0" />
+            
+             <!-- sms credit -->
+            <TextView
+                android:id="@+id/smsCreditTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/businessPageTv"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Sms credit"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/smsCreditVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/smsCreditTv"
+                android:layout_alignBottom="@+id/smsCreditTv"
+                android:layout_alignLeft="@+id/businessPageVal"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/smsCreditVal"
+                android:background="#C0C0C0" />
+            
+             <!-- sms balance -->
+
+            <TextView
+                android:id="@+id/smsBalanceTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/smsCreditTv"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Sms balance"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/smsBalanceVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/smsBalanceTv"
+                android:layout_alignBottom="@+id/smsBalanceTv"
+                android:layout_alignLeft="@+id/smsCreditVal"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/smsCreditVal"
+                android:background="#C0C0C0" />
+            
+            
+            
+            
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/layout_background_color1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+	 <Button
+            android:id="@+id/btnAgentDetProperty"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="PROPERTY"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" />
+	 <Button
+            android:id="@+id/btnAgentDetRequirement"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="REQUIREMENT"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:id="@+id/findAgentDetailBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="BACK"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

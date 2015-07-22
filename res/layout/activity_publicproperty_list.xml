@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/publicPropLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/piblicPropertyListViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg" 
+        android:layout_above="@+id/ll_publicProp_footer">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPublicPropTotalRecord"
+            android:layout_marginLeft="15dp"
+            android:textColor="@android:color/black"
+            android:visibility="gone"/>
+
+        <!-- <ListView
+            android:id="@+id/publicPropListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:scrollbars="none" 
+            android:layout_below="@+id/tvPublicPropTotalRecord"/> -->
+        <com.markupartist.android.widget.PullToRefreshListView
+            android:id="@+id/publicPropListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@android:color/transparent"
+            android:scrollbars="none" 
+            android:layout_below="@+id/tvPublicPropTotalRecord"
+            android:dividerHeight="1dp"/>
+
+            <!-- android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:dividerHeight="10dp"
+             -->
+    </RelativeLayout>
+    
+    
+   	<!-- Progress bar Layout  -->
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:background="@android:color/white"
+	    android:gravity="center"
+	    android:orientation="horizontal"
+	    android:id="@+id/publicPropProgresLayout"
+	    android:visibility="gone">
+
+	    <ProgressBar
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	</LinearLayout>
+	<!-- END  -->
+    
+	<!-- Footer Button layout -->
+    <LinearLayout
+        android:id="@+id/ll_publicProp_footer"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:background="@color/layout_background_color1"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:layout_below="@+id/publicPropProgresLayout">
+
+          <LinearLayout
+            android:id="@+id/publicPropRefineSearchLayout"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="2dp"
+			android:background="@drawable/button_style"
+			android:clickable="true"
+			android:gravity="center"
+			android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ref" 
+                android:paddingRight="@dimen/footer_inner_imageview_pading"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/searchPropListNewSearch"
+                android:text="@string/refine_search"
+                android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:textColor="@color/button_text_color"
+				android:textSize="@dimen/button_text_size"
+				android:background="@android:color/transparent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

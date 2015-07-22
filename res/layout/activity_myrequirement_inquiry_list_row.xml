@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Xml File used to Display The Detail Of View Received Inquiries for property -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myReqViewInquCustomeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/listview_item_customshape" >
+
+    <!-- 1 -->
+
+    <TextView
+        android:id="@+id/myReqViewInquTv1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/triangle"
+        android:drawablePadding="10dp"
+        android:text="Inquiry By"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/myReqViewInquTv2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myReqViewInquTv1"
+        android:layout_alignBottom="@+id/myReqViewInquTv1"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/myReqViewInquTv1"
+        android:textColor="@color/textbody" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/myReqViewInquTv2"
+        android:background="#C0C0C0" />
+
+    <!-- 2 -->
+
+    <TextView
+        android:id="@+id/myReqViewInquTv3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/myReqViewInquTv1"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/triangle"
+        android:drawablePadding="10dp"
+        android:text="Name"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/myReqViewInquTv4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myReqViewInquTv3"
+        android:layout_alignBottom="@+id/myReqViewInquTv3"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/myReqViewInquTv3"
+        android:textColor="@color/textbody" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/myReqViewInquTv4"
+        android:background="#C0C0C0" />
+
+    <!-- 3 -->
+
+    <TextView
+        android:id="@+id/myReqViewInquTv5"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/myReqViewInquTv3"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/triangle"
+        android:drawablePadding="10dp"
+        android:text="Phone"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/myReqViewInquTv6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myReqViewInquTv5"
+        android:layout_alignBottom="@+id/myReqViewInquTv5"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/myReqViewInquTv5"
+        android:textColor="@color/textbody" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/myReqViewInquTv6"
+        android:background="#C0C0C0" />
+
+    <!-- 4 -->
+
+    <TextView
+        android:id="@+id/myReqViewInquTv7"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/myReqViewInquTv5"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/triangle"
+        android:drawablePadding="10dp"
+        android:text="Email"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/myReqViewInquTv8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myReqViewInquTv7"
+        android:layout_alignBottom="@+id/myReqViewInquTv7"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/myReqViewInquTv7"
+        android:textColor="@color/textbody" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/myReqViewInquTv8"
+        android:background="#C0C0C0" />
+
+    <!-- 5 -->
+
+    <TextView
+        android:id="@+id/myReqViewInquTv9"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/myReqViewInquTv7"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/triangle"
+        android:drawablePadding="10dp"
+        android:text="Message"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/myReqViewInquTv10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myReqViewInquTv9"
+        android:layout_alignBottom="@+id/myReqViewInquTv9"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/myReqViewInquTv9"
+        android:textColor="@color/textbody" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/myReqViewInquTv10"
+        android:background="#C0C0C0" />
+
+    <!-- 5 -->
+
+    <TextView
+        android:id="@+id/myReqViewInquTv11"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/myReqViewInquTv9"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/triangle"
+        android:drawablePadding="10dp"
+        android:text="Date"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/myReqViewInquTv12"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myReqViewInquTv11"
+        android:layout_alignBottom="@+id/myReqViewInquTv11"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/myReqViewInquTv11"
+        android:textColor="@color/textbody" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/myReqViewInquTv12"
+        android:background="#C0C0C0" />
+
+    <!-- Call button layout -->
+
+    <LinearLayout
+        android:id="@+id/myReqViewInqCallLayout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/myReqViewInquTv12"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/bottom_right_corner_round"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/myReqViewInqCustCallButtonTv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/call_button" />
+    </LinearLayout>
+
+</RelativeLayout>

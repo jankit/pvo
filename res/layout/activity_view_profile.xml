@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewProfileRLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/listview_item_customshape"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/viewProfileRLayour2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <ImageView
+                android:id="@+id/viewProfileImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/no_image"
+                android:background="@drawable/imageview_border" />
+
+            <!-- Broker Id -->
+
+            <TextView
+                android:id="@+id/brokerIdTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewProfileImageView"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:text="Broker Id"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <!-- Name -->
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/brokerIdTv"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:text="Name"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <!-- Company Name -->
+
+            <TextView
+                android:id="@+id/cmpNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameTv"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:text="Company Name"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <!-- Address -->
+            <TextView
+                android:id="@+id/addressTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cmpNameTv"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:text="Address"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+           <!-- Phone Mobile -->
+            <TextView
+                android:id="@+id/PhoneNoTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addressTv"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:text="Phone(M)"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <!-- Phone Office -->
+            <TextView
+                android:id="@+id/PhoneOTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PhoneNoTv"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:text="Phone(O)"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <!-- Web site -->
+            <TextView
+                android:id="@+id/webSitTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PhoneOTv"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:text="Website"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/emailTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/webSitTv"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:text="Email"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <!-- Date of Join -->
+            <TextView
+                android:id="@+id/dojTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailTv"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:text="Date of Join"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <!-- Post Code -->
+            <TextView
+                android:id="@+id/postcodeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dojTv"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:text="Post Code"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <!-- Since -->
+            <TextView
+                android:id="@+id/scince"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/postcodeTv"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:text="Since"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <!-- Total Property -->
+
+            <TextView
+                android:id="@+id/totalProperty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scince"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:text="Total Property"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <!-- SMS Balance -->
+
+            <TextView
+                android:id="@+id/smsBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/totalProperty"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:text="SMS Balance"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <!-- SMS Credit -->
+
+            <TextView
+                android:id="@+id/smsCredit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/smsBalance"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:text="SMS Credit"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <!-- Value -->
+
+            <TextView
+                android:id="@+id/brokerIdVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/brokerIdTv"
+                android:layout_alignBottom="@+id/brokerIdTv"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/brokerIdTv"
+                android:padding="6dp"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@+id/nameTv"
+                android:layout_below="@+id/brokerIdVal"
+                android:background="#C0C0C0" />
+
+            <TextView
+                android:id="@+id/nameVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/nameTv"
+                android:layout_alignBottom="@+id/nameTv"
+                android:layout_alignLeft="@+id/brokerIdVal"
+                android:padding="5dp"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@+id/nameTv"
+                android:layout_below="@+id/nameVal"
+                android:background="#C0C0C0" />
+
+            <TextView
+                android:id="@+id/cmpVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/cmpNameTv"
+                android:layout_alignBottom="@+id/cmpNameTv"
+                android:layout_alignLeft="@+id/nameVal"
+                android:padding="5dp"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@+id/nameTv"
+                android:layout_below="@+id/cmpVal"
+                android:background="#C0C0C0" />
+
+            <TextView
+                android:id="@+id/addressVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/addressTv"
+                android:layout_alignBottom="@+id/addressTv"
+                android:layout_alignLeft="@+id/cmpVal"
+                android:padding="5dp"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@+id/nameTv"
+                android:layout_below="@+id/addressVal"
+                android:background="#C0C0C0" />
+
+            <TextView
+                android:id="@+id/phoneVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/PhoneNoTv"
+                android:layout_alignBottom="@+id/PhoneNoTv"
+                android:layout_alignLeft="@+id/addressVal"
+                android:padding="5dp"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@+id/nameTv"
+                android:layout_below="@+id/phoneVal"
+                android:background="#C0C0C0" />
+
+            <TextView
+                android:id="@+id/phoneOVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/PhoneOTv"
+                android:layout_alignBottom="@+id/PhoneOTv"
+                android:layout_alignLeft="@+id/phoneVal"
+                android:padding="5dp"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@+id/nameTv"
+                android:layout_below="@+id/phoneOVal"
+                android:background="#C0C0C0" />
+
+            <TextView
+                android:id="@+id/websitVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/webSitTv"
+                android:layout_alignBottom="@+id/webSitTv"
+                android:layout_alignLeft="@+id/phoneVal"
+                android:padding="5dp"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@+id/nameTv"
+                android:layout_below="@+id/websitVal"
+                android:background="#C0C0C0" />
+
+            <TextView
+                android:id="@+id/emailVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/emailTv"
+                android:layout_alignBottom="@+id/emailTv"
+                android:layout_alignLeft="@+id/websitVal"
+                android:padding="5dp"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@+id/nameTv"
+                android:layout_below="@+id/emailVal"
+                android:background="#C0C0C0" />
+
+            <TextView
+                android:id="@+id/dojVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/dojTv"
+                android:layout_alignBottom="@+id/dojTv"
+                android:layout_alignLeft="@+id/emailVal"
+                android:padding="5dp"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@+id/nameTv"
+                android:layout_below="@+id/dojVal"
+                android:background="#C0C0C0" />
+
+            <TextView
+                android:id="@+id/postCodeVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/postcodeTv"
+                android:layout_alignBottom="@+id/postcodeTv"
+                android:layout_alignLeft="@+id/dojVal"
+                android:padding="5dp"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@+id/nameTv"
+                android:layout_below="@+id/postCodeVal"
+                android:background="#C0C0C0" />
+
+            <TextView
+                android:id="@+id/scinceVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/scince"
+                android:layout_alignBottom="@+id/scince"
+                android:layout_alignLeft="@+id/postCodeVal"
+                android:padding="5dp"
+                android:textColor="@color/textbody" />
+
+            <!-- Total Property -->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@+id/nameTv"
+                android:layout_below="@+id/scinceVal"
+                android:background="#C0C0C0" />
+
+            <TextView
+                android:id="@+id/totalPropertyVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/totalProperty"
+                android:layout_alignBottom="@+id/totalProperty"
+                android:layout_alignLeft="@+id/scinceVal"
+                android:padding="5dp"
+                android:textColor="@color/textbody" />
+
+            <!-- SMS Balance -->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@+id/nameTv"
+                android:layout_below="@+id/totalPropertyVal"
+                android:background="#C0C0C0" />
+
+            <TextView
+                android:id="@+id/smsBalanceVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/smsBalance"
+                android:layout_alignBottom="@+id/smsBalance"
+                android:layout_alignLeft="@+id/totalPropertyVal"
+                android:padding="5dp"
+                android:textColor="@color/textbody" />
+
+            <!-- SMS Credit -->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@+id/nameTv"
+                android:layout_below="@+id/smsBalanceVal"
+                android:background="#C0C0C0" />
+
+            <TextView
+                android:id="@+id/smsCreditVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/smsCredit"
+                android:layout_alignBottom="@+id/smsCredit"
+                android:layout_alignLeft="@+id/smsBalanceVal"
+                android:padding="5dp"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@+id/nameTv"
+                android:layout_below="@+id/smsCreditVal"
+                android:background="#C0C0C0" />
+
+            <Button
+                android:id="@+id/viewProfileBackBtn"
+                android:layout_width="wrap_content"
+				android:layout_height="@dimen/button_height"
+				android:layout_margin="@dimen/button_margin"
+				android:background="@drawable/button_style"
+				android:paddingLeft="@dimen/button_pading_left"
+				android:paddingRight="@dimen/button_pading_right"
+				android:textSize="@dimen/button_text_size"
+				android:textColor="@color/button_text_color"
+				android:layout_below="@+id/smsCreditVal"
+				android:text="BACK"
+				android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

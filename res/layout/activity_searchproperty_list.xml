@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	This xml File is display the list of the Search Property for specific criteria
+	java File:- SerachPropertyActivity.java 
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchPropListLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/searchPropListViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg" >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSearchPropTotalRecord"
+            android:layout_marginLeft="15dp"
+            android:textColor="@android:color/black"/>
+
+        
+        <com.markupartist.android.widget.PullToRefreshListView
+            android:id="@+id/searchPropListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:scrollbars="none" 
+            android:layout_below="@+id/tvSearchPropTotalRecord"/>
+        
+        <!-- <ListView
+            android:id="@+id/searchPropListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:scrollbars="none" 
+            android:layout_below="@+id/tvSearchPropTotalRecord">
+        </ListView> -->
+    </RelativeLayout>
+
+    <!-- Footer layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+        <LinearLayout
+            
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/footerheight"
+            android:layout_weight="1"
+            android:background="@color/layout_background_color1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="2dp" >
+
+            <LinearLayout
+                android:id="@+id/searchPropNewSearchLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_style"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="2dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/footer_inner_imageview_pading"
+                    android:src="@drawable/add" 
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/searchPropListNewSearch"
+                    android:text="NEW SEARCH"
+                    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:textColor="@color/button_text_color"
+					android:textSize="@dimen/button_text_size"
+					android:background="@android:color/transparent"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/layout_background_color2"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="2dp" >
+
+            <LinearLayout
+                android:id="@+id/searchPropRefineSearchLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_style_blue_color"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/footer_inner_imageview_pading"
+                    android:src="@drawable/ref" 
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/searchPropListFilterBy"
+                    android:text="@string/refine_search"
+                    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:textColor="@color/button_text_color"
+					android:textSize="@dimen/button_text_size"
+					android:background="@android:color/transparent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

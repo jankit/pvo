@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	This Xml File Is Used to set The My Property Detail
+	Java File:- MyPropertyArrayAdapter.java
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/myPropCustListlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_item_customshape" >
+
+        <ImageView
+            android:id="@+id/myPropImageView"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/no_image" />
+
+        <!-- Property id -->
+        <TextView
+            android:id="@+id/myPropCustPropertyIdTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/myPropImageView"
+            android:layout_toRightOf="@+id/myPropImageView"
+            android:padding="3dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+        <!-- set Price/Rent/Purpose-Rent Or Sale -->
+
+        <TextView
+            android:id="@+id/myPropCustPreiceRentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/myPropImageView"
+            android:padding="3dp"
+            android:layout_below="@+id/myPropCustPropertyIdTv"
+            android:text="Price/Rent"
+            android:textColor="#cc3f3f"
+            android:textSize="12sp" />
+
+        <!-- Set Location -->
+
+        <TextView
+            android:id="@+id/myPropCustLocationTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myPropCustPreiceRentTv"
+            android:layout_toRightOf="@+id/myPropImageView"
+            android:padding="3dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        
+        <!-- Area Sq.Foot -->
+
+        <TextView
+            android:id="@+id/myPropCustAreaSqFootTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myPropCustLocationTv"
+            android:layout_toRightOf="@+id/myPropImageView"
+            android:padding="3dp"
+            android:text="Area Sq.Foot"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <!-- Property type For sale / rent -->
+
+        <TextView
+            android:id="@+id/myPropCustPropertyTypeSaleRentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myPropCustAreaSqFootTv"
+            android:layout_toRightOf="@+id/myPropImageView"
+            android:padding="3dp"
+            android:text="Property Type"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+        
+
+        <!-- Bed -->
+
+        <TextView
+            android:id="@+id/myPropCustBedTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myPropCustPropertyTypeSaleRentTv"
+            android:layout_toRightOf="@+id/myPropImageView"
+            android:padding="3dp"
+            android:text="Bed"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <!-- Posetd Broker Name -->
+
+        <TextView
+            android:id="@+id/myPropCustPosedByBrokerNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/myPropImageView"
+            android:layout_below="@+id/myPropCustBedTv"
+            android:padding="3dp"
+            android:text="Broker Name"
+            android:textColor="#cc3f3f"
+            android:textSize="12sp" />
+
+        <!-- Posetd Date -->
+
+        <TextView
+            android:id="@+id/myPropCustPostedDateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/myPropCustPosedByBrokerNameTv"
+            android:layout_alignParentRight="true"
+            android:padding="3dp"
+            android:text="Broker Name"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <!-- Layout for action edit,delete,active,inactive,inquiry -->
+
+        <View
+            android:id="@+id/myPropLineView"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/myPropCustPosedByBrokerNameTv"
+            android:background="#3021BE4A" />
+
+        <LinearLayout
+            android:id="@+id/myPropCustActionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/myPropLineView"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <!-- Edit Button -->
+
+            <LinearLayout
+                android:id="@+id/myPropEditLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_left_corner_round"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/myPropEditButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/edit" 
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/myPropEditPropButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Edit"
+                    android:textColor="@android:color/black"
+                    android:textSize="10dp" 
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/emailSmsViewLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="#3021BE4A" />
+            </LinearLayout>
+
+            <!-- Delete Button -->
+
+            <LinearLayout
+                android:id="@+id/myPropDeleteLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#EBEBED"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/myPropDeleteButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/delete" 
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/myPropDeletePropButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Delete"
+                    android:textColor="@android:color/black"
+                    android:textSize="10dp" 
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/deleteViewLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="#3021BE4A" />
+                <!-- android:background="#DEDBDC" -->
+            </LinearLayout>
+
+            <!-- Active Button -->
+
+            <LinearLayout
+                android:id="@+id/myPropActiveLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#EBEBED"
+                android:baselineAligned="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/myPropActiveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/act" 
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/myPropActivePropButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Active"
+                    android:textColor="@android:color/black"
+                    android:textSize="10dp" 
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activeViewLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="#3021BE4A" />
+            </LinearLayout>
+
+            <!-- InActive Button -->
+
+            <LinearLayout
+                android:id="@+id/myPropInActiveLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#EBEBED"
+                android:baselineAligned="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/myPropInActiveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/inact" 
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/myPropInActivePropButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="InActive"
+                    android:textColor="@android:color/black"
+                    android:textSize="10dp" 
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inActiveViewLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="#3021BE4A" />
+            </LinearLayout>
+
+            <!-- Email/sms -->
+
+          <!--   <LinearLayout
+                android:id="@+id/myPropEmailLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#EBEBED"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/myPropEmailButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/em_sm" 
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/myPropMailImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Email/Sms"
+                    android:textColor="@android:color/black"
+                    android:textSize="10dp" 
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="#3021BE4A" />
+            </LinearLayout> -->
+            <!-- View Inquiry Button -->
+
+            <LinearLayout
+                android:id="@+id/myPropViewInquiryLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_right_corner_round"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/myPropViewInquiryCounter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="5dp"
+                    android:textColor="#cc3f3f"
+                    android:textSize="9dp" />
+
+                <ImageView
+                    android:id="@+id/myPropViewInquiryButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/inq"
+                    android:background="@android:color/transparent" />
+
+                <TextView
+                    android:id="@+id/myPropViewInqBotton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Inquiry"
+                    android:textColor="@android:color/black"
+                    android:textSize="10dp" 
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Ads Listing Layout -->
+
+    <RelativeLayout
+        android:id="@+id/myPropCustAdLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myPropCustListlayout"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/listview_item_customshape"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/videoImageView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_image" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/groupMemberPopupWindow"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg">
+
+    <ListView
+        android:id="@+id/groupMemberListview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:scrollbars="none"
+        android:layout_above="@+id/ll_grpMem_footer"/>
+    
+    <LinearLayout
+        android:id="@+id/ll_grpMem_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/footerheight"
+        android:layout_alignParentBottom="true"
+        android:background="@color/layout_background_color1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_grpMem_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="BACK"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:id="@+id/btn_grpMem_addMember"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="ADD MEMBER"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size"
+            />
+        
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	This Xml File is For Add New My Requirement
+	Java File:- AddMyRequirementActivity.java
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addReqLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="top" >
+
+    <!-- Left Side Icon Bar -->
+
+    <RelativeLayout
+        android:id="@+id/addReqIconLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#886AAE2C" >
+
+        <ImageView
+            android:id="@+id/addReqPublicInfoImg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:src="@drawable/public_pro" />
+
+        <ImageView
+            android:id="@+id/addReqflatImg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/addReqPublicInfoImg"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:src="@drawable/propert_ic" />
+
+        <ImageView
+            android:id="@+id/addReqPriceImg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/addReqflatImg"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:src="@drawable/price_budget" />
+
+        <ImageView
+            android:id="@+id/addReqExtraInfoImg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/addReqPriceImg"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:src="@drawable/information" />
+    </RelativeLayout>
+
+    <!-- Heading -->
+
+    <RelativeLayout
+        android:id="@+id/addReqHeardr3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/addReqIconLayout2"
+        android:background="#886AAE2C"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/addReqHeaderTv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Public Information"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/addReqPublicInfoscroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addReqHeardr3"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/addReqIconLayout2"
+        android:background="@android:color/white"
+        android:paddingBottom="38dp"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/addReqMainContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 1) Public Information -->
+
+            <RelativeLayout
+                android:id="@+id/addReqPublicInfoLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/addReqPropType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/addReqPropTypeSpinner"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqPropType"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:prompt="@string/propertyTypePrompt"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/addReqOption"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqPropTypeSpinner"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/addReqOptionSpinner"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqOption"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:prompt="@string/optionPrompt"
+                    android:spinnerMode="dropdown" />
+				<!-- State -->
+                <TextView
+                    android:id="@+id/addReqState"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqOptionSpinner"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="State"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/addMyReqStateSpinner"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqState"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:prompt="@string/State_prompt"
+                    android:spinnerMode="dropdown" />
+                
+                 <!-- District -->
+                <TextView
+                    android:id="@+id/addReqDistrict"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addMyReqStateSpinner"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="District"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/addReqDistrictSpinner"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqDistrict"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:prompt="@string/distPrompt"
+                    android:spinnerMode="dropdown" />
+
+                <!-- City -->
+                <TextView
+                    android:id="@+id/addReqCity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqDistrictSpinner"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="City"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/addReqCitySpinner"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqCity"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:prompt="@string/cityPrompt"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/addReqLocationTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqCitySpinner"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/addReqLocationEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqLocationTv"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edit_style"
+                    android:hint="Click to Select Location"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@android:color/black" />
+            </RelativeLayout>
+            <!-- End of 1 layout -->
+
+
+            <!-- 2) Property Flat Related -->
+
+            <RelativeLayout
+                android:id="@+id/addReqFaltLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addReqPublicInfoLayout"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <!-- Beds -->
+                <RelativeLayout
+                    android:id="@+id/addReqBedLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/addReqFlatBeds"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/addReqBedErrorMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/addReqFlatBeds"
+                        android:focusable="true"
+                        android:text="*"
+                        android:textColor="#FF0000"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/addReqFlatMinBeds"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqFlatBeds"
+                        android:layout_marginLeft="12dp"
+                        android:prompt="@string/bedPrompt"
+                        android:spinnerMode="dropdown" />
+
+                    <TextView
+                        android:id="@+id/addReqFlatTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/addReqFlatMaxBeds"
+                        android:layout_below="@+id/addReqFlatBeds"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/addReqFlatMinBeds"
+                        android:text="To"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/addReqFlatMaxBeds"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqFlatBeds"
+                        android:layout_marginRight="12dp"
+                        android:layout_toRightOf="@+id/addReqFlatTo"
+                        android:prompt="@string/bedPrompt"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+
+                <!-- T.P Scheme Layout -->
+
+                <RelativeLayout
+                    android:id="@+id/addReqTPSchemeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqBedLayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/addReqTPSchemeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="T.P.Scheme"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/addReqTPSchemeSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqTPSchemeTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:padding="5dp"
+                        android:prompt="@string/rentBudgePrompt"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+
+                <!-- Zone Layout -->
+
+                <LinearLayout
+                    android:id="@+id/addReqZoneLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqTPSchemeLayout"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/AddReqZoneTv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Zone"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Furnish Option -->
+
+                <RelativeLayout
+                    android:id="@+id/addReqFurnishOptionLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqZoneLayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/addReqFlatFurnishOption"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Furnish Options"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/addReqFlatFurnishOptionSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqFlatFurnishOption"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:prompt="@string/furnishPrompt"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+
+                <!-- Purpose -->
+
+                <RelativeLayout
+                    android:id="@+id/addReqPurposeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqFurnishOptionLayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/addReqFlatPurpose"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Purpose"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/addReqFlatPurposeSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqFlatPurpose"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:prompt="@string/purposePrompt"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+                <!-- Floor -->
+
+                <RelativeLayout
+                    android:id="@+id/addReqFloorLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqPurposeLayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/addReqFlatFloor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Floor"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/addReqFloorMinErrorMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/addReqFlatFloor"
+                        android:focusable="true"
+                        android:text="*"
+                        android:textColor="#FF0000"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/addReqFlatMinFloorSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqFlatFloor"
+                        android:layout_marginLeft="12dp"
+                        android:prompt="@string/floorPrompt"
+                        android:spinnerMode="dropdown" />
+
+                    <TextView
+                        android:id="@+id/addReqFloorTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/addReqFlatMaxFloorSpinner"
+                        android:layout_below="@+id/addReqFlatFloor"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/addReqFlatMinFloorSpinner"
+                        android:text="To"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/addReqFlatMaxFloorSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqFlatFloor"
+                        android:layout_marginRight="12dp"
+                        android:layout_toRightOf="@+id/addReqFloorTo"
+                        android:prompt="@string/floorPrompt"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+
+                <!-- Building Type -->
+
+                <RelativeLayout
+                    android:id="@+id/addReqBuildingType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqFloorLayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/addReqFlatBuildingType"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Building Type"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/addReqFlatBuildingTypeSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqFlatBuildingType"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:prompt="@string/buildingPrompt"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+                <!-- Area -->
+
+                <RelativeLayout
+                    android:id="@+id/addReqAreaLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqBuildingType"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/addReqFlatArea"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/addReqFlatMinAreaEditBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqFlatArea"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/edit_style"
+                        android:hint="sq. yards"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/addReqAreaTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/addReqFlatMinAreaEditBox"
+                        android:layout_below="@+id/addReqFlatArea"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/addReqFlatMinAreaEditBox"
+                        android:text="To"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/addReqFlatMaxAreaEditBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqFlatArea"
+                        android:layout_toRightOf="@+id/addReqAreaTo"
+                        android:background="@drawable/edit_style"
+                        android:hint="sq. yards"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@android:color/black" />
+                </RelativeLayout>
+
+                <!-- Plot Area -->
+
+                <RelativeLayout
+                    android:id="@+id/addReqPlotAreaLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqAreaLayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/addReqFlatMinPlotArea"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Min Plot Area(if applicable)"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/addReqFlatMinPlotAreaEditBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqFlatMinPlotArea"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:hint="sq. yards"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/addReqMaxPlotAreTv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqFlatMinPlotAreaEditBox"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Max Plot Area(if applicable)"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/addReqFlatMaxPlotAreaEditBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqMaxPlotAreTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:hint="sq. yards"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@android:color/black" />
+                </RelativeLayout>
+
+                <!-- Construction Area -->
+
+                <RelativeLayout
+                    android:id="@+id/addReqConstructionAreaLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqPlotAreaLayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/addReqFlatMinConstructionArea"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Min. Const. Area(if applicable)"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/addReqFlatMinConstructionAreaEditBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqFlatMinConstructionArea"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:hint="sq. yards"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/addReqMaxConstructionAreaTv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqFlatMinConstructionAreaEditBox"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Max Const. Area(if applicable)"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/addReqFlatMaxConstructionAreaEditBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqMaxConstructionAreaTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:hint="sq. yards"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@android:color/black" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <!-- End of 2 layout -->
+
+
+            <!-- 3) Price Budget Related -->
+
+            <RelativeLayout
+                android:id="@+id/addReqPriceLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addReqFaltLayout"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <!-- Rent Layout -->
+
+                <RelativeLayout
+                    android:id="@+id/addMyReqRentLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/addReqRentBudget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/addReqRentErrorMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/addReqRentBudget"
+                        android:focusable="true"
+                        android:text="*"
+                        android:textColor="#FF0000"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/addReqMinRentBudget"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqRentBudget"
+                        android:layout_marginLeft="12dp"
+                        android:prompt="@string/rentBudgePrompt"
+                        android:spinnerMode="dropdown" />
+
+                    <TextView
+                        android:id="@+id/addReqRentBudgetTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/addReqMinRentBudget"
+                        android:layout_below="@+id/addReqRentBudget"
+                        android:layout_toRightOf="@+id/addReqMinRentBudget"
+                        android:text="To"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/addReqMaxRentBudget"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqRentBudget"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_toRightOf="@+id/addReqRentBudgetTo"
+                        android:prompt="@string/rentBudgePrompt"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+
+                <!-- Price Layout -->
+
+                <RelativeLayout
+                    android:id="@+id/addMyReqPriceLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addMyReqRentLayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/addReqPriceBudget"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/addReqMinPriceBudget"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqPriceBudget"
+                        android:layout_marginLeft="12dp"
+                        android:prompt="@string/rentBudgePrompt"
+                        android:spinnerMode="dropdown" />
+
+                    <TextView
+                        android:id="@+id/addReqPriceBudgetTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/addReqMinPriceBudget"
+                        android:layout_below="@+id/addReqPriceBudget"
+                        android:layout_toRightOf="@+id/addReqMinPriceBudget"
+                        android:text="To"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/addReqMaxPriceBudget"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addReqPriceBudget"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_toRightOf="@+id/addReqPriceBudgetTo"
+                        android:prompt="@string/rentBudgePrompt"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- End of 3 layout -->
+
+
+            <!-- 4) Extra Information -->
+
+            <RelativeLayout
+                android:id="@+id/addReqExtraInfoLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addReqPriceLayout"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/addReqHint"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Description/Keyword"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/addReqHintEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqHint"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edit_style"
+                    android:inputType="text|textNoSuggestions"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/addReqKeyword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqHintEditBox"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Keyword"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/addReqKeywordEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addReqKeyword"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edit_style"
+                    android:inputType="text|textNoSuggestions"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@android:color/black" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <!-- End of 4 layout -->
+    </ScrollView>
+
+    <!-- Buttons -->
+
+    <LinearLayout
+        android:id="@+id/addReqButtonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/layout_background_color1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/addReqSaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="SAVE"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/addReqNextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="NEXT"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:id="@+id/addReqPreviousButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="PREVIOUS"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/addReqCancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="CANCEL"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

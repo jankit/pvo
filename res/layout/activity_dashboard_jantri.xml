@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white" >
+    
+     <!-- Header layout -->
+    <LinearLayout
+        android:id="@+id/llJantriHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#2665B4"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Jantri"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" 
+            android:textSize="15dp"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/llJantriHeader"
+        android:layout_margin="10dp"
+        >
+        <!-- State -->
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="State"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+        <Spinner 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/SpinnerStyle"
+            android:id="@+id/spinJantriState"
+            android:spinnerMode="dropdown"/>
+        
+        <!-- District -->
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="District"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+        <Spinner 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/SpinnerStyle"
+            android:id="@+id/spinJantriDistrict"
+            android:spinnerMode="dropdown"/>
+        
+        <!-- Taluka -->
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Taluko"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+        <Spinner 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/SpinnerStyle"
+            android:id="@+id/spinJantriTaluko"
+            android:spinnerMode="dropdown"/>
+        
+        <!-- Village -->
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Village"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+        <Spinner 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/SpinnerStyle"
+            android:id="@+id/spinJantriVillage"
+            android:spinnerMode="dropdown"/>
+        
+         <!-- Jantri -->
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Jantri"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+        <Spinner 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/SpinnerStyle"
+            android:id="@+id/spinJantriJantri"
+            android:spinnerMode="dropdown"/>
+        
+        <!-- Button show -->
+       <Button
+            android:id="@+id/btnShowJantriMap"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="SHOW"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" 
+            android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+    
+    
+</RelativeLayout>

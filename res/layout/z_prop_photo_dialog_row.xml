@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_margin="2dp" >
+    <z.com.pvo.newAdapter.ZSquareImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/iv_refRackRow_photo" />
+
+    <ImageView 
+        android:id="@+id/iv_refRackRow_photo_remove"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/prop_photo_remove"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+    
+</RelativeLayout>

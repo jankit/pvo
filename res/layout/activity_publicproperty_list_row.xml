@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	This Xml File Is used to set the Public Property 
+	Java File:- PublicPropertyCustomAdapter.java
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/publicPropCustListlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listview_item_customshape" >
+
+            <ImageView
+                android:id="@+id/publicPropImageView"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/no_image" />
+
+            <!-- Property id -->
+            <TextView
+                android:id="@+id/publicPropCustPropertyIdTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/publicPropImageView"
+                android:layout_toRightOf="@+id/publicPropImageView"
+                android:padding="2dp"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+            
+            <!-- set Price/Rent/Purpose-Rent Or Sale -->
+            <TextView
+                android:id="@+id/publicPropCustPreiceRentTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/publicPropImageView"
+                android:layout_below="@+id/publicPropCustPropertyIdTv"
+                android:padding="2dp"
+                android:text="Price/Rent"
+                android:textColor="#cc3f3f"
+                android:textSize="12sp" />
+
+            <!-- Set Location -->
+
+            <TextView
+                android:id="@+id/publicPropCustLocationTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/publicPropCustPreiceRentTv"
+                android:layout_toRightOf="@+id/publicPropImageView"
+                android:padding="1dp"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+             <!-- Area Sq.Foot -->
+
+            <TextView
+                android:id="@+id/publicPropCustAreaSqFootTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/publicPropCustLocationTv"
+                android:layout_toRightOf="@+id/publicPropImageView"
+                android:padding="1dp"
+                android:text="Area Sq.Foot"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <!-- Property type For sale / rent -->
+
+            <TextView
+                android:id="@+id/publicPropCustPropertyTypeSaleRentTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/publicPropCustAreaSqFootTv"
+                android:layout_toRightOf="@+id/publicPropImageView"
+                android:padding="1dp"
+                android:text="Property Type"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+           
+
+            <!-- Bed -->
+
+            <TextView
+                android:id="@+id/publicPropCustBedTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/publicPropCustPropertyTypeSaleRentTv"
+                android:layout_toRightOf="@+id/publicPropImageView"
+                android:padding="1dp"
+                android:text="Bed"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <!-- Posetd Broker Name -->
+
+            <TextView
+                android:id="@+id/publicPropCustPosedByBrokerNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/publicPropCustBedTv"
+                android:padding="1dp"
+                android:text="Broker Name"
+                android:textColor="#cc3f3f"
+                android:textSize="12sp" />
+
+            <!-- Phone Number -->
+
+            <TextView
+                android:id="@+id/publicPropCustPhoneNumberTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/publicPropCustPosedByBrokerNameTv"
+                android:padding="1dp"
+                android:text="Phone Number"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <!-- Nominee name -->
+
+            <TextView
+                android:id="@+id/publicPropCustNomineeNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/publicPropCustPhoneNumberTv"
+                android:padding="1dp"
+                android:text="Nominee Name"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:visibility="gone" />
+            <!-- Nominee Phone number -->
+
+            <TextView
+                android:id="@+id/publicPropCustNomineePhoneTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/publicPropCustNomineeNameTv"
+                android:padding="1dp"
+                android:text="Nominee Phone"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <!-- Posetd Date -->
+
+            <TextView
+                android:id="@+id/publicPropCustPostedDateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/publicPropCustPosedByBrokerNameTv"
+                android:layout_alignParentRight="true"
+                android:padding="1dp"
+                android:text="Posted Date"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <!-- Button layout -->
+
+            <LinearLayout
+                android:id="@+id/publicPropCustActionLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/publicPropCustPostedDateTv"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/publicPropCustCallButtonTv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/call_button" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="#3021BE4A" />
+
+                <ImageView
+                    android:id="@+id/publicPropCustSmsButtonTv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/sms_button" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

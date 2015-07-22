@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	This Xml File is used to enter detail For Edit Nominee
+	Java File:- EditNomineeActivity.javaa
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editNomineeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/listview_item_customshape"
+        android:paddingBottom="10dp"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/editNomineesDetailLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/editNomineeNameTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:text="Name"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editNomineeNameEditBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editNomineeNameTV"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/edit_style"
+                android:hint="Name Of Nominee"
+                android:inputType="text|textNoSuggestions"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@android:color/black" />
+
+            <TextView
+                android:id="@+id/editNomineeMobileTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editNomineeNameEditBox"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:maxLength="10"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editNomineeMobileEditBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editNomineeMobileTV"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/edit_style"
+                android:hint="Mobile No."
+                android:inputType="number|textNoSuggestions"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@android:color/black" />
+
+            <TextView
+                android:id="@+id/editNomineeEmailTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editNomineeMobileEditBox"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editNomineeEmailEditBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editNomineeEmailTV"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/edit_style"
+                android:hint="Email"
+                android:inputType="textEmailAddress|textNoSuggestions"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@android:color/black" />
+
+            <!-- Password -->
+
+            <TextView
+                android:id="@+id/editNomineePasswordTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editNomineeEmailEditBox"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:text="Password"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editNomineePasswordEditBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editNomineePasswordTV"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/edit_style"
+                android:hint="Password"
+                android:inputType="textPassword|textNoSuggestions"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@android:color/black" />
+
+            <!-- Button layout Save and cancel -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editNomineePasswordEditBox"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/editNomineeSaveBotton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_margin="@dimen/button_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:paddingLeft="@dimen/button_pading_left"
+                    android:paddingRight="@dimen/button_pading_right"
+                    android:text="SAVE"
+                    android:textColor="@color/button_text_color"
+                    android:textSize="@dimen/button_text_size" />
+
+                <Button
+                    android:id="@+id/editNomineeCancelBotton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_margin="@dimen/button_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:paddingLeft="@dimen/button_pading_left"
+                    android:paddingRight="@dimen/button_pading_right"
+                    android:text="CANCEL"
+                    android:textColor="@color/button_text_color"
+                    android:textSize="@dimen/button_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

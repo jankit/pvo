@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	This xml File Is used To enter the detail of Search property,
+	Java File:- SearchPropertyActivity.java
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchPropLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <ScrollView
+        android:id="@+id/publicInfoscroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/searchPropButtonLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/listview_item_customshape"
+        android:paddingBottom="10dp"
+        android:scrollbars="none"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/searchPropContainerLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/searchPropProceedLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/searchPropTextView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Select property type"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/searchPropSpinner"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropTextView2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/searchPropTextView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropSpinner"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="For"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/searchPropForSpinner"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropTextView3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:prompt="@string/agentCriteria"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/searchPropTextView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropForSpinner"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/searchPropAreaEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropTextView4"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edit_style"
+                    android:editable="false"
+                    android:hint="Click to Select Area"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@android:color/black" />
+
+                <!-- Total Price for Sale -->
+
+                <RelativeLayout
+                    android:id="@+id/searchPropTotalPriceLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropAreaEditBox"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/searchPropTotalPriceTv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/searchPropTotalPriceMinSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropTotalPriceTv"
+                        android:layout_marginLeft="12dp"
+                        android:padding="5dp"
+                        android:prompt="@string/rentBudgePrompt"
+                        android:spinnerMode="dropdown" />
+
+                    <TextView
+                        android:id="@+id/searchPropMinPriceErrorMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/searchPropTotalPriceMinSpinner"
+                        android:layout_below="@+id/searchPropTotalPriceMinSpinner"
+                        android:text="Select Min. Price"
+                        android:textColor="#FE0002"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/searchPropTotalPriceToTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/searchPropTotalPriceMinSpinner"
+                        android:layout_below="@+id/searchPropTotalPriceTv"
+                        android:layout_toRightOf="@+id/searchPropTotalPriceMinSpinner"
+                        android:text="To"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/searchPropTotalPriceMaxSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropTotalPriceTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_toRightOf="@+id/searchPropTotalPriceToTv"
+                        android:padding="5dp"
+                        android:prompt="@string/rentBudgePrompt"
+                        android:spinnerMode="dropdown" />
+
+                    <TextView
+                        android:id="@+id/searchPropMaxPriceErrorMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/searchPropTotalPriceMaxSpinner"
+                        android:layout_below="@+id/searchPropTotalPriceMaxSpinner"
+                        android:layout_toRightOf="@+id/searchPropMinPriceErrorMsg"
+                        android:text="Select Max. Price"
+                        android:textColor="#FE0002"
+                        android:textSize="10dp" />
+                </RelativeLayout>
+
+                <!-- Rent -->
+
+                <RelativeLayout
+                    android:id="@+id/searchPropRentLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropTotalPriceLayout" >
+
+                    <TextView
+                        android:id="@+id/searchPropRentTv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/searchPropRentMinSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropRentTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:padding="5dp"
+                        android:prompt="@string/rentBudgePrompt"
+                        android:spinnerMode="dropdown" />
+
+                    <TextView
+                        android:id="@+id/minRentErrorMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/searchPropRentMinSpinner"
+                        android:layout_below="@+id/searchPropRentMinSpinner"
+                        android:text="Select Min. Rent"
+                        android:textColor="#FE0002"
+                        android:textSize="10dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/searchPropRentToTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/searchPropRentMinSpinner"
+                        android:layout_below="@+id/searchPropRentTv"
+                        android:layout_toRightOf="@+id/searchPropRentMinSpinner"
+                        android:text="To"
+                        android:textColor="#000000" />
+                    <!-- android:paddingRight="5dp" -->
+
+                    <Spinner
+                        android:id="@+id/searchPropRentMaxSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropRentTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_toRightOf="@+id/searchPropRentToTv"
+                        android:padding="5dp"
+                        android:prompt="@string/rentBudgePrompt"
+                        android:spinnerMode="dropdown" />
+
+                    <TextView
+                        android:id="@+id/maxRentErrorMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/searchPropRentMaxSpinner"
+                        android:layout_below="@+id/searchPropRentMaxSpinner"
+                        android:layout_toRightOf="@+id/minRentErrorMsg"
+                        android:text="Select Max. Rent"
+                        android:textColor="#FE0002"
+                        android:textSize="10dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- Flat Rent/Sale Search Detail Layout -->
+
+            <RelativeLayout
+                android:id="@+id/searchPropFlatLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/searchPropProceedLayout"
+                android:layout_marginTop="20dp"
+                android:visibility="gone" >
+
+                <!-- TP Scheme -->
+
+                <RelativeLayout
+                    android:id="@+id/searchPropTPSchemeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/searchPropTPSchemeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="T.P.Scheme"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/searchPropTPSchemeSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropTPSchemeTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:padding="5dp"
+                        android:prompt="@string/rentBudgePrompt"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+                <!-- Keyword -->
+
+                <TextView
+                    android:id="@+id/searchPropKeyWordTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropTPSchemeLayout"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Keyword"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/searchPropKeywordEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropKeyWordTv"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edit_style"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@android:color/black" />
+
+                <!-- Zone -->
+
+                <LinearLayout
+                    android:id="@+id/searchPropZoneLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropKeywordEditBox"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" 
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/searchPropZoneTv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Zone"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- N.A -->
+
+                <RelativeLayout
+                    android:id="@+id/searchPropNALayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropZoneLayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/searchPropNATv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="N.A.?"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/searchPropNASpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropNATv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:padding="5dp"
+                        android:prompt="@string/rentBudgePrompt"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/searchPropTermsLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropNALayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/searchPropTermsTv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Trems"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/searchPropTermsNaviSharatCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropTermsTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="Navi Sharat"
+                        android:textColor="@android:color/black" 
+                        android:button="@xml/custom_checkbox"/>
+
+                    <CheckBox
+                        android:id="@+id/searchPropTermsJuniSharatCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropTermsNaviSharatCheck"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="Juni Sharat"
+                        android:textColor="@android:color/black" 
+                        android:button="@xml/custom_checkbox"/>
+
+                    <CheckBox
+                        android:id="@+id/searchPropTermsKhetiCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropTermsJuniSharatCheck"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="Kheti Kheti Juni"
+                        android:textColor="@android:color/black" 
+                        android:button="@xml/custom_checkbox"/>
+
+                    <CheckBox
+                        android:id="@+id/searchPropTermsPRASHACheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropTermsKhetiCheck"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="PRA.SHA.P"
+                        android:textColor="@android:color/black" 
+                        android:button="@xml/custom_checkbox"/>
+
+                    <CheckBox
+                        android:id="@+id/searchPropTermsDisputeCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropTermsPRASHACheck"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="Dispute"
+                        android:textColor="@android:color/black" 
+                        android:button="@xml/custom_checkbox"/>
+
+                    <CheckBox
+                        android:id="@+id/searchPropTermsShreeSarkarCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropTermsDisputeCheck"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="Shree Sarkar"
+                        android:textColor="@android:color/black" 
+                        android:button="@xml/custom_checkbox"/>
+                </RelativeLayout>
+                <!-- Area Sq.Foot -->
+
+                <RelativeLayout
+                    android:id="@+id/searchPropAreaLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropTermsLayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/searchPropAreaTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Area (Sq. Foot)"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/searchPropAreaMinEditBox"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropAreaTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/searchPropToTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/searchPropAreaMinEditBox"
+                        android:layout_below="@+id/searchPropAreaTv"
+                        android:layout_toRightOf="@+id/searchPropAreaMinEditBox"
+                        android:text="To"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/searchPropAreaMaxEditBox"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropAreaTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_toRightOf="@+id/searchPropToTv"
+                        android:background="@drawable/edit_style"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@android:color/black" />
+                </RelativeLayout>
+
+                <!-- Min/Max Plot (Sq. Foot) -->
+
+                <RelativeLayout
+                    android:id="@+id/searchPropPlotAreaLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropAreaLayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/searchPropPlotAreaTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Plot (Sq. Foot)"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/searchPropPlotAreaMinEditBox"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropPlotAreaTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/searchPropPlotToTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/searchPropPlotAreaMinEditBox"
+                        android:layout_below="@+id/searchPropPlotAreaTv"
+                        android:layout_toRightOf="@+id/searchPropPlotAreaMinEditBox"
+                        android:text="To"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/searchPropPlotAreaMaxEditBox"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropPlotAreaTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_toRightOf="@+id/searchPropPlotToTv"
+                        android:background="@drawable/edit_style"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@android:color/black" />
+                </RelativeLayout>
+
+                <!-- Commercial Bunglow for Sale Construction Sq. Foot -->
+
+                <RelativeLayout
+                    android:id="@+id/searchPropComBunglowConstLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropPlotAreaLayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/searchPropConstructionAreaTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Construction (Sq. Foot)"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/searchPropConstructionAreaMinEditBox"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropConstructionAreaTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/searchPropConstructionAreaToTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/searchPropConstructionAreaMinEditBox"
+                        android:layout_below="@+id/searchPropConstructionAreaTv"
+                        android:layout_toRightOf="@+id/searchPropConstructionAreaMinEditBox"
+                        android:text="To"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/searchPropConstructionAreaMaxEditBox"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropConstructionAreaTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_toRightOf="@+id/searchPropConstructionAreaToTv"
+                        android:background="@drawable/edit_style"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@android:color/black" />
+                </RelativeLayout>
+
+                <!-- Bed -->
+
+                <RelativeLayout
+                    android:id="@+id/searchPropBedLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropComBunglowConstLayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/searchPropBedTv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Bed"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/searchPropBedMinSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropBedTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:padding="5dp"
+                        android:prompt="@string/bedPrompt"
+                        android:spinnerMode="dropdown" />
+
+                    <!--
+                         <TextView
+                        android:id="@+id/minBedErrorMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropBedMinSpinner"
+                        android:text="Select Minimum Bed"
+                        android:textColor="#FE0002"
+                        android:visibility="gone" />
+                    -->
+
+                    <TextView
+                        android:id="@+id/searchPropBedToTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/searchPropBedMinSpinner"
+                        android:layout_below="@+id/searchPropBedTv"
+                        android:layout_toRightOf="@+id/searchPropBedMinSpinner"
+                        android:text="To"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/searchPropBedMaxSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropBedTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_toRightOf="@+id/searchPropBedToTv"
+                        android:padding="5dp"
+                        android:prompt="@string/bedPrompt"
+                        android:spinnerMode="dropdown" />
+
+                    <!--
+                         <TextView
+                        android:id="@+id/maxBedErrorMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropBedMaxSpinner"
+                        android:layout_toRightOf="@+id/minBedErrorMsg"
+                        android:text="Select Maximum Bed"
+                        android:textColor="#FE0002"
+                        android:visibility="gone" />
+                    -->
+                </RelativeLayout>
+
+                <!-- Floor -->
+
+                <RelativeLayout
+                    android:id="@+id/searchPropFloorLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropBedLayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/searchPropFloorTv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Floor"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/searchPropFloorMinSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropFloorTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:padding="5dp"
+                        android:prompt="@string/floorPrompt"
+                        android:spinnerMode="dropdown" />
+
+                    <TextView
+                        android:id="@+id/searchPropFloorToTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/searchPropFloorMinSpinner"
+                        android:layout_below="@+id/searchPropFloorTv"
+                        android:layout_toRightOf="@+id/searchPropFloorMinSpinner"
+                        android:text="To"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/searchPropFloorMaxSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropFloorTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_toRightOf="@+id/searchPropFloorToTv"
+                        android:padding="5dp"
+                        android:prompt="@string/floorPrompt"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+
+                <!-- Building Type Preference -->
+
+                <RelativeLayout
+                    android:id="@+id/searchPropBuildingTypeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropFloorLayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/searchPropBuildingTypeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Building Type Preference"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/searchPropBuildingTypeSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropBuildingTypeTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:padding="5dp"
+                        android:prompt="@string/buildingPrompt"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+                <!-- Purpose -->
+
+                <RelativeLayout
+                    android:id="@+id/searchPropPurposeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropBuildingTypeLayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/searchPropPurposeTv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Puropose"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/searchPropPurposeSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropPurposeTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:padding="5dp"
+                        android:prompt="@string/purposePrompt"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+
+                <!-- Furnish Options -->
+
+                <RelativeLayout
+                    android:id="@+id/searchPropFurnishOptionLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropPurposeLayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/searchPropFurnishOptionTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Furnish Options"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/searchPropFurnishOptionSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchPropFurnishOptionTv"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:padding="5dp"
+                        android:prompt="@string/furnishPrompt"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <!-- Buttons -->
+
+    <LinearLayout
+        android:id="@+id/searchPropButtonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/footerheight"
+        android:layout_alignParentBottom="true"
+        android:background="@color/layout_background_color1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/SearchPropShowResultButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="SHOW RESULTS"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:id="@+id/searchPropProceedBotton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="MORE OPTION"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:id="@+id/searchPropBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="BACK"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

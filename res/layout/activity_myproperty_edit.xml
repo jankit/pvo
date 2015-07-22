@@ -1,0 +1,2105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	This Xml Screen for Edit My Property Into My property List
+	Java File:-
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editPropLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:gravity="top" >
+
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/listview_item_customshape">
+    <!-- Left Side Icon Bar -->
+
+    <ScrollView
+        android:id="@+id/editMyPropLeftSideScroll"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#886AAE2C" 
+        android:layout_above="@+id/editPropButtonLayout">
+        
+
+        <RelativeLayout
+            android:id="@+id/editPropIconLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/editPropPublicInfoImg"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:background="@android:color/white"
+                android:padding="5dp"
+                android:src="@drawable/public_pro" />
+
+            <ImageView
+                android:id="@+id/editPropNomineeImg"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/editPropPublicInfoImg"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:src="@drawable/nome_ic" />
+
+            <ImageView
+                android:id="@+id/editPropFlatImg"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/editPropNomineeImg"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:src="@drawable/propert_ic" />
+
+            <ImageView
+                android:id="@+id/editPropPriceImg"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/editPropFlatImg"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:src="@drawable/price_budget" />
+
+            <ImageView
+                android:id="@+id/editPropExtraInfoImg"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/editPropPriceImg"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:src="@drawable/information" />
+
+            <ImageView
+                android:id="@+id/editPropBrokerImg"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/editPropExtraInfoImg"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:src="@drawable/broker" />
+
+            <ImageView
+                android:id="@+id/editPropFacilityImg"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/editPropBrokerImg"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:src="@drawable/facility" />
+        </RelativeLayout>
+    </ScrollView>
+    <!-- Heading -->
+
+    <RelativeLayout
+        android:id="@+id/editPropHeardr3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/editMyPropLeftSideScroll"
+        android:background="#886AAE2C"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/editPropHeaderTv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Public Information"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/editPropPublicInfoscroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPropHeardr3"
+        android:layout_above="@+id/editPropButtonLayout"
+        android:layout_toRightOf="@+id/editMyPropLeftSideScroll"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/editPropMainContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 1) Public Information -->
+
+            <LinearLayout
+                android:id="@+id/editPropPublicInfoLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/editPropPropType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Property Type"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/editPropPropTypeSpinner"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:prompt="@string/propertyTypePrompt"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/editPropOption"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Options"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/editPropOptionSpinner"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:prompt="@string/optionPrompt"
+                    android:spinnerMode="dropdown" />
+
+                <!-- <TextView
+                    android:id="@+id/editPropAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editPropAddressEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edit_style"
+                    android:inputType="text|textNoSuggestions"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null" />
+
+                <TextView
+                    android:id="@+id/editPropPostCode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Postcode"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editPropPostCodeEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edit_style"
+                    android:inputType="number|textNoSuggestions"
+                    android:maxLength="6"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null" /> -->
+
+                <TextView
+                    android:id="@+id/editPropState"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/editPropStateSpinner"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:prompt="@string/State_prompt"
+                    android:spinnerMode="dropdown" />
+
+                <!-- Error message text view -->
+
+                <TextView
+                    android:id="@+id/stateErrorMsg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Please Select State"
+                    android:textColor="#FF0000"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/editPropCity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/editPropCitySpinner"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:prompt="@string/cityPrompt"
+                    android:spinnerMode="dropdown" />
+
+                <!-- City Error message  Text view -->
+
+                <TextView
+                    android:id="@+id/cityErrorMsg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Please Select City"
+                    android:textColor="#FF0000"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/editPropLocation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/editPropLocationSpinner"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:prompt="@string/locationPrompt"
+                    android:spinnerMode="dropdown" />
+
+                <!-- Location Error Message Text view -->
+
+                <TextView
+                    android:id="@+id/locationErrorMsg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Please Select Location"
+                    android:textColor="#FF0000"
+                    android:visibility="gone" />
+                
+                <TextView
+                    android:id="@+id/editPropAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editPropAddressEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edit_style"
+                    android:inputType="text|textNoSuggestions"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null" />
+
+                <TextView
+                    android:id="@+id/editPropPostCode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Postcode"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editPropPostCodeEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edit_style"
+                    android:inputType="number|textNoSuggestions"
+                    android:maxLength="6"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null" />
+
+               <!--  <TextView
+                    android:id="@+id/editPropLandmark1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/editPropLandmark1Spinner"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:prompt="@string/landmarkPrompt"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/eidtPropAddLandmarkImgButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/button_style"
+                    android:paddingLeft="@dimen/button_pading_left"
+                    android:paddingRight="@dimen/button_pading_right"
+                    android:text="ADD LANDMARK"
+                    android:textColor="@color/button_text_color"
+                    android:textSize="@dimen/button_text_size" />
+
+                Landmark Error Message Textview
+
+                <TextView
+                    android:id="@+id/landmark1ErrorMsg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Please Select Landmark"
+                    android:textColor="#FF0000"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/editProplandmarkOtherEditbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edit_style"
+                    android:hint="if other is selected"
+                    android:inputType="text|textNoSuggestions"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/editPropLandmark2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/editPropLandmark2Spinner"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:prompt="@string/landmarkPrompt"
+                    android:spinnerMode="dropdown" />
+
+                Landmark2 Error Message Text view
+
+                <TextView
+                    android:id="@+id/landmark2ErrorMsg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Please Select Landmark"
+                    android:textColor="#FF0000"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/editPropLandmark2Editbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edit_style"
+                    android:hint="if other is selected"
+                    android:inputType="text|textNoSuggestions"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:visibility="gone" /> -->
+
+                <TextView
+                    android:id="@+id/editPropSelLoc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Select Location"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <!-- <RelativeLayout
+                    android:id="@+id/editPropMapLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="30" > -->
+					<include
+                        android:id="@+id/editPropMap"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        layout="@layout/google_map" 
+                        android:layout_margin="5dp"/>
+                    <!-- <fragment
+                        android:id="@+id/editPropMap"
+                        android:name="com.google.android.gms.maps.SupportMapFragment" 
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="5dp"/> -->
+                <!-- </RelativeLayout> -->
+
+                <TextView
+                    android:id="@+id/editPropLongitude"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Longitude"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editPropLongitudeEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edit_style"
+                    android:inputType="number|textNoSuggestions"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null" />
+
+                <TextView
+                    android:id="@+id/editPropLatitude"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Latitude"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editPropLatitudeEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edit_style"
+                    android:inputType="number|textNoSuggestions"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null" />
+
+                <TextView
+                    android:id="@+id/editPropPropOccup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Property Occupacy"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/editPropPropOccupSpinner"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:prompt="@string/propertyOccupyPrompt"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/editPropOccupName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Occupacy Name"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/editPropOccupNameEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edit_style"
+                    android:inputType="text|textNoSuggestions"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/editPropOccupDetail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Occupacy Detail"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editPropOccupDetailEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edit_style"
+                    android:inputType="text|textNoSuggestions"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null" />
+
+                <TextView
+                    android:id="@+id/editPropReleseDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Relese Date"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editPropReleseDateEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edit_style"
+                    android:hint="DD/MM/YYYY"
+                    android:inputType="date|textNoSuggestions"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+            <!-- 2) Nominee -->
+
+            <LinearLayout
+                android:id="@+id/editPropNomineeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editPropPublicInfoLayout"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ListView
+                    android:id="@+id/editPropNomineeListView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent" >
+                </ListView>
+            </LinearLayout>
+
+            <!-- 3) Property Flat Related -->
+
+            <LinearLayout
+                android:id="@+id/editPropFaltLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editPropNomineeLayout"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <!-- Beds Layout -->
+
+                <LinearLayout
+                    android:id="@+id/editPropBedLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/editPropFlatBeds"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/editPropFlatBedsSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:prompt="@string/bedPrompt"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <!-- T.P Scheme Layout -->
+
+                <LinearLayout
+                    android:id="@+id/editPropTPSchemeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/editPropTPSchemeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="T.P.Scheme"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/editPropTPSchemeSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:padding="5dp"
+                        android:prompt="@string/rentBudgePrompt"
+                        android:spinnerMode="dropdown" />
+
+                    <!-- Zone Layout -->
+
+                    <LinearLayout
+                        android:id="@+id/editPropZoneLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/editPropZoneTv"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Zone"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/editPropFlatZoneSpinner"
+                            style="@style/SpinnerStyle"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:prompt="@string/bedPrompt"
+                            android:spinnerMode="dropdown" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/editPropNATv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="N.A.?"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/editPropNASpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:padding="5dp"
+                        android:prompt="@string/rentBudgePrompt"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <!-- Floor Layout -->
+
+                <LinearLayout
+                    android:id="@+id/editPropFloorLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/editPropFlatFloor"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Floor"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/editPropFlatFloorSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:prompt="@string/floorPrompt"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <!-- Furnish Layout -->
+
+                <LinearLayout
+                    android:id="@+id/editPropFurnishLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/editPropFlatFurnishOption"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Furnish Options"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/editPropFlatFurnishOptionSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:prompt="@string/furnishPrompt"
+                        android:spinnerMode="dropdown" />
+
+                    <TextView
+                        android:id="@+id/editPropFlatFurnishDetail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Furnish detail"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editPropFlatFurnishDetailEditBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:inputType="text|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <!-- Area Type Layout -->
+
+                <LinearLayout
+                    android:id="@+id/editPropAreaLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/editPropFlatArea"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Area"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" >
+
+                        <TextView
+                            android:id="@+id/editPropFlatAreaHintTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_toLeftOf="@+id/editPropFlatAreaEditBox"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:padding="10dp"
+                            android:textColor="#C0C0C0"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editPropFlatAreaEditBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/edit_style"
+                            android:inputType="number|textNoSuggestions"
+                            android:textColor="#000000"
+                            android:textCursorDrawable="@null" />
+                        <!-- android:paddingRight="5dp" -->
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- Plot Area Layout -->
+
+                <LinearLayout
+                    android:id="@+id/editPropPlotAreaLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/editPropFlatPlotArea"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Plot Area"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" >
+
+                        <TextView
+                            android:id="@+id/editPropFlatPlotAreaHintTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_toLeftOf="@+id/editPropFlatPlotAreaEditBox"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:padding="10dp"
+                            android:textColor="#C0C0C0"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editPropFlatPlotAreaEditBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/edit_style"
+                            android:inputType="number|textNoSuggestions"
+                            android:textColor="#000000"
+                            android:textCursorDrawable="@null" />
+                        <!-- android:paddingRight="5dp" -->
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- Construction Area Layout -->
+
+                <LinearLayout
+                    android:id="@+id/editPropConstructionLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/editPropFlatConstructionArea"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Construction Area"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" >
+
+                        <TextView
+                            android:id="@+id/editPropFlatConstructionAreaHintTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_toLeftOf="@+id/editPropFlatConstructionAreaEditBox"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:padding="10dp"
+                            android:textColor="#C0C0C0"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editPropFlatConstructionAreaEditBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/edit_style"
+                            android:inputType="number|textNoSuggestions"
+                            android:textColor="#000000"
+                            android:textCursorDrawable="@null" />
+                        <!-- android:paddingRight="5dp" -->
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- Bulding Type Layout -->
+
+                <LinearLayout
+                    android:id="@+id/editPropBuildingTypeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/editPropFlatBuildingType"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Building Type"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/editPropFlatBuildingTypeSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:prompt="@string/buildingPrompt"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <!-- Total Price Layout -->
+
+                <LinearLayout
+                    android:id="@+id/editPropTotalPriceLyout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/editPropFlatTatalPrice"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editPropFlatTatalPriceEditBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <!-- Selling Price Layout -->
+
+                <LinearLayout
+                    android:id="@+id/editPropSellingPriceLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/editPropFlatSellPrice"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Sell Price"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editPropFlatSellPriceEditBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <!-- Dastawage Layout -->
+
+                <LinearLayout
+                    android:id="@+id/editPropDastawage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/editPropFlatDastawage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Dastawage"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editPropFlatDastawageEditBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <!-- Image Layout -->
+
+                <LinearLayout
+                    android:id="@+id/editPropFlatImageLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <!-- First Image -->
+
+                    <RelativeLayout
+                        android:id="@+id/addNewPropFirstImage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/editPropFlatDefaultImg"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Default Image "
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/editPropFlatDefaultImgButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_below="@+id/editPropFlatDefaultImg"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/button_style"
+                            android:paddingLeft="@dimen/button_pading_left"
+                            android:paddingRight="@dimen/button_pading_right"
+                            android:text="BROWSE"
+                            android:textColor="@color/button_text_color"
+                            android:textSize="@dimen/button_text_size" />
+
+                        <ImageView
+                            android:id="@+id/editPropImage1ImageView"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignBottom="@+id/editPropFlatDefaultImgButton"
+                            android:layout_below="@+id/editPropFlatDefaultImg"
+                            android:layout_toRightOf="@+id/editPropFlatDefaultImgButton"
+                            android:src="@drawable/no_image" />
+
+                        <TextView
+                            android:id="@+id/editPropFlatDefaultImgPath"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/editPropImage1ImageView"
+                            android:layout_below="@+id/editPropFlatDefaultImg"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_toRightOf="@+id/editPropImage1ImageView"
+                            android:textColor="#000000"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <!-- Second Image -->
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/editPropFlatImage2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Image 2 "
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/editPropFlatImage2Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_below="@+id/editPropFlatImage2"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/button_style"
+                            android:paddingLeft="@dimen/button_pading_left"
+                            android:paddingRight="@dimen/button_pading_right"
+                            android:text="BROWSE"
+                            android:textColor="@color/button_text_color"
+                            android:textSize="@dimen/button_text_size" />
+
+                        <ImageView
+                            android:id="@+id/editPropImage2ImageView"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignBottom="@+id/editPropFlatImage2Button"
+                            android:layout_below="@+id/editPropFlatImage2"
+                            android:layout_toRightOf="@+id/editPropFlatImage2Button"
+                            android:src="@drawable/no_image" />
+
+                        <TextView
+                            android:id="@+id/editPropFlatImage2Path"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/editPropImage2ImageView"
+                            android:layout_below="@+id/editPropFlatImage2"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_toRightOf="@+id/editPropImage2ImageView"
+                            android:textColor="#000000"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <!-- Third Image -->
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/editPropFlatImage3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Image 3 "
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/editPropFlatImage3Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_below="@+id/editPropFlatImage3"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/button_style"
+                            android:paddingLeft="@dimen/button_pading_left"
+                            android:paddingRight="@dimen/button_pading_right"
+                            android:text="BROWSE"
+                            android:textColor="@color/button_text_color"
+                            android:textSize="@dimen/button_text_size" />
+
+                        <ImageView
+                            android:id="@+id/editPropImage3ImageView"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignBottom="@+id/editPropFlatImage3Button"
+                            android:layout_below="@+id/editPropFlatImage3"
+                            android:layout_toRightOf="@+id/editPropFlatImage3Button"
+                            android:src="@drawable/no_image" />
+
+                        <TextView
+                            android:id="@+id/editPropFlatImage3Path"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/editPropImage3ImageView"
+                            android:layout_below="@+id/editPropFlatImage3"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_toRightOf="@+id/editPropImage3ImageView"
+                            android:textColor="#000000"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <!-- Fourth Image -->
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/editPropFlatImage4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Image 4 "
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/editPropFlatImage4Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_below="@+id/editPropFlatImage4"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/button_style"
+                            android:paddingLeft="@dimen/button_pading_left"
+                            android:paddingRight="@dimen/button_pading_right"
+                            android:text="BROWSE"
+                            android:textColor="@color/button_text_color"
+                            android:textSize="@dimen/button_text_size" />
+
+                        <ImageView
+                            android:id="@+id/editPropImage4ImageView"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignBottom="@+id/editPropFlatImage4Button"
+                            android:layout_below="@+id/editPropFlatImage4"
+                            android:layout_toRightOf="@+id/editPropFlatImage4Button"
+                            android:src="@drawable/no_image" />
+
+                        <TextView
+                            android:id="@+id/editPropFlatImage4Path"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/editPropImage4ImageView"
+                            android:layout_below="@+id/editPropFlatImage4"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_toRightOf="@+id/editPropImage4ImageView"
+                            android:textColor="#000000"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <!-- Fifth Image -->
+
+                    <RelativeLayout
+                        android:id="@+id/addNewPropFifthImage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/editPropFlatImage5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Image 5 "
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/editPropFlatImage5Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_below="@+id/editPropFlatImage5"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/button_style"
+                            android:paddingLeft="@dimen/button_pading_left"
+                            android:paddingRight="@dimen/button_pading_right"
+                            android:text="BROWSE"
+                            android:textColor="@color/button_text_color"
+                            android:textSize="@dimen/button_text_size" />
+
+                        <ImageView
+                            android:id="@+id/editPropImage5ImageView"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignBottom="@+id/editPropFlatImage5Button"
+                            android:layout_below="@+id/editPropFlatImage5"
+                            android:layout_toRightOf="@+id/editPropFlatImage5Button"
+                            android:src="@drawable/no_image" />
+
+                        <TextView
+                            android:id="@+id/editPropFlatImage5Path"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/editPropImage5ImageView"
+                            android:layout_below="@+id/editPropFlatImage5"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_toRightOf="@+id/editPropImage5ImageView"
+                            android:textColor="#000000"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 4) Price Budget Related / Extra Expenses -->
+
+            <LinearLayout
+                android:id="@+id/editPropPriceLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editPropFaltLayout"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <!-- Maintenance (p.m.) -->
+
+                <LinearLayout
+                    android:id="@+id/editPropPriceRentMaintenanceLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/editPropPriceMaintenance"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Maintenance (p.m.)"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editPropPriceMaintenanceEditBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <!-- Price Budge For Flat-Rent -->
+
+                <LinearLayout
+                    android:id="@+id/editPropPriceRentLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <!-- Rent -->
+
+                    <TextView
+                        android:id="@+id/editPropPriceRent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editPropPriceRentEditBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <!-- Rent Deposite -->
+
+                <LinearLayout
+                    android:id="@+id/editPropRentDepositeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/editPropPriceRentDeposit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Rent Deposit"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editPropPriceRentDepositeEditBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <!-- Price Budget Related For Sale -->
+
+                <LinearLayout
+                    android:id="@+id/editPropPriceSaleLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <!-- Transfer Fees -->
+
+                    <TextView
+                        android:id="@+id/editPropTransferFeesSale"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Transfer Fees"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editPropPriceTransferFeeseSaleEditBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null" />
+
+                    <!-- AEC/Auda Legal -->
+
+                    <TextView
+                        android:id="@+id/editPropAECAudaLegalSale"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="AEC/Auda Legal"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editPropPriceAECAudaLegalSaleEditBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null" />
+
+                    <!-- Parking Charges -->
+
+                    <TextView
+                        android:id="@+id/editPropParkingChargeSale"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Parking Charges"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editPropPriceParkingChargesSaleEditBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:inputType="number|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 5) Extra Information / Additional Information -->
+
+            <LinearLayout
+                android:id="@+id/editPropExtraInfoLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editPropPriceLayout"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <!-- Purpose -->
+
+                <LinearLayout
+                    android:id="@+id/editPropExtraInfoPurposeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/editPropExtraInfoPurpose"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Purpose"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/editPropExtraInfoPurposeSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:prompt="@string/purposePrompt"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <!-- Whom to let/give? -->
+
+                <LinearLayout
+                    android:id="@+id/editPropExtraInfoWhomeToLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/editPropExtraInfoWhomToLet"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Whom to let/give?"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/editPropExtraInfoWhomToLetSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:prompt="@string/whomeToLetPrompt"
+                        android:spinnerMode="dropdown" />
+
+                    <EditText
+                        android:id="@+id/editPropExtraInfoWhomeToletOther"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:inputType="text|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <!-- Built Year Layout -->
+
+                <LinearLayout
+                    android:id="@+id/editPropExtraInfoBuilrYearLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <!-- Build Year -->
+
+                    <TextView
+                        android:id="@+id/editPropExtraInfoBuiltYear"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Built Year"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/editPropExtraInfoBuiltYearSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:prompt="@string/builtYearPrompt"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <!-- Term Layout -->
+
+                <LinearLayout
+                    android:id="@+id/editPropExtraInfoTermLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/editPropTermsTv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Trems"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/editPropTermsNaviSharatCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:button="@xml/custom_checkbox"
+                        android:text="Navi Sharat"
+                        android:textColor="@android:color/black" />
+
+                    <CheckBox
+                        android:id="@+id/editPropTermsJuniSharatCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="Juni Sharat"
+                        android:button="@xml/custom_checkbox"
+                        android:textColor="@android:color/black" />
+
+                    <CheckBox
+                        android:id="@+id/editPropTermsKhetiCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="Kheti Kheti Juni"
+                        android:button="@xml/custom_checkbox"
+                        android:textColor="@android:color/black" />
+
+                    <CheckBox
+                        android:id="@+id/editPropTermsPRASHACheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="PRA.SHA.P"
+                        android:button="@xml/custom_checkbox"
+                        android:textColor="@android:color/black" />
+
+                    <CheckBox
+                        android:id="@+id/editPropTermsDisputeCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="Dispute"
+                        android:button="@xml/custom_checkbox"
+                        android:textColor="@android:color/black" />
+
+                    <CheckBox
+                        android:id="@+id/editPropTermsShreeSarkarCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="Shree Sarkar"
+                        android:button="@xml/custom_checkbox"
+                        android:textColor="@android:color/black" />
+
+                    <CheckBox
+                        android:id="@+id/editPropTermsDoNotKnowCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="Do Not Know"
+                        android:button="@xml/custom_checkbox"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/editPropExtraInfoFramHouseRoadTouch"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Road Touch"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/editPropExtraInfoFramHouseRoadTouchSpinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:prompt="@string/purposePrompt"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <!-- Extra comment -->
+
+                <LinearLayout
+                    android:id="@+id/editPropExtraInfoCommentLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/editPropExtraInfoComment"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Extra comment"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editPropExtraInfoCommentEditBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:inputType="text|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <!-- Hint/Keyword Layout -->
+
+                <LinearLayout
+                    android:id="@+id/editPropExtraInfoHintKeyowrdLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <!-- Hint -->
+
+                    <TextView
+                        android:id="@+id/editPropExtraInfoHint2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Description/Keyword"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editPropExtraInfoHintEditBox2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:inputType="text|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <!-- Keyword -->
+
+                <LinearLayout
+                    android:id="@+id/editPropExtraInfoKeyowrdLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/editPropExtraInfoKeyword"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Keyword"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editPropExtraInfoKeywordEditBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/edit_style"
+                        android:inputType="text|textNoSuggestions"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <!-- Button Layout -->
+
+                <LinearLayout
+                    android:id="@+id/editPropImageButtonLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+                    
+                    
+                    <RelativeLayout
+                        android:id="@+id/editNewPropextraimageRl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                       <TextView
+                        android:id="@+id/editPropFlatFarmImage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Image"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                            <Button
+                            android:id="@+id/editPropFlatFarmImageButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_below="@+id/editPropFlatFarmImage"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/button_style"
+                            android:paddingLeft="@dimen/button_pading_left"
+                            android:paddingRight="@dimen/button_pading_right"
+                            android:text="BROWSE"
+                            android:textColor="@color/button_text_color"
+                            android:textSize="@dimen/button_text_size" />
+
+                        <ImageView
+                            android:id="@+id/editPropImageExtraIV"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignBottom="@+id/editPropFlatFarmImageButton"
+                            android:layout_below="@+id/editPropFlatFarmImage"
+                            android:layout_toRightOf="@+id/editPropFlatFarmImageButton"
+                            android:src="@drawable/no_image" />
+
+                        <TextView
+                            android:id="@+id/editPropFlatExtraIVPath"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/editPropImageExtraIV"
+                            android:layout_below="@+id/editPropFlatFarmImage"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_toRightOf="@+id/editPropImageExtraIV"
+                            android:textColor="#000000"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                    
+
+                    
+                    
+
+                        
+
+                    <!-- <Button
+                        android:id="@+id/editPropFlatFarmImageButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/button_style"
+                        android:padding="10dp"
+                        android:text="BROWSE"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" /> -->
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 5) Select Broker -->
+
+            <LinearLayout
+                android:id="@+id/editPropSelectBrokLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editPropExtraInfoLayout"
+                android:background="@android:color/transparent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <!-- Publishing option Public Only, Preferred Only, Both -->
+
+                <TextView
+                    android:id="@+id/editPropPublishOption"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Publishing Option"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/editPropPublishOptionSpinner"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:prompt="@string/publishPrompt"
+                    android:spinnerMode="dropdown" />
+
+                <ListView
+                    android:id="@+id/editPropBrokerListView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent" >
+                </ListView>
+            </LinearLayout>
+
+            <!-- 6) Facility -->
+
+            <LinearLayout
+                android:id="@+id/editPropFacilityLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editPropSelectBrokLayout"
+                android:orientation="vertical"
+                android:visibility="gone" >
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <!-- Buttons -->
+
+    <LinearLayout
+        android:id="@+id/editPropButtonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/layout_background_color1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/editPropSaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="SAVE"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/editPropNextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="NEXT"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:id="@+id/editPropPreviousButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="PREVIOUS"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/editPropCancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="CANCEL"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" />
+    </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

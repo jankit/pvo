@@ -1,0 +1,89 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Select Nominees"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </TableRow>
+
+    <View
+        android:layout_height="1dip"
+        android:background="@color/btnGreenColor" />
+
+    <RelativeLayout
+        android:id="@+id/rl_nomineeList_chkAll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center" 
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/chk_nomineeList_checkAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="All" />
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:orientation="horizontal" >
+
+        <GridView
+            android:id="@+id/grd_nominee_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2" >
+        </GridView>
+    </LinearLayout>
+    
+     <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_height="1dip"
+        android:background="@color/btnGreenColor" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnGetItem"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/footerBtnHeight"
+            android:layout_margin="@dimen/footerBtnMargin"
+            android:background="@color/btnBlueColor"
+            android:text="OK"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/footerBtnTxtSize" />
+    </LinearLayout>
+
+</TableLayout>

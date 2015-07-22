@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	this Xml File is used to Display the Full Detail of the My Property
+	This file Open onclick Of the First Text View of the My Property List
+	Java File:- MyPropertyDetailActivity.java
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myPropDetLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg" >
+
+    <TextView
+        android:id="@+id/myPropDetSubHeaderTv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:textColor="@color/textbody"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ll_propDet_footer"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/listview_item_customshape"
+        android:paddingBottom="10dp"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <Gallery
+                android:id="@+id/gallery"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:spacing="3dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/gallery"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <!-- android:layout_alignRight="@+id/gallery" -->
+
+                <Button
+                    android:id="@+id/imagePreviousButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="1dp"
+                    android:background="#50666666"
+                    android:text="@string/previous"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/imageNextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="1dp"
+                    android:background="#50666666"
+                    android:text="@string/next"
+                    android:textColor="@android:color/black" />android:layout_alignLeft="@+id/myPropDettv30"
+
+                <TextView
+                    android:id="@+id/numberOfImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="1dp"
+                    android:background="#50666666"
+                    android:gravity="center"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- Property ID -->
+
+            <TextView
+                android:id="@+id/myPropDettv1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/gallery"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Property ID"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDettv11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDettv1"
+                android:layout_alignBottom="@+id/myPropDettv1"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/myPropDettv1"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDettv11"
+                android:background="#C0C0C0" />
+
+            <!-- State -->
+
+            <TextView
+                android:id="@+id/myPropDetStateTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDettv1"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="State"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDetStateValTv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDetStateTv"
+                android:layout_alignBottom="@+id/myPropDetStateTv"
+                android:layout_alignLeft="@+id/myPropDettv11"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDetStateValTv"
+                android:background="#C0C0C0" />
+
+            <!-- City -->
+
+            <TextView
+                android:id="@+id/myPropDetCityTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDetStateTv"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="City"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDetCityValTv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDetCityTv"
+                android:layout_alignBottom="@+id/myPropDetCityTv"
+                android:layout_alignLeft="@+id/myPropDetStateValTv"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDetCityValTv"
+                android:background="#C0C0C0" />
+
+            <!-- Location -->
+
+            <TextView
+                android:id="@+id/myPropDettv4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDetCityTv"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Location"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDettv14"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDettv4"
+                android:layout_alignBottom="@+id/myPropDettv4"
+                android:layout_alignLeft="@+id/myPropDetCityValTv"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDettv14"
+                android:background="#C0C0C0" />
+
+            <!-- Address -->
+
+            <TextView
+                android:id="@+id/myPropDettv2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDettv4"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Address"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDettv12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDettv2"
+                android:layout_alignBottom="@+id/myPropDettv2"
+                android:layout_alignLeft="@+id/myPropDettv14"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDettv12"
+                android:background="#C0C0C0" />
+
+            <!-- Post code -->
+
+            <TextView
+                android:id="@+id/myPropDettv3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDettv2"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Post code"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDettv13"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDettv3"
+                android:layout_alignBottom="@+id/myPropDettv3"
+                android:layout_alignLeft="@+id/myPropDettv12"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDettv13"
+                android:background="#C0C0C0" />
+
+            <!-- Landmark -->
+
+
+            <!--
+            <TextView
+                android:id="@+id/myPropDettv5"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDettv4"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Landmark"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDettv15"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDettv5"
+                android:layout_alignBottom="@+id/myPropDettv5"
+                android:layout_alignLeft="@+id/myPropDettv14"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDettv15"
+                android:background="#C0C0C0" />
+            -->
+
+
+            <!-- Type of Rise -->
+
+            <TextView
+                android:id="@+id/myPropDettv6"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDettv3"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Type of Rise"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDettv16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDettv6"
+                android:layout_alignBottom="@+id/myPropDettv6"
+                android:layout_alignLeft="@+id/myPropDettv13"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDettv16"
+                android:background="#C0C0C0" />
+
+            <!-- Bed -->
+
+            <TextView
+                android:id="@+id/myPropDetBedTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDettv6"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Bed(s)"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDetBedValTv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDetBedTv"
+                android:layout_alignBottom="@+id/myPropDetBedTv"
+                android:layout_alignLeft="@+id/myPropDettv16"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDetBedValTv"
+                android:background="#C0C0C0" />
+
+            <!-- Furnish Options -->
+
+            <TextView
+                android:id="@+id/myPropDettv7"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDetBedTv"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Furnish Options"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDettv17"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDettv7"
+                android:layout_alignBottom="@+id/myPropDettv7"
+                android:layout_alignLeft="@+id/myPropDetBedValTv"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDettv17"
+                android:background="#C0C0C0" />
+
+            <!-- "N.A. -->
+
+            <!-- <TextView
+                android:id="@+id/myPropDettv8"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDettv7"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="N.A."
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDettv18"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDettv8"
+                android:layout_alignBottom="@+id/myPropDettv8"
+                android:layout_alignLeft="@+id/myPropDettv17"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDettv18"
+                android:background="#C0C0C0" /> -->
+
+            <!-- Posted on -->
+
+            <TextView
+                android:id="@+id/myPropDettv9"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDettv7"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Posted On"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDettv19"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDettv9"
+                android:layout_alignBottom="@+id/myPropDettv9"
+                android:layout_alignLeft="@+id/myPropDettv17"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDettv19"
+                android:background="#C0C0C0" />
+
+            <!-- Floor -->
+
+            <TextView
+                android:id="@+id/myPropDettv10"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDettv9"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Floor"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDettv20"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDettv10"
+                android:layout_alignBottom="@+id/myPropDettv10"
+                android:layout_alignLeft="@+id/myPropDettv19"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDettv20"
+                android:background="#C0C0C0" />
+
+            <!-- Built-up Area -->
+
+            <TextView
+                android:id="@+id/myPropDettv21"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDettv10"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Built-up Area"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDettv27"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDettv21"
+                android:layout_alignBottom="@+id/myPropDettv21"
+                android:layout_alignLeft="@+id/myPropDettv20"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDettv27"
+                android:background="#C0C0C0" />
+
+            <!-- Year built up -->
+
+            <TextView
+                android:id="@+id/myPropDettv22"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDettv21"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Year built up"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDettv28"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDettv22"
+                android:layout_alignBottom="@+id/myPropDettv22"
+                android:layout_alignLeft="@+id/myPropDettv27"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDettv28"
+                android:background="#C0C0C0" />
+
+            <!-- Additional Charges -->
+
+            <TextView
+                android:id="@+id/myPropDettv23"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDettv22"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Additional Charges"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDettv29"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDettv23"
+                android:layout_alignBottom="@+id/myPropDettv23"
+                android:layout_alignLeft="@+id/myPropDettv28"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDettv29"
+                android:background="#C0C0C0" />
+
+            <!-- Facility -->
+
+            <TextView
+                android:id="@+id/myPropDettv24"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDettv23"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Facility"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/myPropDettv30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/myPropDettv24"
+                android:layout_alignLeft="@+id/myPropDettv29"
+                android:layout_toRightOf="@+id/myPropDettv24"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDettv30"
+                android:background="#C0C0C0" />
+
+            <!-- Purpose -->
+
+            <TextView
+                android:id="@+id/myPropDetPurposeTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDettv24"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Purpose"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDetPurposeValTv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDetPurposeTv"
+                android:layout_alignBottom="@+id/myPropDetPurposeTv"
+                android:layout_alignLeft="@+id/myPropDettv30"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDetPurposeValTv"
+                android:background="#C0C0C0" />
+
+            <!-- Occupacy Details -->
+
+            <TextView
+                android:id="@+id/myPropDetOccupacyTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDetPurposeTv"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Occupacy Details"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDetOccupacyValTv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDetOccupacyTv"
+                android:layout_alignBottom="@+id/myPropDetOccupacyTv"
+                android:layout_alignLeft="@+id/myPropDetPurposeValTv"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDetOccupacyValTv"
+                android:background="#C0C0C0" />
+
+            <!-- Discription -->
+
+            <TextView
+                android:id="@+id/myPropDetDiscriptionTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDetOccupacyTv"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text=" Discription"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDetDiscriptionValTv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDetDiscriptionTv"
+                android:layout_alignBottom="@+id/myPropDetDiscriptionTv"
+                android:layout_alignLeft="@+id/myPropDetOccupacyValTv"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDetDiscriptionValTv"
+                android:background="#C0C0C0" />
+
+            <!-- Map -->
+
+            <RelativeLayout
+                android:id="@+id/myPropDetmapLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/myPropDetDiscriptionTv">
+
+                <TextView
+                    android:id="@+id/myPropDetMaptv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="See this property on map"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/myPropDetMaptv"
+                    android:background="#C0C0C0" />
+				<!-- <ImageView 
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_below="@+id/myPropDetMaptv"
+                    android:layout_margin="5dp"
+                    android:id="@+id/propDetailMap"/> -->
+	               <!--  <fragment
+                    android:id="@+id/propDetailMap"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/myPropDetMaptv"
+                    android:layout_margin="5dp" /> -->
+                <!-- android:name="com.google.android.gms.maps.MapFragment" -->
+                <include
+                        android:id="@+id/map"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        layout="@layout/google_map"
+                        android:layout_below="@+id/myPropDetMaptv" 
+                        android:layout_margin="5dp"/>
+            </RelativeLayout>
+
+            <!-- Property Statistics -->
+
+            <TextView
+                android:id="@+id/myPropDetPropStatisticsTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/myPropDetmapLayout"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Property Statistics"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myPropDetPropStatisticsValTv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/myPropDetPropStatisticsTv"
+                android:layout_alignBottom="@+id/myPropDetPropStatisticsTv"
+                android:layout_alignLeft="@+id/myPropDettv30"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:id="@+id/lastView"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myPropDetPropStatisticsValTv"
+                android:background="#C0C0C0" />
+
+            <Button
+                android:id="@+id/btnShowBrokerDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lastView"
+                android:text="View Broker Detail" />
+
+            <!-- Broker -->
+
+            <RelativeLayout
+                android:id="@+id/rlBrokerInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnShowBrokerDetail" 
+                android:visibility="gone">
+                
+                 <!-- Broker Id -->
+
+                <TextView
+                    android:id="@+id/myPropDetBrokerIdTv"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Broker Id"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myPropDetBrokerIdValTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myPropDetBrokerIdTv"
+                    android:layout_alignBottom="@+id/myPropDetBrokerIdTv"
+                    android:layout_toRightOf="@+id/myPropDetBrokerIdTv"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:textColor="@color/textbody" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/myPropDetBrokerIdValTv"
+                    android:background="#C0C0C0" />
+
+                <!-- Broker name -->
+
+                <TextView
+                    android:id="@+id/myPropDetBrokerNameTv"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:layout_below="@+id/myPropDetBrokerIdTv"
+                    android:drawablePadding="10dp"
+                    android:text="Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myPropDetNameValTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myPropDetBrokerNameTv"
+                    android:layout_alignBottom="@+id/myPropDetBrokerNameTv"
+                    android:layout_alignLeft="@+id/myPropDetBrokerIdValTv"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:textColor="@color/textbody" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/myPropDetNameValTv"
+                    android:background="#C0C0C0" />
+                <!-- Company name -->
+
+                <TextView
+                    android:id="@+id/myPropDetBrokerCompanyTv"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/myPropDetBrokerNameTv"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Company"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myPropDetCompanyValTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myPropDetBrokerCompanyTv"
+                    android:layout_alignBottom="@+id/myPropDetBrokerCompanyTv"
+                    android:layout_alignLeft="@+id/myPropDetNameValTv"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:textColor="@color/textbody" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/myPropDetCompanyValTv"
+                    android:background="#C0C0C0" />
+
+                <!-- Address -->
+
+                <TextView
+                    android:id="@+id/myPropDetBrokerAddressTv"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/myPropDetBrokerCompanyTv"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Address"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myPropDetAddressValTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myPropDetBrokerAddressTv"
+                    android:layout_alignBottom="@+id/myPropDetBrokerAddressTv"
+                    android:layout_alignLeft="@+id/myPropDetCompanyValTv"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:textColor="@color/textbody" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/myPropDetAddressValTv"
+                    android:background="#C0C0C0" />
+
+                <!-- Phone Number -->
+
+                <TextView
+                    android:id="@+id/myPropDetPhoneNoTv"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/myPropDetBrokerAddressTv"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Phone Number"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myPropDetPhoneNoValTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myPropDetPhoneNoTv"
+                    android:layout_alignBottom="@+id/myPropDetPhoneNoTv"
+                    android:layout_alignLeft="@+id/myPropDetAddressValTv"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:textColor="@color/textbody" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/myPropDetPhoneNoValTv"
+                    android:background="#C0C0C0" />
+
+                <!-- Email -->
+
+                <TextView
+                    android:id="@+id/myPropDetEmailTv"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/myPropDetPhoneNoTv"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Email"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myPropDetEmailValTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myPropDetEmailTv"
+                    android:layout_alignBottom="@+id/myPropDetEmailTv"
+                    android:layout_alignLeft="@+id/myPropDetPhoneNoValTv"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:textColor="@color/textbody" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/myPropDetEmailValTv"
+                    android:background="#C0C0C0" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_propDet_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/layout_background_color1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/myPropertyDetailSendSmsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="EMAIL/SMS"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/myPropertyDetailBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="BACK"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

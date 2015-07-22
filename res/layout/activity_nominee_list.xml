@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nomineesLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <!-- List View layout -->
+
+    <RelativeLayout
+        android:id="@+id/nomineesListViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg" >
+
+        <ListView
+            android:id="@+id/nomineesListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+    <!-- Add new nominee and Refine Search Layout -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/layout_background_color1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <Button
+           	android:id="@+id/btnAddNominee"
+           	android:layout_width="wrap_content"
+           	android:layout_height="@dimen/button_height"
+           	android:layout_margin="@dimen/button_margin"
+           	android:background="@drawable/button_style"
+           	android:paddingLeft="@dimen/button_pading_left"
+           	android:paddingRight="@dimen/button_pading_right"
+           	android:text="ADD NOMINEE"
+           	android:textColor="@color/button_text_color"
+           	android:textSize="@dimen/button_text_size" />
+        
+        <Button
+            	android:id="@+id/btnCancelNominee"
+            	android:layout_width="wrap_content"
+            	android:layout_height="@dimen/button_height"
+            	android:layout_margin="@dimen/button_margin"
+            	android:background="@drawable/button_style"
+            	android:paddingLeft="@dimen/button_pading_left"
+            	android:paddingRight="@dimen/button_pading_right"
+            	android:text="CANCEL"
+            	android:textColor="@color/button_text_color"
+            	android:textSize="@dimen/button_text_size" />
+
+        <!-- <LinearLayout
+            android:id="@+id/nomineeAddLayout"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="2dp"
+			android:background="@drawable/button_style"
+			android:clickable="true"
+			android:gravity="center"
+			android:padding="5dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/footer_inner_imageview_pading"
+                android:src="@drawable/add" 
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/nomineesAddTextView"
+                android:text="ADD NOMINEE"
+                android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:textColor="@color/button_text_color"
+				android:textSize="@dimen/button_text_size"
+				android:background="@android:color/transparent"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/nomineeCancelLayout"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="2dp"
+			android:background="@drawable/button_style"
+			android:clickable="true"
+			android:gravity="center"
+			android:padding="5dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/footer_inner_imageview_pading"
+                android:src="@drawable/add" 
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/nomineesCancelTV"
+                android:text="CANCEL"
+                android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:textColor="@color/button_text_color"
+				android:textSize="@dimen/button_text_size"
+				android:background="@android:color/transparent"/>
+        </LinearLayout> -->
+    </LinearLayout>
+
+</RelativeLayout>

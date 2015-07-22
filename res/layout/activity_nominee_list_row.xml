@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	This Xml File used to Display The Detail Of Nominee 
+	and This file is Display in Nominee List
+	This file Set in NomineeListCustomAdapter.java File-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nomineesCustomeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/listview_item_customshape" >
+
+    <TextView
+        android:id="@+id/nomineesCustomeTitleTextView"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/nomineesCustomeMobileTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/nomineesCustomeTitleTextView"
+        android:padding="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#000000" />
+
+    <!-- Layout for action edit and delete -->
+
+    <View
+        android:id="@+id/myPropLineView"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/nomineesCustomeMobileTextView"
+        android:background="#3021BE4A" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/myPropLineView"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <!-- Edit Button -->
+
+        <LinearLayout
+            android:id="@+id/nomineeCustEditLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_right_corner_round"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/edit" 
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/nomineesCustomeEditTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Edit"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" 
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emailSmsViewLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="#3021BE4A" />
+        </LinearLayout>
+
+        <!-- Delete Button -->
+
+        <LinearLayout
+            android:id="@+id/nomineeDeleteLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_left_corner_round"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/delete" 
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/nomineesCustomeDeleteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Delete"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" 
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

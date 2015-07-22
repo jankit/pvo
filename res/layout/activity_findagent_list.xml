@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	This Xml File Is used to Dispaly to the List Of agent
+	Java File:- FindAgentListActivity.java
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/findAgentListLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/findAgentListViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg" >
+
+        <TextView
+            android:id="@+id/tvAgentTotalRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:textColor="@android:color/black" />
+
+        <com.markupartist.android.widget.PullToRefreshListView
+            android:id="@+id/findAgentListListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/tvAgentTotalRecord"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:scrollbars="none" />
+        <!--
+        <ListView
+            android:id="@+id/findAgentListListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:scrollbars="none"
+            android:layout_below="@+id/tvAgentTotalRecord" >
+        </ListView>
+        -->
+    </RelativeLayout>
+
+    <!-- Footer Layout -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/layout_background_color1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="2dp" >
+
+            <LinearLayout
+                android:id="@+id/findAgentAddNewPropLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_style"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/footer_inner_imageview_pading"
+                    android:src="@drawable/add" />
+
+                <TextView
+                    android:id="@+id/findAgentAddTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/add_property"
+                    android:textColor="@color/button_text_color"
+                    android:textSize="@dimen/button_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/layout_background_color2"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="2dp" >
+
+            <LinearLayout
+                android:id="@+id/findAgentRefineSearchLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_style_blue_color"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/footer_inner_imageview_pading"
+                    android:src="@drawable/ref" />
+
+                <TextView
+                    android:id="@+id/searchPropListNewSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/refine_search"
+                    android:textColor="@color/button_text_color"
+                    android:textSize="@dimen/button_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

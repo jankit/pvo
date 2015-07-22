@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	This xml File Is used To enter the detail of Search property,
+	Java File:- SearchPropertyActivity.java
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filterProjectLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <ScrollView
+        android:id="@+id/filterProjectInfoscroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/listview_item_customshape"
+        android:paddingBottom="10dp"
+        android:scrollbars="none"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/filterProjectContainerLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- Builder ID -->
+
+            <TextView
+                android:id="@+id/filterProjectBuilderIdTv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:text="Builder ID"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/filterProjectBuilderIDSpinner"
+                style="@style/SpinnerStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filterProjectBuilderIdTv"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:scrollbars="none"
+                android:spinnerMode="dropdown" />
+
+            <!-- Builder Name -->
+
+            <TextView
+                android:id="@+id/filterProjectBuilderNameTv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filterProjectBuilderIDSpinner"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:text="Builder Name"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/filterProjectBuilderNameEt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filterProjectBuilderNameTv"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/edit_style"
+                android:hint="Builder name"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@android:color/black" />
+
+            <!-- Select Location -->
+
+            <TextView
+                android:id="@+id/filterProjectLocationTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filterProjectBuilderNameEt"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:text="Location"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/filterProjectLocationEditTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filterProjectLocationTv"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/edit_style"
+                android:hint="Click to Select Area"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@android:color/black" />
+
+            <!-- Keyword -->
+
+            <TextView
+                android:id="@+id/filterProjectKeywordTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filterProjectLocationEditTextView"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:text="Keyword"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/filterPropKeywordEditTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filterProjectKeywordTv"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/edit_style"
+                android:hint="Keyword"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@android:color/black" />
+
+            <!-- Price range -->
+
+            <TextView
+                android:id="@+id/filterProjectPriceRangeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filterPropKeywordEditTextView"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:text="Budget"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/filterProjectPriceRangeSpinner"
+                style="@style/SpinnerStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filterProjectPriceRangeTv"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:scrollbars="none"
+                android:spinnerMode="dropdown" />
+
+            <!-- Search Button Layout -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filterProjectPriceRangeSpinner"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/filterProjectSearchBotton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_margin="@dimen/button_margin"
+                    android:background="@drawable/button_style"
+                    android:paddingLeft="@dimen/button_pading_left"
+                    android:paddingRight="@dimen/button_pading_right"
+                    android:text="SEARCH"
+                    android:textColor="@color/button_text_color"
+                    android:textSize="@dimen/button_text_size" />
+
+                <Button
+                    android:id="@+id/filterProjectCancelBotton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_margin="@dimen/button_margin"
+                    android:background="@drawable/button_style"
+                    android:paddingLeft="@dimen/button_pading_left"
+                    android:paddingRight="@dimen/button_pading_right"
+                    android:text="CANCEL"
+                    android:textColor="@color/button_text_color"
+                    android:textSize="@dimen/button_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,238 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.    -->
+    <!-- <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar">
+        
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.       
+    </style> -->
+
+    <!-- <style name="Theme" parent="android:Theme.Holo.Light">
+        
+    </style> -->
+
+    <!-- Application theme. -->
+    <!-- <style name="AppTheme" parent="AppBaseTheme">
+        All customizations that are NOT specific to a particular API-level can go here.
+    </style> -->
+   
+  <!--   <style name="MyTheme" parent="android:Theme.Holo.Light">
+    	<item name="android:windowNoTitle">true</item>
+    	<item name="android:dropDownAnchor">@style/MyDropDownNav</item>
+    	<item name="android:textColor">#080707</item>
+	</style> -->
+	
+    
+    <style name="progressbar_holo" parent="@android:style/Theme.Light"/>
+    
+    <style name="MyDropDownNav" parent="android:style/Widget.Holo.Light.Spinner">
+	    <item name="android:textColor">#080707</item>
+	</style>
+
+		
+<style name="TestSpinnerStyle" parent="android:style/Widget.ListView.DropDown">
+    <item name="android:divider">#0D70BB</item>
+    <item name="android:dividerHeight">5dp</item>
+</style>
+	
+		
+	<!-- Spinner Style -->
+	<style name="SpinnerStyle" >
+	    <item name="android:textColor">@android:color/black</item>
+	    <item name="android:background">@drawable/spinner_background_holo_light</item>
+		<item name="android:choiceMode">singleChoice</item>
+		<item name="android:popupBackground">#BDCAD6</item>
+		<item name="android:padding">10dp</item>
+		<item name="android:dropDownVerticalOffset">0dip</item>
+		<item name="android:dropDownHorizontalOffset">0dip</item>
+		<item name="android:dropDownSelector">@android:color/black</item>
+		<item name="android:dropDownListViewStyle">@style/TestSpinnerStyle</item>
+		<item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+	</style>	
+	
+	
+	<style name="registerSpinnerStyle" >
+	    <item name="android:textColor">@android:color/white</item>
+	    <item name="android:background">@drawable/spinner_background_holo_light</item>
+		<item name="android:choiceMode">singleChoice</item>
+		<item name="android:popupBackground">#BDCAD6</item>
+		<item name="android:padding">10dp</item>
+		<item name="android:dropDownVerticalOffset">0dip</item>
+		<item name="android:dropDownHorizontalOffset">0dip</item>
+		<item name="android:dropDownSelector">@android:color/white</item>
+		<item name="android:dropDownListViewStyle">@style/TestSpinnerStyle</item>
+	</style>
+	
+	<!-- full_screen_dialog -->
+	<style name="full_screen_dialog" parent="@android:style/Theme.Dialog">
+    	<item name="android:windowNoTitle">true</item>
+    	<item name="android:windowFullscreen">true</item>
+    	<item name="android:windowIsFloating">true</item>
+    	<item name="android:windowContentOverlay">@null</item>
+    	<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    	<item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    	<item name="android:windowBackground">@android:color/transparent</item>
+	</style>
+
+	
+	
+	<!-- ****************** NEW ********************** -->
+	<!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+       <!--  <item name="@android:style/Widget.ActionBar">@style/ActionBar</item> -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+       <!--  <item name="@android:style/Widget.ActionBar">@style/ActionBar</item> -->
+    </style>
+
+    
+    
+    <style name="mySwitchStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="track">@drawable/z_toggle_switch_track_green</item>
+        <item name="thumb">@drawable/z_toggle_background_fenced</item>
+        <item name="switchTextAppearanceAttrib">@style/mySwitchTextAppearance</item>
+        <item name="pushStyle">false</item>
+        <item name="textOnThumb">true</item>
+        <item name="thumbTextPadding">@dimen/thumbTextPadding</item>
+        <item name="trackTextPadding">@dimen/trackTextPadding</item>
+        <item name="switchMinHeight">@dimen/switchMinHeight</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="mySwitchTextAppearance">
+        <item name="textColor">@color/ToggleTextColor</item>
+        <item name="textSize">@dimen/toggleTxtSize</item>
+        <item name="textStyle">normal</item>
+    </style>
+    
+    
+   <!--  <style name="mySwitchStyle">
+        <item name="track">@drawable/z_toggle_switch_track_green</item>
+        <item name="thumb">@drawable/z_toggle_background_fenced</item>
+        <item name="switchTextAppearanceAttrib">@style/mySwitchTextAppearance</item>
+        <item name="textOn">ON</item>
+        <item name="textOff">OFF</item>
+        <item name="pushStyle">false</item>
+        <item name="textOnThumb">true</item>
+        <item name="thumbExtraMovement">-2dp</item>
+        <item name="thumbTextPadding">@dimen/thumbTextPadding</item>
+        <item name="trackTextPadding">@dimen/trackTextPadding</item>
+        <item name="switchMinWidth">@dimen/switchMinWidth</item>
+        <item name="switchMinHeight">@dimen/switchMinHeight</item>
+        <item name="switchPadding">@dimen/switchPadding</item>
+    </style>
+
+    <style name="mySwitchTextAppearance">
+        <item name="textColor">#59D964</item>
+        <item name="textSize">@dimen/toggleTxtSize</item>
+        <item name="textStyle">normal</item>
+    </style> -->
+
+    <!-- Add Property linear layout style -->
+    <style name="addPropLLStyle">
+        <item name="android:background">@color/addPropLLBgCoolor</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/addPropLLHeight</item>
+        <item name="android:layout_marginTop">@dimen/addPropLLTopMargin</item>
+        <!-- <item name="android:layout_marginBottom">@dimen/addPropLLBottmMargin</item> -->
+        <item name="android:layout_marginLeft">@dimen/addPropLLLeftMargin</item>
+        <item name="android:layout_marginRight">@dimen/addPropLLRightMargin</item>
+    </style>
+    
+    <!-- Textview lable style -->
+    <style name="tetxtViewLableStyle">
+        <item name="android:textColor">@color/tvLableTextColor</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/tvLablePadding</item>
+        <item name="android:textSize">@dimen/tvLableTxtSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <!-- Furnish option style -->
+    <style name="furnishOprionTVStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/addPropFurnishOptionHeight</item>
+        <item name="android:textSize">@dimen/tvLableTxtSize</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/addPropFurnishOptMarginRight</item>
+    </style>
+    
+    <style name="dialog_untran" parent="dialog_tran">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+     <style name="dialog_tran" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+    
+    <!-- Dilog animation --> 
+     <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/new_dialog_slide_up</item>
+        <item name="android:windowExitAnimation">@anim/new_dialog_slide_out_down</item>
+    </style>
+
+     <!-- Animation for dialog box -->
+    <style name="DialogSlideAnim" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+    
+    
+     <!-- Near by location -->
+    <style name="Animation">
+        <item name="android:windowEnterAnimation">@anim/new_dialog_slide_up</item>
+        <item name="android:windowExitAnimation">@anim/new_dialog_slide_out_down</item>
+    </style>
+    
+    
+    <!-- Actionbar style common -->
+    <!-- <style name="ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:icon">@android:color/transparent</item>
+        <item name="android:background">@color/btnBlueColor</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:height">50dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:titleTextStyle">@style/NoTitleText</item>
+        <item name="android:gravity">clip_horizontal</item>
+        <item name="android:minHeight">50dp</item>
+         <item name="android:homeAsUpIndicator">@drawable/back_arrow</item>
+         <item name="android:actionButtonStyle">@style/MyActionButtonStyle</item>
+    </style>
+ -->    
+    <!-- <style name="MyActionButtonStyle" parent="@android:style/Widget.Holo.Light.ActionButton">
+         <item name="android:maxWidth">20dip</item>
+         <item name="android:maxHeight">20dip</item>
+         <item name="android:padding">50dp</item>
+	</style> -->
+	
+   <!--  <style name="NoTitleText">
+        <item name="android:textSize">@dimen/ActionBatTextSize</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textStyle">normal</item>
+    </style> -->
+	
+</resources>

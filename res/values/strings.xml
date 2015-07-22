@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="menuItemArray"
+        >
+        <item >Search Property</item>
+        <item >Search Requirement</item>
+        <item >Find Agent</item>
+        <item >Find Property by Id</item>
+        <item >My Account</item>
+        <item >Nominee</item>
+        <item >Change Password</item>
+        <item >View Profile</item>
+        <item >My Property</item>
+        <item >My Requirement</item>
+        <item >Prefered Broker</item>
+        <item >Notification</item>
+        <item >Public Property</item>
+        <item >Public Requirement</item>
+    </string-array>
+    
+    <string name="toast_crash">Something went wrong :( But no worries, a report has been sent to help fix the issue.</string>
+	<string name="crash_dialog_title">Property via online has crashed</string>
+	<string name="crash_dialog_text">An unexpected error occurred forcing the
+    application to stop. Please help us fix this by sending us error data,
+    all you have to do is click OK.</string>
+	<string name="crash_dialog_comment_prompt">You might add your comments about the problem below:</string>
+	<string name="crash_dialog_ok_toast">Thank you !</string>
+   
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Project</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    
+    <!-- Welcome Screen -->
+    <string name="propertyViaOnline"><b>Property Via online</b></string>
+    <string name="PropertyType"><i><b>Property Type</b></i></string>
+    <string name="PricingRange"><i><b>Pricing Range : </b></i></string>
+    <string name="selectLocation"><i><b>Select Location </b></i></string>
+    <string name="radio_sale">Sale</string>
+    <string name="radio_rent">Rent</string>
+    <string name="selectPropertyType">Select Property Type</string>
+    <string name="selectArea">Select Area</string>
+    <string name="app_name">Property Via Online</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="MobileNumber"><i><b>Mobile Number</b></i></string>
+    <string name="Password"><i><b>Password</b></i></string>
+    <string name="VerificationCode"><i><b>Verification Code</b></i></string>
+    <string name="Name"><i><b>Name</b></i></string>
+    <string name="Login"><b>LOGIN</b></string>
+    <string name="Register"><b>REGISTER</b></string>
+    <string name="Send"><b>Send</b></string>
+    <string name="Search"><b>SEARCH</b></string>
+    <string name="tab_check_bg">#00cc00</string>
+    <string name="tab_uncheck_bg">#ffffff</string>
+    <string name="OR"><i><b>OR</b></i></string>
+
+    <color name="Blue">#cc00cc</color>
+    <color name="white">#ffffff</color>
+
+    <!-- Available Property -->
+    <string name="availableProperty"><B>Available Property</B></string>
+
+    <!-- popup menu -->
+    <color name="rbm_menu_background">#303030</color>
+    <color name="rbm_item_text_color">#ffffff</color>
+    <dimen name="rbm_menu_width">200dp</dimen>
+    <dimen name="rbm_item_padding_topbottom">16dp</dimen>
+    <dimen name="rbm_item_padding_leftright">8dp</dimen>
+    <dimen name="rbm_item_image_height">24dp</dimen>
+    <dimen name="rbm_item_image_width">24dp</dimen>
+    <dimen name="rbm_item_text_size">16sp</dimen>
+    <dimen name="rbm_item_text_padding_left">10dp</dimen>
+
+    <!-- end  popup menu -->
+
+    <!-- Filter By Arrray -->
+    <string-array name="Filterby">
+        <item>Normal</item>
+        <item>Preferred</item>
+    </string-array>
+
+    <!-- My Account Section -->
+    <string name="CompanynameTxt"><b>Company Name</b></string>
+    <string name="WebsiteTxt"><b>Website</b></string>
+    <string name="AddressTxt"><b>address</b></string>
+    <string name="Phoneoffice1Txt"><b>Phone (O)</b></string>
+    <string name="Phoneoffice2Txt"><b>Phone (O)</b></string>
+    <string name="Phonemobile2Txt"><b>Phone (M)</b></string>
+    <string name="EmailTxt"><b>Email ID</b></string>
+    <string name="StateTxt"><b>State</b></string>
+    <string name="DistinctTxt"><b>District</b></string>
+    <string name="CityTxt"><b>City</b></string>
+    <string name="FacebookTxt"><b>Facebook Link</b></string>
+    <string name="TwitterTxt"><b>Twitter Link</b></string>
+    <string name="BusinessTxt"><b>Business Page Link</b></string>
+    <string name="LinkedTxt"><b>Linked Link</b></string>
+    <string name="AfiliatedTxt"><b>Afiliated With</b></string>
+    <string name="BusinessScienceTxt"><b>Business Science</b></string>
+    <string name="LanguageTxt"><b>Language Known</b></string>
+    <string name="DoneTxt"><b>Done</b></string>
+    <string name="PropertyDealTxt"><b>Property Deals in</b></string>
+    <string name="AreaDealTxt"><b>Area Deals in</b></string>
+    <string name="PhotoTxt"><b>Photo(Max 4MB)</b></string>
+    <string name="LogoTxt"><b>Logo(Max 4MB)</b></string>
+    <string name="SaveTxt"><b>Save</b></string>
+    <string name="CancelTxt"><b>Cancel</b></string>
+    <string name="ViewProfileTxt"><b>View Profile</b></string>
+    <string name="State_prompt">Choose a State</string>
+    <string name="SelectYear">Select Year</string>
+    <string name="Distinct_prompt">Choose a Distinct</string>
+    <string name="City_prompt">Choose a City</string>
+    <string name="agentCriteria">Select</string>
+
+
+    <color name="textbody">#009933</color>
+
+    <!-- *************Add Property*************** -->
+    <string name="publishPrompt">Choose a Publishing Option</string>
+
+   
+
+    <string name="optionPrompt">Choose a Option</string>
+    <string name="propertyTypePrompt">Choose a Property Type</string>
+    <string name="propertyOccupyPrompt">Choose a Option</string>
+    <string name="cityPrompt">Choose a City</string>
+    <string name="distPrompt">Choose a District</string>
+    <string name="landmarkPrompt">Choose a Landmark</string>
+    <string name="locationPrompt">Choose a Location</string>
+    <string name="bedPrompt">Choose a Bed</string>
+    <string name="furnishPrompt">Choose a Furnished Type</string>
+    <string name="floorPrompt">Choose a Floor</string>
+    <string name="buildingPrompt">Choose a Building Type</string>
+
+
+    <string name="purposePrompt">Choose a Purpose</string>
+
+     <!-- Whome To let Array used in Add Property -->
+    <string-array name="whomeToLet">
+        <item>Any</item>
+        <item>Company Employee only</item>
+        <item>Family only</item>
+        <item>Company Employee/Family only</item>
+        <item>Bachelors only</item>
+        <item>Other</item>
+    </string-array> 
+    
+    
+    <string name="whomeToLetPrompt">Choose Option</string>
+
+    <!-- Built year -->
+    <string name="builtYearPrompt">Choose Year</string>
+    <string name="rentBudgePrompt">Select Rent</string>
+    
+    
+    <!-- Menu -->
+     <string name="menu_settings">Settings</string>
+    
+     <string name="menu_title">MENU</string>
+     <string name="item_1">Item 1</string>
+     <string name="item_2">Item 2</string>
+     
+     <string name="description">Description</string>
+     
+    <!-- Footer Button -->     
+    <dimen name="footer_inner_layout_pading">5dp</dimen>
+    <dimen name="footer_inner_imageview_pading">5dp</dimen>
+   
+    <color name="button_text_color">#ffffff</color><!-- White -->
+    <color name="layout_background_color1">#23C14A</color><!-- Green -->
+    <color name="layout_background_color2">#2665B4</color><!-- Blue -->
+    <string name="add_property">ADD PROPERTY</string>
+    <string name="add_requirement">ADD REQUIREMENT</string>
+    <string name="refine_search">REFINE SEARCH</string>
+    <string name="cancel">CANCEL</string>
+    
+    <string name="previous">&lt;&lt;</string>
+    <string name="next">&gt;&gt;</string>
+    
+    
+    <string-array name="selectState">
+        <item >Select State</item>
+    </string-array>
+    <string-array name="selectCity">
+        <item >Select City</item>
+    </string-array>
+    <string-array name="selectDistrict">
+        <item >Select District</item>
+    </string-array>
+    
+    
+    <!-- near by location related -->
+    <string-array name="place_type">
+        <item></item>
+        <item>airport</item>
+        <item>atm</item>
+        <item>bank</item>
+        <item >school</item>
+        <item>bus_station</item>
+        <item>church</item>
+        <item>doctor</item>
+        <item>hospital</item>
+        <item>mosque</item>
+        <item>movie_theater</item>
+        <item>hindu_temple</item>
+        <item>restaurant</item>
+    </string-array>
+
+    <string-array name="place_type_name">
+        <item>Select NearBy Location</item>
+        <item>Airport</item>
+        <item>ATM</item>
+        <item>Bank</item>
+        <item >School</item>
+        <item>Bus Station</item>
+        <item>Church</item>
+        <item>Doctor</item>
+        <item>Hospital</item>
+        <item>Mosque</item>
+        <item>Movie Theater</item>
+        <item>Hindu Temple</item>
+        <item>Restaurant</item>
+    </string-array>
+    
+     
+</resources>

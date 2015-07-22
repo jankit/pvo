@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	This xml File Is used To enter the detail of Search property,
+	Java File:- SearchPropertyActivity.java
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filterPropLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <ScrollView
+        android:id="@+id/filterInfoscroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/listview_item_customshape"
+        android:paddingBottom="10dp"
+        android:scrollbars="none"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/filterPropContainerLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/filterPropProceedLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <!-- Property Type -->
+
+                <TextView
+                    android:id="@+id/filterPropTypeTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Select property type"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/filterPropPropetyTypeSpinner"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/filterPropTypeTv"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown" />
+
+                <!-- PUrpose Sale or Rent -->
+
+                <TextView
+                    android:id="@+id/filterPropSaleOrRentTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/filterPropPropetyTypeSpinner"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Purpose"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/searchPropForSpinner"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/filterPropSaleOrRentTv"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown" />
+
+                <!-- Select Location -->
+
+                <TextView
+                    android:id="@+id/filterPropLocationTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchPropForSpinner"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Location"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/filterPropLocationEditTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/filterPropLocationTv"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edit_style"
+                    android:hint="Click to Select Area"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@android:color/black" />
+
+                <!-- Keyword -->
+
+                <TextView
+                    android:id="@+id/filterPropKeywordTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/filterPropLocationEditTextView"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Keyword"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/filterPropKeywordEditTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/filterPropKeywordTv"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/edit_style"
+                    android:hint="Keyword"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@android:color/black" />
+
+                <!-- Search Button Layout -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/filterPropKeywordEditTextView"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/filterPropSearchBotton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_margin="@dimen/button_margin"
+                        android:background="@drawable/button_style"
+                        android:paddingLeft="@dimen/button_pading_left"
+                        android:paddingRight="@dimen/button_pading_right"
+                        android:text="SEARCH"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="@dimen/button_text_size" />
+
+                    <Button
+                        android:id="@+id/filterPropCancelBotton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_margin="@dimen/button_margin"
+                        android:background="@drawable/button_style"
+                        android:paddingLeft="@dimen/button_pading_left"
+                        android:paddingRight="@dimen/button_pading_right"
+                        android:text="CANCEL"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="@dimen/button_text_size" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

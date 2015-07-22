@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	This File is used to Enter the Detail Of Agent Which you want ot find
+	Java File:- FindAgentActivity.java
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/findAgentLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/listview_item_customshape"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/findAgentLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- Criteria Spinner -->
+
+            <Spinner
+                android:id="@+id/findAgentSpinner"
+                style="@style/SpinnerStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:prompt="@string/agentCriteria"
+                android:spinnerMode="dropdown" />
+
+            <!-- agent Info Edit box -->
+
+            <TextView
+                android:id="@+id/findAgentEnterInfoTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/findAgentSpinner"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/findAgentEditBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/findAgentEnterInfoTextView"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/edit_style"
+                android:hint="Enter Agent Info."
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@android:color/black"
+                android:visibility="gone" />
+
+            <!-- Area Edit box -->
+
+            <TextView
+                android:id="@+id/findAgentAreaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/findAgentEditBox"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/findAgentAreaEditBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/findAgentAreaTextView"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/edit_style"
+                android:hint="Click to Select Area"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@android:color/black"
+                android:visibility="gone" />
+
+            <!-- select Property -->
+
+            <TextView
+                android:id="@+id/findAgentPropTypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/findAgentAreaEditBox"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/findAgentPropTypeSpinner"
+                style="@style/SpinnerStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/findAgentPropTypeTextView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:scrollbars="none"
+                android:spinnerMode="dropdown"
+                android:visibility="gone" />
+
+            <!-- Footer layout -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/findAgentPropTypeSpinner"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/findAgentBotton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_margin="@dimen/button_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:paddingLeft="@dimen/button_pading_left"
+                    android:paddingRight="@dimen/button_pading_right"
+                    android:text="@string/Search"
+                    android:textColor="@color/button_text_color"
+                    android:textSize="@dimen/button_text_size" />
+
+                <Button
+                    android:id="@+id/findAgentCancelBotton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_margin="@dimen/button_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:paddingLeft="@dimen/button_pading_left"
+                    android:paddingRight="@dimen/button_pading_right"
+                    android:text="@string/cancel"
+                    android:textColor="@color/button_text_color"
+                    android:textSize="@dimen/button_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

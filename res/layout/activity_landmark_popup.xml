@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="120dp"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/listview_item_customshape" >
+
+        <TextView
+            android:id="@+id/landmarkTv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:text="Landmark Name"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/landmarkEditBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/landmarkTv"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/edit_style"
+            android:hint="Enter landmark name"
+            android:inputType="textNoSuggestions"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/landmarkEditBox" >
+
+            <Button
+                android:id="@+id/landmarkSendButton"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/button_margin"
+                android:layout_weight="1"
+                android:background="@drawable/button_style"
+                android:paddingLeft="@dimen/button_pading_left"
+                android:paddingRight="@dimen/button_pading_right"
+                android:text="SEND"
+                android:textColor="@color/button_text_color"
+                android:textSize="@dimen/button_text_size" />
+
+            <Button
+                android:id="@+id/landmarkCancelButton"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/button_margin"
+                android:layout_weight="1"
+                android:background="@drawable/button_style"
+                android:paddingLeft="@dimen/button_pading_left"
+                android:paddingRight="@dimen/button_pading_right"
+                android:text="CANCEL"
+                android:textColor="@color/button_text_color"
+                android:textSize="@dimen/button_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

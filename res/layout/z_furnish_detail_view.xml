@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_furnishDet_container"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/addPropFurnishOptionHeight"
+    android:background="@drawable/select_bg"
+    android:orientation="horizontal" 
+    android:layout_margin="2dp"
+    android:gravity="center">
+
+    <!-- android:background="@drawable/furnish_option_view_bg" -->
+
+    <TextView
+        android:id="@+id/tv_furnishDet_fully"
+        style="@style/furnishOprionTVStyle"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_furnishDet_semi"
+        style="@style/furnishOprionTVStyle"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_furnishDet_un"
+        style="@style/furnishOprionTVStyle"
+        android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:gravity="center">
+    
+    <TextView
+        android:id="@+id/tv_nomineeCall_name" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Nominee Name"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/tvLableTxtSize"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:layout_centerVertical="true"/>
+
+    <ImageView 
+        android:id="@+id/iv_nomineeCall_call"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/call_ic"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

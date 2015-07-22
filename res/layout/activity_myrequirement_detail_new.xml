@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	This Xml File is used to Display the full Detail of the My Requirement 
+	this file is Open Onclick Of first Text View Of My requirement 
+	Java File:- MyRequirementDetailActivity.java
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myReqDetLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg" >
+
+    <TextView
+        android:id="@+id/myReqDetSubHeaderTv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:textColor="@color/textbody"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/myReqDetSubHeaderTv"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/listview_item_customshape"
+        android:paddingBottom="10dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/myReqDetPropPhotoImg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:src="@drawable/no_image" 
+                android:scaleType="fitXY"/>
+
+            <!-- 1 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:gravity="center">
+
+                <!-- Requirement ID -->
+
+                <TextView
+                    android:id="@+id/myReqDettv1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Requirement ID"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/myReqDettv11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myReqDettv1"
+                    android:layout_alignBottom="@+id/myReqDettv1"
+                    android:layout_toRightOf="@+id/myReqDettv1"
+                    android:textColor="@color/textbody" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myReqDettv11"
+                android:background="#C0C0C0" />
+
+            <!-- 2 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:gravity="center">
+
+                <!-- Preferred Locations -->
+
+                <TextView
+                    android:id="@+id/myReqDettv2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/myReqDettv1"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Preferred Locations"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myReqDettv12"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myReqDettv2"
+                    android:layout_alignBottom="@+id/myReqDettv2"
+                    android:layout_alignLeft="@+id/myReqDettv11"
+                    android:textColor="@color/textbody" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myReqDettv12"
+                android:background="#C0C0C0" />
+
+            <!-- 3 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:gravity="center">
+
+                <!-- Date Added -->
+
+                <TextView
+                    android:id="@+id/myReqDettv3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/myReqDettv2"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Date Added"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myReqDettv13"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myReqDettv3"
+                    android:layout_alignBottom="@+id/myReqDettv3"
+                    android:layout_alignLeft="@+id/myReqDettv12"
+                    android:textColor="@color/textbody" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myReqDettv13"
+                android:background="#C0C0C0" />
+            <!-- 4 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:gravity="center">
+
+                <!-- Date Updated -->
+
+                <TextView
+                    android:id="@+id/myReqDettv4"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/myReqDettv3"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Date Updated"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myReqDettv14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myReqDettv4"
+                    android:layout_alignBottom="@+id/myReqDettv4"
+                    android:layout_alignLeft="@+id/myReqDettv13"
+                    android:textColor="@color/textbody" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myReqDettv14"
+                android:background="#C0C0C0" />
+
+            <!-- 5 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:gravity="center">
+
+                <!-- Bed -->
+
+                <TextView
+                    android:id="@+id/myReqDettv5"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/myReqDettv4"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Bed"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myReqDettv15"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myReqDettv5"
+                    android:layout_alignBottom="@+id/myReqDettv5"
+                    android:layout_alignLeft="@+id/myReqDettv14"
+                    android:textColor="@color/textbody" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myReqDettv15"
+                android:background="#C0C0C0" />
+
+            <!-- 6 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center" >
+
+                <!-- Furnish Option -->
+
+                <TextView
+                    android:id="@+id/myReqDettv6"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/myReqDettv5"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Furnish Option"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myReqDettv16"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myReqDettv6"
+                    android:layout_alignBottom="@+id/myReqDettv6"
+                    android:layout_alignLeft="@+id/myReqDettv15"
+                    android:textColor="@color/textbody" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myReqDettv16"
+                android:background="#C0C0C0" />
+
+            <!-- 7 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:gravity="center">
+
+                <!-- Purpose -->
+
+                <TextView
+                    android:id="@+id/myReqDettv7"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/myReqDettv6"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Purpose"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myReqDettv17"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myReqDettv7"
+                    android:layout_alignBottom="@+id/myReqDettv7"
+                    android:layout_alignLeft="@+id/myReqDettv16"
+                    android:textColor="@color/textbody" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myReqDettv17"
+                android:background="#C0C0C0" />
+
+            <!-- 8 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center" >
+
+                <!-- Floor -->
+
+                <TextView
+                    android:id="@+id/myReqDettv8"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/myReqDettv7"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Floor"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myReqDettv18"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myReqDettv8"
+                    android:layout_alignBottom="@+id/myReqDettv8"
+                    android:layout_alignLeft="@+id/myReqDettv17"
+                    android:textColor="@color/textbody" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myReqDettv18"
+                android:background="#C0C0C0" />
+
+            <!-- 9 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:gravity="center">
+
+                <!-- Building Type -->
+
+                <TextView
+                    android:id="@+id/myReqDettv9"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/myReqDettv8"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Building Type"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                     />
+
+                <TextView
+                    android:id="@+id/myReqDettv19"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myReqDettv9"
+                    android:layout_alignBottom="@+id/myReqDettv9"
+                    android:layout_alignLeft="@+id/myReqDettv18"
+                    android:textColor="@color/textbody" 
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myReqDettv19"
+                android:background="#C0C0C0" 
+                android:gravity="center"/>
+            <!-- 10 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Area -->
+
+                <TextView
+                    android:id="@+id/myReqDettv10"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/myReqDettv9"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Area"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                     />
+
+                <TextView
+                    android:id="@+id/myReqDettv20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myReqDettv10"
+                    android:layout_alignBottom="@+id/myReqDettv10"
+                    android:layout_alignLeft="@+id/myReqDettv19"
+                    android:textColor="@color/textbody" 
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myReqDettv20"
+                android:background="#C0C0C0" />
+
+            <!-- 11 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:gravity="center">
+
+                <!-- Price/Budget -->
+
+                <TextView
+                    android:id="@+id/myReqDettv21"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/myReqDettv10"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Price/Budget"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myReqDettv27"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myReqDettv21"
+                    android:layout_alignBottom="@+id/myReqDettv21"
+                    android:layout_alignLeft="@+id/myReqDettv20"
+                    android:textColor="@color/textbody" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/myReqLastView"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myReqDettv27"
+                android:background="#C0C0C0" />
+
+            <Button
+                android:id="@+id/btnMyReqShowBrokerInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myReqLastView"
+                android:text="View Broker Info" />
+
+            <!--
+                 <RelativeLayout
+                android:id="@+id/rlBrokerInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnMyReqShowBrokerInfo"
+                android:visibility="gone" >
+            -->
+
+
+            <!-- 12 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Broker id -->
+
+                <TextView
+                    android:id="@+id/myReqDetBrokerIdTv"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Broker Id"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myReqDetIdValTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myReqDetBrokerIdTv"
+                    android:layout_alignBottom="@+id/myReqDetBrokerIdTv"
+                    android:layout_toRightOf="@+id/myReqDetBrokerIdTv"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:textColor="@color/textbody" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myReqDetIdValTv"
+                android:background="#C0C0C0" />
+            <!-- 13 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Broker name -->
+
+                <TextView
+                    android:id="@+id/myReqDetBrokerNameTv"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/myReqDetBrokerIdTv"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myReqDetNameValTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myReqDetBrokerNameTv"
+                    android:layout_alignBottom="@+id/myReqDetBrokerNameTv"
+                    android:layout_alignLeft="@+id/myReqDetIdValTv"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:textColor="@color/textbody" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myReqDetNameValTv"
+                android:background="#C0C0C0" />
+            <!-- 14 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Company name -->
+
+                <TextView
+                    android:id="@+id/myReqDetBrokerCompanyTv"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/myReqDetBrokerNameTv"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Company"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myReqDetCompanyValTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myReqDetBrokerCompanyTv"
+                    android:layout_alignBottom="@+id/myReqDetBrokerCompanyTv"
+                    android:layout_alignLeft="@+id/myReqDetNameValTv"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:textColor="@color/textbody" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myReqDetCompanyValTv"
+                android:background="#C0C0C0" />
+            <!-- 15 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Address -->
+
+                <TextView
+                    android:id="@+id/myReqDetBrokerAddressTv"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/myReqDetBrokerCompanyTv"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Address"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myReqDetAddressValTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myReqDetBrokerAddressTv"
+                    android:layout_alignBottom="@+id/myReqDetBrokerAddressTv"
+                    android:layout_alignLeft="@+id/myReqDetCompanyValTv"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:textColor="@color/textbody" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myReqDetAddressValTv"
+                android:background="#C0C0C0" />
+
+            <!-- 16 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Phone Number -->
+
+                <TextView
+                    android:id="@+id/myReqDetPhoneNoTv"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/myReqDetBrokerAddressTv"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Phone Number"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myReqDetPhoneNoValTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myReqDetPhoneNoTv"
+                    android:layout_alignBottom="@+id/myReqDetPhoneNoTv"
+                    android:layout_alignLeft="@+id/myReqDetAddressValTv"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:textColor="@color/textbody" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myReqDetPhoneNoValTv"
+                android:background="#C0C0C0" />
+            <!-- 17 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Email -->
+
+                <TextView
+                    android:id="@+id/myReqDetEmailTv"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/myReqDetPhoneNoTv"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="Email"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myReqDetEmailValTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/myReqDetEmailTv"
+                    android:layout_alignBottom="@+id/myReqDetEmailTv"
+                    android:layout_alignLeft="@+id/myReqDetPhoneNoValTv"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:textColor="@color/textbody" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/myReqDetEmailValTv"
+                android:background="#C0C0C0" />
+        </LinearLayout>
+    </ScrollView>
+
+
+<!-- Footer Button layout -->
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/layout_background_color1"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/myReqDetSendSmsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/button_margin"
+        android:background="@drawable/button_style"
+        android:paddingLeft="@dimen/button_pading_left"
+        android:paddingRight="@dimen/button_pading_right"
+        android:text="EMAIL/SMS"
+        android:textColor="@color/button_text_color"
+        android:textSize="@dimen/button_text_size" />
+
+    <Button
+        android:id="@+id/myReqDetBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/button_margin"
+        android:background="@drawable/button_style"
+        android:paddingLeft="@dimen/button_pading_left"
+        android:paddingRight="@dimen/button_pading_right"
+        android:text="BACK"
+        android:textColor="@color/button_text_color"
+        android:textSize="@dimen/button_text_size" />
+
+</LinearLayout>
+
+</RelativeLayout>

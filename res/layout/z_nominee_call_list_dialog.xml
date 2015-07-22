@@ -1,0 +1,114 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+   <!--  <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" > -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_nomineeCall_brokerPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/propDetTvPaddingCommon"
+                android:src="@drawable/prop_det_avatar" />
+
+            <TextView
+                android:id="@+id/tv_nomineeCall_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_nomineeCall_brokerPhoto"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+                android:text="Select Nominees"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/iv_nomineeCallList_call"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/call_ic" />
+        </RelativeLayout>
+   <!--  </TableRow> -->
+
+    <View
+        android:layout_height="1dip"
+        android:background="@color/btnGreenColor" />
+
+    <RelativeLayout
+        android:id="@+id/rl_nomineeCall_chkAll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <CheckBox
+            android:id="@+id/chk_nomineeList_checkAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="All" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:orientation="horizontal" >
+
+            <GridView
+                android:id="@+id/grd_nomineeCall_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="1" 
+                >
+            </GridView>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/prog_nomineeCall_progressbar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_height="1dip"
+        android:background="@color/btnGreenColor" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_nomineeCall_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/footerBtnHeight"
+            android:layout_margin="@dimen/footerBtnMargin"
+            android:background="@color/btnBlueColor"
+            android:text="OK"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/footerBtnTxtSize" />
+    </LinearLayout>
+
+</TableLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	This Exm File Is Used To find the Property 
+	This Xml Is Enter the Property Id Which you want to Search
+	Java File:- FindByPropertyIdActivity.java
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/findPropByIdLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/addNomineesDetailLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/listview_item_customshape"
+        android:paddingBottom="10dp" >
+
+        <TextView
+            android:id="@+id/propertyTv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:text="Enter Property Id"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/findPropByIdEditBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/propertyTv"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/edit_style"
+            android:hint="Enter Property Id"
+            android:inputType="number|textNoSuggestions"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@android:color/black" />
+
+        <Button
+            android:id="@+id/findPropByIdSaveBotton"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_below="@+id/findPropByIdEditBox"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="@string/Search"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

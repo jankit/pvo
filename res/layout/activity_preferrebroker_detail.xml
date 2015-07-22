@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	this Xml File is used to Display the Full Detail of the Preferre Broker
+	This file Open onclick Of the First Text View of the Preferre Broker List
+	Java File:- PreferreBrokerDetailActivity.java
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/preferreBrokerDetLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="5dp"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/preferreBrokerDetPropPhotoImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/no_image" />
+
+            <!-- Broker ID -->
+
+            <TextView
+                android:id="@+id/preferreBrokerDettv1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/preferreBrokerDetPropPhotoImg"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:text="Broker Id"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/preferreBrokerDettv11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/preferreBrokerDettv1"
+                android:layout_alignBottom="@+id/preferreBrokerDettv1"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/preferreBrokerDettv1"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/preferreBrokerDettv11"
+                android:background="#C0C0C0" />
+
+            <!-- First,last Name -->
+
+            <TextView
+                android:id="@+id/preferreBrokerNameDettv2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/preferreBrokerDettv1"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:text="Name"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/preferreBrokerNameValDettv12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/preferreBrokerNameDettv2"
+                android:layout_alignBottom="@+id/preferreBrokerNameDettv2"
+                android:layout_alignLeft="@+id/preferreBrokerDettv11"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/preferreBrokerNameValDettv12"
+                android:background="#C0C0C0" />
+
+            <!-- Company name -->
+
+            <TextView
+                android:id="@+id/preferreBrokerCompanyNameDettv3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/preferreBrokerNameDettv2"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Company Name"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/preferreBrokercompanyNameValDettv13"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/preferreBrokerCompanyNameDettv3"
+                android:layout_alignBottom="@+id/preferreBrokerCompanyNameDettv3"
+                android:layout_alignLeft="@+id/preferreBrokerNameValDettv12"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/preferreBrokercompanyNameValDettv13"
+                android:background="#C0C0C0" />
+
+            <!-- Address -->
+
+            <TextView
+                android:id="@+id/preferreBrokerAddressDettv4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/preferreBrokerCompanyNameDettv3"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Address"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/preferreBrokerAddressValDettv14"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/preferreBrokerAddressDettv4"
+                android:layout_alignBottom="@+id/preferreBrokerAddressDettv4"
+                android:layout_alignLeft="@+id/preferreBrokercompanyNameValDettv13"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/preferreBrokerAddressValDettv14"
+                android:background="#C0C0C0" />
+
+            <!-- Phone Number -->
+
+            <TextView
+                android:id="@+id/preferreBrokerNumberDettv5"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/preferreBrokerAddressDettv4"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Number"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/preferreBrokerNumberValDettv15"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/preferreBrokerNumberDettv5"
+                android:layout_alignBottom="@+id/preferreBrokerNumberDettv5"
+                android:layout_alignLeft="@+id/preferreBrokerAddressValDettv14"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/preferreBrokerNumberValDettv15"
+                android:background="#C0C0C0" />
+
+            <!-- website -->
+
+            <TextView
+                android:id="@+id/preferreBrokerWebsiteDettv6"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/preferreBrokerNumberDettv5"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Web Site"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/preferreBrokerWebsiteValDettv16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/preferreBrokerWebsiteDettv6"
+                android:layout_alignBottom="@+id/preferreBrokerWebsiteDettv6"
+                android:layout_alignLeft="@+id/preferreBrokerNumberValDettv15"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/preferreBrokerWebsiteValDettv16"
+                android:background="#C0C0C0" />
+
+            <!-- Email -->
+
+            <TextView
+                android:id="@+id/preferreBrokerEmailDetTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/preferreBrokerWebsiteDettv6"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Email"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/preferreBrokerEmailValTv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/preferreBrokerEmailDetTv"
+                android:layout_alignBottom="@+id/preferreBrokerEmailDetTv"
+                android:layout_alignLeft="@+id/preferreBrokerWebsiteValDettv16"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/preferreBrokerEmailValTv"
+                android:background="#C0C0C0" />
+
+            <!-- Date of joint -->
+
+            <TextView
+                android:id="@+id/preferreBrokerDateOfJoinDettv7"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/preferreBrokerEmailDetTv"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Date Of Join"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/preferreBrokerDateOfJoinValDettv7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/preferreBrokerDateOfJoinDettv7"
+                android:layout_alignBottom="@+id/preferreBrokerDateOfJoinDettv7"
+                android:layout_alignLeft="@+id/preferreBrokerEmailValTv"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/preferreBrokerDateOfJoinValDettv7"
+                android:background="#C0C0C0" />
+
+            <!-- FaceBook -->
+
+            <TextView
+                android:id="@+id/preferreBrokerFacebookDettv8"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/preferreBrokerDateOfJoinDettv7"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Facebook"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/preferreBrokerFacebookValDettv18"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/preferreBrokerFacebookDettv8"
+                android:layout_alignBottom="@+id/preferreBrokerFacebookDettv8"
+                android:layout_alignLeft="@+id/preferreBrokerDateOfJoinValDettv7"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/preferreBrokerFacebookValDettv18"
+                android:background="#C0C0C0" />
+
+            <!-- Twitter -->
+
+            <TextView
+                android:id="@+id/preferreBrokerTwitterDettv9"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/preferreBrokerFacebookDettv8"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Twitter"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/preferreBrokerTwitterValDettv19"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/preferreBrokerTwitterDettv9"
+                android:layout_alignBottom="@+id/preferreBrokerTwitterDettv9"
+                android:layout_alignLeft="@+id/preferreBrokerFacebookValDettv18"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/preferreBrokerTwitterValDettv19"
+                android:background="#C0C0C0" />
+
+            <!-- Linked in -->
+
+            <TextView
+                android:id="@+id/preferreBrokerLinkedinDettv10"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/preferreBrokerTwitterDettv9"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Linkedin"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/preferreBrokerLinkedinValDettv20"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/preferreBrokerLinkedinDettv10"
+                android:layout_alignBottom="@+id/preferreBrokerLinkedinDettv10"
+                android:layout_alignLeft="@+id/preferreBrokerTwitterValDettv19"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/preferreBrokerLinkedinValDettv20"
+                android:background="#C0C0C0" />
+
+            <!-- Business Page -->
+
+            <TextView
+                android:id="@+id/preferreBrokerBusinessPageDettv21"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/preferreBrokerLinkedinDettv10"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Business Page"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/preferreBrokerBusinessPageValDettv27"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/preferreBrokerBusinessPageDettv21"
+                android:layout_alignBottom="@+id/preferreBrokerBusinessPageDettv21"
+                android:layout_alignLeft="@+id/preferreBrokerLinkedinValDettv20"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/preferreBrokerBusinessPageValDettv27"
+                android:background="#C0C0C0" />
+
+            <!-- affiliatedWith -->
+
+            <TextView
+                android:id="@+id/preferreBrokerAffiliateWithDettv22"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/preferreBrokerBusinessPageDettv21"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Affiliate With"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/preferreBrokerAffiliateWithValDettv28"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/preferreBrokerAffiliateWithDettv22"
+                android:layout_alignBottom="@+id/preferreBrokerAffiliateWithDettv22"
+                android:layout_alignLeft="@+id/preferreBrokerBusinessPageValDettv27"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/preferreBrokerAffiliateWithValDettv28"
+                android:background="#C0C0C0" />
+
+            <!-- businessScince -->
+
+            <TextView
+                android:id="@+id/preferreBrokerBusinessScinceDettv23"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/preferreBrokerAffiliateWithDettv22"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Business Scince"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/preferreBrokerBusinessScinceValDettv29"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/preferreBrokerBusinessScinceDettv23"
+                android:layout_alignBottom="@+id/preferreBrokerBusinessScinceDettv23"
+                android:layout_alignLeft="@+id/preferreBrokerAffiliateWithValDettv28"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/preferreBrokerBusinessScinceValDettv29"
+                android:background="#C0C0C0" />
+
+            <!-- Language Known -->
+
+            <TextView
+                android:id="@+id/preferreBrokerLanguageKnownDettv24"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/preferreBrokerBusinessScinceDettv23"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Language Known"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/preferreBrokerLanguageKnownValDettv30"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/preferreBrokerLanguageKnownDettv24"
+                android:layout_alignBottom="@+id/preferreBrokerLanguageKnownDettv24"
+                android:layout_alignLeft="@+id/preferreBrokerBusinessScinceValDettv29"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/preferreBrokerLanguageKnownValDettv30"
+                android:background="#C0C0C0" />
+
+            <!-- Button Layout Email and Back -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/preferreBrokerLanguageKnownDettv24"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/preferreBrokerDetailSendSmsBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_style"
+                    android:padding="10dp"
+                    android:text="Call"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/preferreBrokerDetailBackBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/preferreBrokerDetailSendSmsBtn"
+                    android:background="@drawable/button_style"
+                    android:padding="10dp"
+                    android:text="BACK"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

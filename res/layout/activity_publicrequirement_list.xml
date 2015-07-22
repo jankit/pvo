@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/publicReqLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/publicRequirementListViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_publicReq_footer"
+         >
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPublicReqTotalRecord"
+            android:textColor="@android:color/black"/>
+         
+         <com.markupartist.android.widget.PullToRefreshListView
+            android:id="@+id/publicReqListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:scrollbars="none" 
+            android:layout_below="@+id/tvPublicReqTotalRecord"/>
+
+       <!--  <ListView
+            android:id="@+id/publicReqListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:scrollbars="none" 
+            android:layout_below="@+id/tvPublicReqTotalRecord">
+        </ListView> -->
+    </RelativeLayout>
+    
+    <!-- Progress bar Layout  -->
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:background="@android:color/white"
+	    android:gravity="center"
+	    android:orientation="horizontal"
+	    android:id="@+id/publicRequirementProgresLayout"
+	    android:visibility="gone">
+
+	    <ProgressBar
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	</LinearLayout>
+	<!-- END  -->
+
+    <!-- Footer Button layout -->
+    <LinearLayout
+        android:id="@+id/ll_publicReq_footer"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:background="@color/layout_background_color1"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:layout_below="@+id/publicRequirementProgresLayout">
+        
+          <LinearLayout
+            android:id="@+id/publicReqRefineSearch"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="2dp"
+			android:background="@drawable/button_style"
+			android:clickable="true"
+			android:gravity="center"
+			android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ref" 
+                android:paddingRight="@dimen/footer_inner_imageview_pading"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/searchPropListNewSearch"
+                android:text="@string/refine_search"
+                android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:textColor="@color/button_text_color"
+				android:textSize="@dimen/button_text_size"
+				android:background="@android:color/transparent"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

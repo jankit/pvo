@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	this Xml File is used to Display the Full Detail of the My Property
+	This file Open onclick Of the First Text View of the My Property List
+	Java File:- MyPropertyDetailActivity.java-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adsDetDetLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg" >
+
+    <ScrollView
+        android:id="@+id/adsDetScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/listview_item_customshape"
+        android:paddingBottom="10dp"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <Gallery
+                android:id="@+id/adsDetGallery"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                android:spacing="3dp" />
+
+            <TextView
+                android:id="@+id/adsDetNumberOfImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/adsDetGallery"
+                android:layout_alignRight="@+id/adsDetGallery"
+                android:layout_margin="5dp"
+                android:background="#50666666"
+                android:padding="5dp"
+                android:textColor="@android:color/black" />
+
+            <!-- Project ID -->
+
+            <TextView
+                android:id="@+id/adsDetProjectidTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/adsDetGallery"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Project ID"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adsDetProjectidVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/adsDetProjectidTv"
+                android:layout_alignBottom="@+id/adsDetProjectidTv"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/adsDetProjectidTv"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/adsDetProjectidVal"
+                android:background="#C0C0C0" />
+
+            <!-- Builder name -->
+
+            <TextView
+                android:id="@+id/adsDetBuilderNameTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/adsDetProjectidTv"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Buildear Name"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adsDetBuilderNameVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/adsDetBuilderNameTv"
+                android:layout_alignBottom="@+id/adsDetBuilderNameTv"
+                android:layout_alignLeft="@+id/adsDetProjectidVal"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/adsDetBuilderNameVal"
+                android:background="#C0C0C0" />
+
+            <!-- Number -->
+
+            <TextView
+                android:id="@+id/adsDetNumberTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/adsDetBuilderNameTv"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Phone Number"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adsDetNumberVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/adsDetNumberTv"
+                android:layout_alignBottom="@+id/adsDetNumberTv"
+                android:layout_alignLeft="@+id/adsDetBuilderNameVal"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/adsDetNumberVal"
+                android:background="#C0C0C0" />
+
+            <!-- Price -->
+
+            <TextView
+                android:id="@+id/adsDetPriceTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/adsDetNumberTv"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="Price"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adsDetPriceVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/adsDetPriceTv"
+                android:layout_alignBottom="@+id/adsDetPriceTv"
+                android:layout_alignLeft="@+id/adsDetNumberVal"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/adsDetPriceVal"
+                android:background="#C0C0C0" />
+
+            <!-- Map -->
+
+            <RelativeLayout
+                android:id="@+id/adsDetMapLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/adsDetPriceTv"
+                android:layout_weight="30" >
+
+                <TextView
+                    android:id="@+id/adsDetMaptv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/triangle"
+                    android:drawablePadding="10dp"
+                    android:text="See this property on map"
+                    android:textColor="@android:color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/adsDetMaptv"
+                    android:background="#C0C0C0" />
+                <!--
+                     <fragment
+                    android:id="@+id/adsDetMap"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/adsDetMaptv"
+                    android:layout_margin="5dp" />
+                -->
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/adsDetailMap"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/adsDetMapLayout"
+                android:layout_margin="5dp" />
+            <!--
+                 <fragment
+                    android:id="@+id/adsDetMap"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="5dp" 
+                    android:layout_below="@+id/adsDetMapLayout"/>
+            -->
+
+
+            <!-- Latitude -->
+
+            <TextView
+                android:id="@+id/adsDetLatitudeTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/adsDetailMap"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="latitude"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adsDetLatitudeVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/adsDetLatitudeTv"
+                android:layout_alignBottom="@+id/adsDetLatitudeTv"
+                android:layout_alignLeft="@+id/adsDetPriceVal"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/adsDetLatitudeVal"
+                android:background="#C0C0C0" />
+
+            <!-- Longitude -->
+
+            <TextView
+                android:id="@+id/adsDetLongitudeTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/adsDetLatitudeTv"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/triangle"
+                android:drawablePadding="10dp"
+                android:text="longitude"
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adsDetLongitudeVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/adsDetLongitudeTv"
+                android:layout_alignBottom="@+id/adsDetLongitudeTv"
+                android:layout_alignLeft="@+id/adsDetLatitudeVal"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/textbody" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_below="@+id/adsDetLongitudeVal"
+                android:background="#C0C0C0" />
+
+            <!-- Detail -->
+
+            <RelativeLayout
+                android:id="@+id/adsDetDetailLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adsDetLongitudeTv"
+                android:layout_margin="5dp"
+                android:background="@drawable/layout_style_rounded_corners_border"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/adsDetCustDetailLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="Detail"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/adsDetDetailVal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adsDetDetailLayout"
+                android:layout_margin="5dp"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/layout_background_color1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <!-- Download Broucher -->
+
+        <Button
+            android:id="@+id/adsDetDownloadPriceBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_weight="1"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="DOWNLOAD PRICE LIST"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" />
+
+        <!-- DOWNLOAD FLOOR PLAN -->
+
+        <Button
+            android:id="@+id/adsDetDownloadFloorPlanBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_weight="1"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="DOWNLOAD FLOOR PLAN"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" />
+
+        <!-- Email/Sms Button -->
+
+        <Button
+            android:id="@+id/adsDetSendSmsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_weight="1"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="EMAIL/SMS"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" />
+
+        <!-- Back button -->
+
+        <Button
+            android:id="@+id/adsDetBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_weight="1"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="BACK"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

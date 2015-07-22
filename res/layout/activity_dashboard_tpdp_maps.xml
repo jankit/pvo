@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <!-- Header layout -->
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#2665B4"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="TP"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" 
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+    <!-- Check box table layout -->
+
+    <RelativeLayout
+        android:id="@+id/rlCheckBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout"
+        android:background="#33ffff0c"
+        android:gravity="center"
+        android:padding="2dp" >
+
+        <!-- TP -->
+
+        <CheckBox
+            android:id="@+id/chkTp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@xml/custom_checkbox"
+            android:paddingLeft="25dp"
+            android:paddingRight="5dp"
+            android:text="TP"
+            android:textColor="@android:color/black" />
+        <!-- DP -->
+
+        <CheckBox
+            android:id="@+id/chkDp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chkTp"
+            android:layout_weight="1"
+            android:button="@xml/custom_checkbox"
+            android:paddingLeft="25dp"
+            android:paddingRight="5dp"
+            android:text="DP"
+            android:textColor="@android:color/black" />
+        <!-- VILLAGE MAPS -->
+
+        <CheckBox
+            android:id="@+id/chkVillageMaps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/chkTp"
+            android:layout_weight="1"
+            android:button="@xml/custom_checkbox"
+            android:paddingLeft="25dp"
+            android:paddingRight="5dp"
+            android:text="Village Maps"
+            android:textColor="@android:color/black" />
+
+        <!-- F-FORM -->
+
+       <!--  <CheckBox
+            android:id="@+id/chkFForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chkVillageMaps"
+            android:layout_toRightOf="@+id/chkDp"
+            android:layout_weight="1"
+            android:button="@xml/custom_checkbox"
+            android:paddingLeft="25dp"
+            android:paddingRight="5dp"
+            android:text="F-form"
+            android:textColor="@android:color/black" /> -->
+
+        <!-- GDCR -->
+
+        <CheckBox
+            android:id="@+id/chkGdcr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/chkTp"
+            android:layout_below="@+id/chkVillageMaps"
+            android:layout_weight="1"
+            android:button="@xml/custom_checkbox"
+            android:paddingLeft="25dp"
+            android:paddingRight="5dp"
+            android:text="GDCR"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+    <!-- check box layout -->
+
+    <LinearLayout
+        android:id="@+id/mainSecondLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlCheckBox"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <!-- City layout -->
+        <LinearLayout
+            android:id="@+id/llCity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textColor="@android:color/black" />
+
+            <Spinner
+                android:id="@+id/spinCity"
+                style="@style/SpinnerStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+
+        <!-- TP spinner layout -->
+        <LinearLayout
+            android:id="@+id/llTp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="TP"
+                android:textColor="@android:color/black" />
+
+            <Spinner
+                android:id="@+id/spinTp"
+                style="@style/SpinnerStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+        
+
+    	<!-- State spinner layout -->
+        <LinearLayout
+            android:id="@+id/llState"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="State"
+                android:textColor="@android:color/black" />
+
+            <Spinner
+                android:id="@+id/spinState"
+                style="@style/SpinnerStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+        
+        <!-- District spinner layout -->
+        <LinearLayout
+            android:id="@+id/llDistrict"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="District"
+                android:textColor="@android:color/black" />
+
+            <Spinner
+                android:id="@+id/spinDistrict"
+                style="@style/SpinnerStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+
+        <!-- Taluka spinner layout -->
+        <LinearLayout
+            android:id="@+id/llTaluka"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Taluka"
+                android:textColor="@android:color/black" />
+
+            <Spinner
+                android:id="@+id/spinTaluka"
+                style="@style/SpinnerStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+
+        <!-- Mojegam spinner layout -->
+        <LinearLayout
+            android:id="@+id/llMojegam"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Mojegam"
+                android:textColor="@android:color/black" />
+
+            <Spinner
+                android:id="@+id/spinMojegam"
+                style="@style/SpinnerStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+        
+        <!-- Village spinner layout -->
+        <LinearLayout
+            android:id="@+id/llVillage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Village"
+                android:textColor="@android:color/black" />
+
+            <Spinner
+                android:id="@+id/spinVillage"
+                style="@style/SpinnerStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+
+        <!-- DP spinner layout -->
+        <LinearLayout
+            android:id="@+id/llDp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="DP"
+                android:textColor="@android:color/black" />
+            <Spinner
+                android:id="@+id/spinDp"
+                style="@style/SpinnerStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+        
+        <!-- F-Form spinner layout -->
+       <!--  <LinearLayout
+            android:id="@+id/llFForm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="F-form"
+                android:textColor="@android:color/black" />
+
+            <Spinner
+                android:id="@+id/spinFForm"
+                style="@style/SpinnerStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout> -->
+
+        <!-- GDCR spinner layout -->
+        <LinearLayout
+            android:id="@+id/llGdcr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="GDCR"
+                android:textColor="@android:color/black" />
+
+            <Spinner
+                android:id="@+id/spinGdcr"
+                style="@style/SpinnerStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+    </LinearLayout>
+
+     <Button
+            android:id="@+id/btnShowMap"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:paddingLeft="@dimen/button_pading_left"
+            android:paddingRight="@dimen/button_pading_right"
+            android:text="SHOW"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/button_text_size" 
+            android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	This is the Registration screen xml 
+	Java file name:- RegisterActivity
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#26488F" >
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_register"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/imageLayout_register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:weightSum="4" >
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:fitsSystemWindows="true"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/editTextLayout_register"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/imageLayout_register"
+            android:orientation="vertical" >
+
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="State"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:id="@+id/tvState"/>
+            <Spinner
+                 android:id="@+id/registerStateSpinner"
+                 android:layout_width="fill_parent"
+                 android:layout_height="40dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:prompt="@string/propertyTypePrompt"
+                 android:spinnerMode="dropdown" 
+                 android:layout_weight="1"
+                 android:padding="5dp"
+                 android:background="@drawable/login_edit_style"
+                 android:entries="@array/selectState"/>
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="District"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:id="@+id/tvDistrict"/>
+            <Spinner
+                 android:id="@+id/registerDistrictSpinner"
+                 android:layout_width="fill_parent"
+                 android:layout_height="40dp"
+                 android:layout_marginLeft="12dp"
+                 android:layout_marginRight="12dp"
+                 android:prompt="@string/propertyTypePrompt"
+                 android:spinnerMode="dropdown" 
+                 android:layout_weight="1"
+                 android:padding="5dp"
+                 android:background="@drawable/login_edit_style"
+                 android:entries="@array/selectDistrict"/>
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:textStyle="bold"
+                 android:id="@+id/tvCity"/>
+            <Spinner
+                 android:id="@+id/registerCitySpinner"
+                 android:layout_height="40dp"
+                 android:background="@drawable/login_edit_style"
+                 android:layout_width="fill_parent"
+                 android:layout_marginLeft="12dp"
+                 android:layout_marginRight="12dp"
+                 android:prompt="@string/propertyTypePrompt"
+                 android:spinnerMode="dropdown" 
+                 android:layout_weight="1"
+                 android:padding="5dp"
+                 android:entries="@array/selectCity"/>
+            <EditText
+                android:id="@+id/mobileNumberEditBox_register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_edit_style"
+                android:hint="@string/MobileNumber"
+                android:inputType="number|textNoSuggestions"
+                android:padding="10dp"
+                android:singleLine="true" 
+                android:maxLength="10"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/VerificatonCodeEditBox_register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_edit_style"
+                android:hint="@string/VerificationCode"
+                android:inputType="number|textNoSuggestions"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black" 
+                android:textCursorDrawable="@android:color/black"/>
+            
+            <EditText
+                android:id="@+id/firstNameEditBox_register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_edit_style"
+                android:hint="@string/Name"
+                android:inputType="text|textNoSuggestions"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black" 
+                android:textCursorDrawable="@android:color/black"/>
+
+            <Button
+                android:id="@+id/registerBotton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_style"
+                android:padding="10dp"
+                android:text="@string/Register"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orTextRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="@string/OR"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/loginBtnRegister"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_style"
+                android:padding="10dp"
+                android:text="@string/Login"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

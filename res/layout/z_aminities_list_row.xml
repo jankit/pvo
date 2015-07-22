@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/iv_aminitiesRow_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_image" />
+
+    <z.com.pvo.newActivity.ZAminitiesCheckboxCommon
+        android:id="@+id/chk_addProp_aminities"
+        android:layout_width="@dimen/amenitiesDiaChkWidth"
+        android:layout_height="@dimen/amenitiesDiaChkHeight"
+        android:layout_centerInParent="true"
+        android:background="@drawable/z_amenities_chk_selector"
+        android:button="@null"
+        android:checked="false"
+        android:drawablePadding="@dimen/amenitiesDiaChkDrawablePadding"
+        android:padding="@dimen/amenitiesDiaChkPadding" />
+
+</RelativeLayout>

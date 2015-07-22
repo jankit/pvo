@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	This xml File is used to set the Detail of My requirement 
+	Java File:- MyRequirementCustomAdapter.java
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/myReqCustListlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listview_item_customshape" >
+
+            <ImageView
+                android:id="@+id/myReqImageView"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/no_image" />
+
+            <!-- Requirement id-->
+            <TextView
+                android:id="@+id/myReqRequirementIDTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/myReqImageView"
+                android:padding="3dp"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+            <!-- Price or Rent Text view -->
+            <TextView
+                android:id="@+id/myReqPriceRentTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/myReqImageView"
+                android:layout_below="@+id/myReqRequirementIDTv"
+                android:padding="3dp"
+                android:text="Price Or Rent"
+                android:textColor="#cc3f3f"
+                android:textSize="12sp" />
+
+            <!-- Location Text View -->
+
+            <TextView
+                android:id="@+id/myReqCustLocationTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myReqPriceRentTv"
+                android:layout_toRightOf="@+id/myReqImageView"
+                android:padding="3dp"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+            
+             <!-- Area Sq. Foot Text View -->
+
+            <TextView
+                android:id="@+id/myReqCustSqFootTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myReqCustLocationTv"
+                android:layout_toRightOf="@+id/myReqImageView"
+                android:padding="3dp"
+                android:text="Area Sq.Foot"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <!-- Property Type For sale Or rent -->
+
+            <TextView
+                android:id="@+id/myReqCustPropertyTypeForSaleprRentTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myReqCustSqFootTv"
+                android:layout_toRightOf="@+id/myReqImageView"
+                android:padding="3dp"
+                android:text="For Sale/Rent"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+           
+
+            <!-- Main/Max Bed Text View -->
+
+            <TextView
+                android:id="@+id/myReqCustBedMinMaxTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myReqCustPropertyTypeForSaleprRentTv"
+                android:layout_toRightOf="@+id/myReqImageView"
+                android:padding="3dp"
+                android:text="Bed"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <!-- Posted By Text View -->
+
+            <TextView
+                android:id="@+id/myReqCustPostedeByTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/myReqImageView"
+                android:layout_below="@+id/myReqCustBedMinMaxTv"
+                android:layout_marginTop="10dp"
+                android:padding="3dp"
+                android:text="Posted By:"
+                android:textColor="#cc3f3f"
+                android:textSize="12sp" />
+
+            <!-- Posted On Date Text View -->
+
+            <TextView
+                android:id="@+id/myReqCustPostedOnDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/myReqCustPostedeByTv"
+                android:layout_alignParentRight="true"
+                android:padding="3dp"
+                android:text="Posted On Date"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <!-- layout for action Edit,delete,active,inactive -->
+
+            <View
+                android:id="@+id/myPropLineView"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/myReqCustPostedOnDateTextView"
+                android:background="#3021BE4A" />
+
+            <LinearLayout
+                android:id="@+id/myReqCustActionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/myPropLineView"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <!-- Edit Button -->
+
+                <LinearLayout
+                    android:id="@+id/myReqEditLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bottom_right_corner_round"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/edit" 
+                        android:background="@android:color/transparent"/>
+
+                    <TextView
+                        android:id="@+id/myReqEditPropButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="Edit"
+                        android:textColor="@android:color/black"
+                        android:textSize="10dp" 
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/emailSmsViewLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="#3021BE4A" />
+                </LinearLayout>
+
+                <!-- Delete Button -->
+
+                <LinearLayout
+                    android:id="@+id/deleteLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#EBEBED"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/delete" 
+                        android:background="@android:color/transparent"/>
+
+                    <TextView
+                        android:id="@+id/myReqDeletePropButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="Delete"
+                        android:textColor="@android:color/black"
+                        android:textSize="10dp" 
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/deleteViewLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="#3021BE4A" />
+                </LinearLayout>
+
+                <!-- Active Button -->
+
+                <LinearLayout
+                    android:id="@+id/activeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#EBEBED"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/act" 
+                        android:background="@android:color/transparent"/>
+
+                    <TextView
+                        android:id="@+id/myReqActivePropButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="Active"
+                        android:textColor="@android:color/black"
+                        android:textSize="10dp" 
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="#3021BE4A" />
+                </LinearLayout>
+
+                <!-- InActive Button -->
+
+                <LinearLayout
+                    android:id="@+id/inActiveLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#EBEBED"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/inact" 
+                        android:background="@android:color/transparent"/>
+
+                    <TextView
+                        android:id="@+id/myReqInActivePropButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="InActive"
+                        android:textColor="@android:color/black"
+                        android:textSize="10dp" 
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/inActiveViewLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="#3021BE4A" />
+                </LinearLayout>
+
+                <!-- Email/sms -->
+
+                <LinearLayout
+                    android:id="@+id/myReqEmailLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#EBEBED"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/myReqEmailButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/em_sm" 
+                        android:background="@android:color/transparent"/>
+
+                    <TextView
+                        android:id="@+id/myReqMailImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="Email/Sms"
+                        android:textColor="@android:color/black"
+                        android:textSize="10dp" 
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="#3021BE4A" />
+                </LinearLayout>
+                <!-- View Inquiry Button -->
+
+                <LinearLayout
+                    android:id="@+id/myReqViewInquiryLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bottom_left_corner_round"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+                    <TextView
+	                    android:id="@+id/myReqViewInquiryCounter"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="center"
+	                    android:paddingLeft="5dp"
+	                    android:textColor="#cc3f3f"
+	                    android:textSize="9dp" />
+
+                    <ImageView
+                        android:id="@+id/myReqViewInquiryButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/inq" 
+                        android:background="@android:color/transparent"/>
+
+                    <TextView
+                        android:id="@+id/myReqViewInqBotton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="Inquiry"
+                        android:textColor="@android:color/black"
+                        android:textSize="10dp" 
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	This xml File is used to Set the detail of the Preferre Broker
+	Java File:- PreferreBrokerCustomeAdapter.java
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/prefBrokerCustListlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listview_item_customshape" >
+
+            <ImageView
+                android:id="@+id/prefBrokerImageView"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/no_image" />
+
+            <!-- FirstName,LastName,CompanyName -->
+
+            <TextView
+                android:id="@+id/prefBrokerFiratLastNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/prefBrokerImageView"
+                android:text="Title...."
+                android:textColor="#cc3f3f"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <!-- Address -->
+
+            <TextView
+                android:id="@+id/prefBrokerMobileTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/prefBrokerFiratLastNameTextView"
+                android:layout_toRightOf="@+id/prefBrokerImageView"
+                android:clickable="true"
+                android:text="Address...."
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <!-- Mobile number -->
+
+            <TextView
+                android:id="@+id/prefBrokerDealerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/prefBrokerMobileTextView"
+                android:layout_toRightOf="@+id/prefBrokerImageView"
+                android:text="Mobile number...."
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <!-- Email -->
+
+            <TextView
+                android:id="@+id/prefBrokerPostCodeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/prefBrokerDealerTextView"
+                android:layout_toRightOf="@+id/prefBrokerImageView"
+                android:text="Email...."
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/prefBrokerPostCodeTextView"
+                android:layout_marginTop="35dp" >
+
+                <View
+                    android:id="@+id/prefBrokCustLineView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#3021BE4A" />
+
+                <LinearLayout
+                    android:id="@+id/prefBrokCustActionLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/prefBrokCustLineView"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <!-- Prefere broker property -->
+
+                    <LinearLayout
+                        android:id="@+id/prefereBrokCustPropListLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bottom_left_corner_round"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/prefBrokPropListIV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/pref_brk_prop" 
+                            android:background="@android:color/transparent"/>
+
+                        <TextView
+                            android:id="@+id/prefBrokCustPropListTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="See Property"
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp" 
+                            android:background="@android:color/transparent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:background="#3021BE4A" />
+                    </LinearLayout>
+
+                    <!-- Add To Group -->
+
+                    <LinearLayout
+                        android:id="@+id/prefBrokCustAddtoGroupLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#EBEBED"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/prefBrokCustAddtoGroupIV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/group_member1" 
+                            android:background="@android:color/transparent"/>
+
+                        <TextView
+                            android:id="@+id/prefBrokCustAddtoGroupTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="Add To Group"
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp" 
+                            android:background="@android:color/transparent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:background="#3021BE4A" />
+                    </LinearLayout>
+
+                    <!-- Delete Prefere broker -->
+
+                    <LinearLayout
+                        android:id="@+id/prefBrokerCustDeleteLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#EBEBED"
+                        android:baselineAligned="true"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/prefBrokerCustDeleteIV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/delete" 
+                            android:background="@android:color/transparent"/>
+
+                        <TextView
+                            android:id="@+id/prefBrokerCustDeleteTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="Delete"
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp" 
+                            android:background="@android:color/transparent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:background="#3021BE4A" />
+                    </LinearLayout>
+
+                    <!-- Call prefere Broker -->
+
+                    <LinearLayout
+                        android:id="@+id/prefBrokerCustCallLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#EBEBED"
+                        android:baselineAligned="true"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/call" 
+                            android:background="@android:color/transparent"/>
+
+                        <TextView
+                            android:id="@+id/prefBrokerCustCallTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="Call"
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp" 
+                            android:background="@android:color/transparent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:background="#3021BE4A" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

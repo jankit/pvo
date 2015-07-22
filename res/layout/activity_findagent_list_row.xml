@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+		This Xml File is used to set to Agent Detail 
+		Java File:- FindAgentCustomerAdapter.java
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/findAgentCustListlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_item_customshape" >
+
+        <ImageView
+            android:id="@+id/findAgentImageView"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/no_image" />
+
+        <!-- Id,name,company -->
+
+        <TextView
+            android:id="@+id/findAgentComplexTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/findAgentImageView"
+            android:clickable="true"
+            android:text="ID #1 Hiren "
+            android:textColor="#cc3f3f"
+            android:textSize="12sp" />
+
+        <!-- Deals in -->
+
+        <TextView
+            android:id="@+id/findAgentDealerInTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/findAgentComplexTextView"
+            android:layout_toRightOf="@+id/findAgentImageView"
+            android:clickable="true"
+            android:text="Deals in"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <!-- Address -->
+
+        <TextView
+            android:id="@+id/findAgentAddressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/findAgentDealerInTextView"
+            android:layout_toRightOf="@+id/findAgentImageView"
+            android:text="Address"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <!-- Phone (M) -->
+
+        <TextView
+            android:id="@+id/findAgentSizeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/findAgentAddressTextView"
+            android:layout_toRightOf="@+id/findAgentImageView"
+            android:text="post code"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <!-- Date of join -->
+
+        <TextView
+            android:id="@+id/findAgentDateOfJoinTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/findAgentSizeTextView"
+            android:layout_toRightOf="@+id/findAgentImageView"
+            android:text="Date of joint"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <!-- Layout for action edit and delete -->
+
+        <View
+            android:id="@+id/myPropLineView"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/findAgentDateOfJoinTextView"
+            android:layout_marginTop="20dp"
+            android:background="#3021BE4A" />
+
+        <LinearLayout
+            android:id="@+id/findAgentCustActionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/myPropLineView"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <!-- Make Preferred broker -->
+
+            <LinearLayout
+                android:id="@+id/findAgentAddToPrefereLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_right_corner_round"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/pref_broker" />
+
+                <TextView
+                    android:id="@+id/findAgentCustAddToPrefTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Make Preferred Broker"
+                    android:textColor="@android:color/black"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/findAgentViewLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="#3021BE4A" />
+            </LinearLayout>
+
+            <!-- See Properties -->
+
+            <LinearLayout
+                android:id="@+id/findAgentCustSeeProp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_left_corner_round"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/agentResultPropCounter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="[0]"
+                    android:textColor="#cc3f3f"
+                    android:textSize="9dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/pref_brk_prop" />
+
+                <TextView
+                    android:id="@+id/findAgentCustSeePropTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="See Properties"
+                    android:textColor="@android:color/black"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/findAgentCustSeePropViewLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="#3021BE4A" />
+            </LinearLayout>
+            
+            <!-- See requirement -->
+
+            <LinearLayout
+                android:id="@+id/findAgentCustSeeReq"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_left_corner_round"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/agentResultReqCounter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="[0]"
+                    android:textColor="#cc3f3f"
+                    android:textSize="9dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/pref_brk_req" />
+
+                <TextView
+                    android:id="@+id/findAgentCustSeeReqTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="See Requirements"
+                    android:textColor="@android:color/black"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/findAgentCustSeeReqViewLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="#3021BE4A" />
+            </LinearLayout>
+
+            <!-- Call -->
+
+            <LinearLayout
+                android:id="@+id/findAgentCallLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_left_corner_round"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/call" />
+
+                <TextView
+                    android:id="@+id/findAgentCallTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Call"
+                    android:textColor="@android:color/black"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

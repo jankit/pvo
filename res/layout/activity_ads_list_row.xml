@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/adsListingCustLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/project_listview_shape_with_border" >
+
+        <RelativeLayout
+            android:id="@+id/adsListingImageViewLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp" >
+
+            <ImageView
+                android:id="@+id/adsListingCustImageView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:background="#F07746"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_image" />
+            <!-- Title -->
+
+            <TextView
+                android:id="@+id/adsListingCustTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="3dp"
+                android:background="#99000000"
+                android:gravity="center"
+                android:text="Project Title"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- Price Start and end -->
+
+        <TextView
+            android:id="@+id/adsListingCustPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adsListingImageViewLayout"
+            android:layout_margin="2dp"
+            android:text="Price"
+            android:textColor="#cc3f3f" />
+
+        <!-- Address -->
+
+        <TextView
+            android:id="@+id/adsListingCustAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adsListingCustPrice"
+            android:layout_margin="2dp"
+            android:text="Address"
+            android:textColor="@android:color/black" />
+
+        <!-- Property type -->
+
+        <TextView
+            android:id="@+id/adsListingCustProprtyType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adsListingCustAddress"
+            android:layout_margin="2dp"
+            android:text="Property type"
+            android:textColor="@android:color/black" />
+        <!-- Builder name -->
+
+        <TextView
+            android:id="@+id/adsListingCustBuilderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adsListingCustProprtyType"
+            android:layout_margin="2dp"
+            android:text="Builder name"
+            android:textColor="@android:color/black" />
+
+        <!-- contact person -->
+
+        <TextView
+            android:id="@+id/adsListingCustcontactperson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adsListingCustBuilderName"
+            android:layout_margin="2dp"
+            android:text="contact person"
+            android:textColor="@android:color/black" />
+
+        <!-- Conatect number -->
+
+        <TextView
+            android:id="@+id/adsListingCustContactNUmber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adsListingCustcontactperson"
+            android:layout_margin="2dp"
+            android:text="Contact number"
+            android:textColor="@android:color/black" />
+        <!-- Email -->
+
+        <TextView
+            android:id="@+id/adsListingCustEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adsListingCustContactNUmber"
+            android:layout_margin="2dp"
+            android:text="Email"
+            android:textColor="@android:color/black" />
+
+        <!--
+    <RelativeLayout
+            android:id="@+id/adsListingDetailLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adsListingCustAddress"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/layout_style_rounded_corners_border"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/adsListingCustDetailLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="Detail"
+                android:textColor="@android:color/black"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/adsListingCustDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adsListingDetailLayout"
+            android:layout_margin="5dp"
+            android:text="Detail"
+            android:textColor="@android:color/black"
+            android:textSize="10dp" />
+    </RelativeLayout>
+        -->
+    </RelativeLayout>
+
+</RelativeLayout>

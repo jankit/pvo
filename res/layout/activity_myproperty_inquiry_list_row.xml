@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Xml File used to Display The Detail Of View Received Inquiries for property -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myPropViewInquCustomeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/listview_item_customshape" >
+
+    <!-- Inquiry By -->
+
+    <TextView
+        android:id="@+id/myPropViewRecInqInquiryByTv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/triangle"
+        android:drawablePadding="10dp"
+        android:text="Inquiry By"
+        android:textColor="@android:color/black"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/myPropViewRecInqInquiryByVal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myPropViewRecInqInquiryByTv"
+        android:layout_alignBottom="@+id/myPropViewRecInqInquiryByTv"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/myPropViewRecInqInquiryByTv"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:textColor="@color/textbody" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/myPropViewRecInqInquiryByVal"
+        android:background="#C0C0C0" />
+
+    <!-- Name -->
+
+    <TextView
+        android:id="@+id/myPropViewRecInqNameTv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/myPropViewRecInqInquiryByTv"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/triangle"
+        android:drawablePadding="10dp"
+        android:text="Company"
+        android:textColor="@android:color/black"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/myPropViewRecInqNameVal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myPropViewRecInqNameTv"
+        android:layout_alignBottom="@+id/myPropViewRecInqNameTv"
+        android:layout_alignLeft="@+id/myPropViewRecInqInquiryByVal"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:textColor="@color/textbody" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/myPropViewRecInqNameVal"
+        android:background="#C0C0C0" />
+
+    <!-- Phone -->
+
+    <TextView
+        android:id="@+id/myPropViewRecInqPhoneTv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/myPropViewRecInqNameTv"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/triangle"
+        android:drawablePadding="10dp"
+        android:text="Phone"
+        android:textColor="@android:color/black"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/myPropViewRecInqPhoneVal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myPropViewRecInqPhoneTv"
+        android:layout_alignBottom="@+id/myPropViewRecInqPhoneTv"
+        android:layout_alignLeft="@+id/myPropViewRecInqNameVal"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:textColor="@color/textbody" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/myPropViewRecInqPhoneVal"
+        android:background="#C0C0C0"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+    <!-- Email -->
+
+    <TextView
+        android:id="@+id/myPropViewRecInqEmailTv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/myPropViewRecInqPhoneTv"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/triangle"
+        android:drawablePadding="10dp"
+        android:minLines="2"
+        android:text="Email"
+        android:textColor="@android:color/black"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/myPropViewRecInqEmailVal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myPropViewRecInqEmailTv"
+        android:layout_alignBottom="@+id/myPropViewRecInqEmailTv"
+        android:layout_alignLeft="@+id/myPropViewRecInqPhoneVal"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:textColor="@color/textbody" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/myPropViewRecInqEmailVal"
+        android:background="#C0C0C0" />
+
+    <!-- Message -->
+
+    <TextView
+        android:id="@+id/myPropViewRecInqMessageTv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/myPropViewRecInqEmailTv"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/triangle"
+        android:drawablePadding="10dp"
+        android:text="Message"
+        android:textColor="@android:color/black"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/myPropViewRecInqMessageVal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myPropViewRecInqMessageTv"
+        android:layout_alignBottom="@+id/myPropViewRecInqMessageTv"
+        android:layout_alignLeft="@+id/myPropViewRecInqEmailVal"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:textColor="@color/textbody" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/myPropViewRecInqMessageVal"
+        android:background="#C0C0C0" />
+
+    <!-- Date -->
+
+    <TextView
+        android:id="@+id/myPropViewRecInqDateTv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/myPropViewRecInqMessageTv"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/triangle"
+        android:drawablePadding="10dp"
+        android:text="Date"
+        android:textColor="@android:color/black"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/myPropViewRecInqDateVal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myPropViewRecInqDateTv"
+        android:layout_alignBottom="@+id/myPropViewRecInqDateTv"
+        android:layout_alignLeft="@+id/myPropViewRecInqMessageVal"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:textColor="@color/textbody" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/myPropViewRecInqDateVal"
+        android:background="#C0C0C0" />
+
+    <!-- Call Button layout -->
+
+    <LinearLayout
+        android:id="@+id/myPropViewInqCallLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/myPropViewRecInqDateVal"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/bottom_right_corner_round"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/myPropViewInqCustCallButtonTv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/call_button" />
+    </LinearLayout>
+
+</RelativeLayout>

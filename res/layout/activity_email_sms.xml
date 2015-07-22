@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	 This Xml file Design screen for enter the detail of sending mail or sms 
+	 Java File:-
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myPropSmsEmailLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+       	android:layout_margin="10dp"
+       	android:paddingBottom="10dp"
+        android:background="@drawable/listview_item_customshape" >
+
+        <RelativeLayout
+            android:id="@+id/myPropSmsEmailDetailLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/myPropSmsEmailInfoMessageTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/myPropSmsEmailNameTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myPropSmsEmailInfoMessageTV"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:text="Name"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/myPropSmsEmailNameEditBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myPropSmsEmailNameTV"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/edit_style"
+                android:hint="Name"
+                android:inputType="text|textNoSuggestions"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@android:color/black" />
+
+            <TextView
+                android:id="@+id/myPropSmsEmailMobileTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myPropSmsEmailNameEditBox"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:text="Phone"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/myPropSmsEmailMobileEditBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myPropSmsEmailMobileTV"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/edit_style"
+                android:hint="Mobile number"
+                android:inputType="number|textNoSuggestions"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black" 
+                android:textCursorDrawable="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/myPropSmsEmailEmailTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myPropSmsEmailMobileEditBox"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:text="Email"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/myPropSmsEmailEmailEditBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myPropSmsEmailEmailTV"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/edit_style"
+                android:hint="Email"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:inputType="textNoSuggestions"
+                android:textColor="@android:color/black" 
+                android:textCursorDrawable="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/myPropSmsEmailMessageTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myPropSmsEmailEmailEditBox"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:text="Message"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/myPropSmsEmailMessageEditBox"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/myPropSmsEmailMessageTV"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/edit_style"
+                android:hint="Please provide me text to put here."
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:padding="10dp"
+                android:singleLine="false"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@android:color/black" />
+
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/myPropSmsEmailMessageEditBox">
+                
+                <Button
+	                android:id="@+id/myPropSmsEmailSendBotton"
+	                android:text="SEND"
+                    android:layout_weight="1"
+	                android:layout_width="fill_parent"
+					android:layout_height="@dimen/button_height"
+					android:layout_margin="@dimen/button_margin"
+					android:background="@drawable/button_style"
+					android:paddingLeft="@dimen/button_pading_left"
+					android:paddingRight="@dimen/button_pading_right"
+					android:textSize="@dimen/button_text_size"
+					android:textColor="@color/button_text_color"/>
+                
+                <Button
+	                android:id="@+id/myPropSmsEmailBackBotton"
+	                android:text="BACK"
+	                android:layout_weight="1"
+	                android:layout_width="fill_parent"
+					android:layout_height="@dimen/button_height"
+					android:layout_margin="@dimen/button_margin"
+					android:background="@drawable/button_style"
+					android:paddingLeft="@dimen/button_pading_left"
+					android:paddingRight="@dimen/button_pading_right"
+					android:textSize="@dimen/button_text_size"
+					android:textColor="@color/button_text_color"/>
+            </LinearLayout>
+            
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	 This Xml file Design screen for Display List of Notification For Particular User 
+	 Java File:- AllNotificationActivity.java
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/allNotificationLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swp_notification_swipLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_above="@+id/allNotificationFooterLayout">
+
+            <ListView
+                android:id="@+id/lv_notification_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    
+    <!-- END -->
+
+
+    <!-- Footer Layout -->
+    
+     <LinearLayout
+        android:id="@+id/allNotificationFooterLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <z.com.pvo.loading.button.ActionProcessButton
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btnSignIn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/footerBtnHeight"
+            android:layout_margin="@dimen/footerBtnMargin"
+            android:background="@color/btnBlueColor"
+            android:text="ADD PROPERTY"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/footerBtnTxtSize"/>
+          
+        <!-- <Button
+            android:id="@+id/btn_allNotificationList_addProp"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/footerBtnHeight"
+            android:layout_margin="@dimen/footerBtnMargin"
+            android:background="@color/btnBlueColor"
+            android:text="ADD PROPERTY"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/footerBtnTxtSize" /> -->
+    </LinearLayout>
+
+     <!-- Progress bar Layout -->
+
+    <LinearLayout
+        android:id="@+id/allNotifiactionProgresLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/footerBtnHeight"
+        android:layout_margin="@dimen/footerBtnMargin"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+ 
+</RelativeLayout>

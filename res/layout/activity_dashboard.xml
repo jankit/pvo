@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	This is the main Page,
+	This Xml File is used to set the Main Screen,In this Set All the Icon
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:gravity="center"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/dashboardLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#284C88">
+
+        <TextView
+            android:id="@+id/mywidget"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:paddingLeft="10dip" 
+    		android:paddingRight="10dip" 
+    		android:focusable="true" 
+    		android:focusableInTouchMode="true" 
+    		android:freezesText="true" 
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/dashboardImageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mywidget"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo_sm" />
+    </RelativeLayout>
+
+    <!-- Search -->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/dashboardLayout"
+        android:background="@android:color/white"
+         >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/dashboardLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/label_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="SEARCH"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dashSearchLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dashboardLayout2"
+                 >
+
+                <RelativeLayout
+                    android:id="@+id/searchDashLayout"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/icon_box"
+                    android:clickable="true"
+                     >
+
+                    <ImageView
+                        android:id="@+id/DashSearchImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/search_ic" />
+
+                    <TextView
+                        android:id="@+id/dashSearchPropTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/DashSearchImageView"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Search \nProperty"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dashSearReqlayout"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/searchDashLayout"
+                    android:background="@drawable/icon_box"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/DashSeaReqImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/srh_req_ic" />
+
+                    <TextView
+                        android:id="@+id/dashFindAgentTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/DashSeaReqImageView"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Search\nRequirement"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dashFindAgentlayout"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/dashSearReqlayout"
+                    android:background="@drawable/icon_box"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/DashFindAgentImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/find_ag_ic" />
+
+                    <TextView
+                        android:id="@+id/dashFindAgentTextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/DashFindAgentImageView"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="Find \nAgent"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                
+                <RelativeLayout
+                    android:id="@+id/dashFindPropByIdlayout"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/dashFindAgentlayout"
+                    android:background="@drawable/icon_box"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/DashFindPropByIdImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/pro_id_ic" />
+
+                    <TextView
+                        android:id="@+id/dashFindPropByIdTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/DashFindPropByIdImageView"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="Find Property\nby Id"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- My Account -->
+
+            <RelativeLayout
+                android:id="@+id/dashMyAccountLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dashSearchLayout"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/label_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="MY ACCOUNT"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dashMyAcIconLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dashMyAccountLayout" >
+
+                <RelativeLayout
+                    android:id="@+id/dashAcInfoLayout"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/icon_box"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/DashAcIfoImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/ac_info" />
+
+                    <TextView
+                        android:id="@+id/dashAcIfoTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/DashAcIfoImageView"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Account\nInfo"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dashNomineeslayout"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/dashAcInfoLayout"
+                    android:background="@drawable/icon_box"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/dashNomineesImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/nome_ic" />
+
+                    <TextView
+                        android:id="@+id/dashNomineeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dashNomineesImageView"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Nominees"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dashChangePWDlayout"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/dashNomineeslayout"
+                    android:background="@drawable/icon_box"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/dashChangePWDImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/pass_ic" />
+
+                    <TextView
+                        android:id="@+id/dashChangePWDTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dashChangePWDImageView"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Change\nPassword"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dashViewProflayout"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/dashChangePWDlayout"
+                    android:background="@drawable/icon_box"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/DashViewProfImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/prof_ic" />
+
+                    <TextView
+                        android:id="@+id/dashViewProfTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/DashViewProfImageView"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="View\nProfile"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- My property -->
+
+            <RelativeLayout
+                android:id="@+id/dashMyPropLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dashMyAcIconLayout"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/label_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="MY PROPERTY"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dashMyPropIconLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dashMyPropLayout" >
+
+                <RelativeLayout
+                    android:id="@+id/dashPropertyLayout"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/icon_box"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/DashPropertyImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/propert_ic" />
+
+                    <TextView
+                        android:id="@+id/dashPropertyTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/DashPropertyImageView"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="My Property"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dashRequirementlayout"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/dashPropertyLayout"
+                    android:background="@drawable/icon_box"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/dashRequirementImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/req_ic" />
+
+                    <TextView
+                        android:id="@+id/dashRequirementTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dashRequirementImageView"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="My Requirement"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dashPrefBroklayout"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/dashRequirementlayout"
+                    android:background="@drawable/icon_box"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/dashPrefBrokImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/pref_brk_ic" />
+
+                    <TextView
+                        android:id="@+id/dashPrefBrokTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dashPrefBrokImageView"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Prefeered\nBroker"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dashFavoritelayout"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/dashPrefBroklayout"
+                    android:background="@drawable/icon_box"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/DashFavoriteImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/fav_ic" />
+
+                    <TextView
+                        android:id="@+id/dashFavoriteTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/DashFavoriteImageView"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Notification"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dashPublicProplayout"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dashPropertyLayout"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/icon_box"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/DashPublicPropImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/public_pro" />
+
+                    <TextView
+                        android:id="@+id/dashPublicPropTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/DashPublicPropImageView"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Public\nProperty"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dashPublicReqlayout"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dashRequirementlayout"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/dashPublicProplayout"
+                    android:background="@drawable/icon_box"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/DashPublicReqImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/public_requ" />
+
+                    <TextView
+                        android:id="@+id/dashPublicReqTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/DashPublicReqImageView"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Public\nRequirement"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
